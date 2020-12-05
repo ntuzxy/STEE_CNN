@@ -1,0 +1,16 @@
+AC
+B8
+CE
+DA
+E3
+EB
+F1
+F7
+FB
+FF
+03
+06
+0A
+0E
+16
+1D

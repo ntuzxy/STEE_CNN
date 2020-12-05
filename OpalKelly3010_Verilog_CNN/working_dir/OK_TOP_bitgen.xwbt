@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Zhang\Desktop\OpalKelly3010_Verilog - Copy (2)\working_dir\OK_TOP.ncd
+OUTFILE=C:\Users\Zhang\Desktop\OpalKelly3010_Verilog - Copy (2)\working_dir\OK_TOP.bit
+FAMILY=Spartan3
+PART=xc3s1500-4fg320
+WORKINGDIR=C:\Users\Zhang\Desktop\OpalKelly3010_Verilog - Copy (2)\working_dir
+LICENSE=WebPack
+USER_INFO=__0_0_0

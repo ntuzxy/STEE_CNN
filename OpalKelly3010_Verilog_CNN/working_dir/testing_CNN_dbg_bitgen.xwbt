@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=F:\STEE_PROJ\CONV\OpalKelly3010_Verilog_CNN\working_dir\testing_CNN_dbg.ncd
+OUTFILE=F:\STEE_PROJ\CONV\OpalKelly3010_Verilog_CNN\working_dir\testing_CNN_dbg.bit
+FAMILY=Spartan3
+PART=xc3s1500-4fg320
+WORKINGDIR=F:\STEE_PROJ\CONV\OpalKelly3010_Verilog_CNN\working_dir
+LICENSE=WebPack
+USER_INFO=__0_0_0

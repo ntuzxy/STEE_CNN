@@ -1,0 +1,1310 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.50 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.50 secs
+ 
+--> Reading design: testing_CNN_dbg.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "testing_CNN_dbg.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "testing_CNN_dbg"
+Output Format                      : NGC
+Target Device                      : xc3s1500-4-fg320
+
+---- Source Options
+Top Module Name                    : testing_CNN_dbg
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : Yes
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"../ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "../ipcore_dir/fifo_76800x1.v" in library work
+Compiling verilog file "../ipcore_dir/fifo_512x8b.v" in library work
+Module <fifo_76800x1> compiled
+Compiling verilog file "../ipcore_dir/blk_mem_gen_1.v" in library work
+Module <fifo_512x8b> compiled
+Compiling verilog file "../ipcore_dir/blk_mem_gen_0.v" in library work
+Module <blk_mem_gen_1> compiled
+Compiling verilog file "../ipcore_dir/blk_mem_gen2.v" in library work
+Module <blk_mem_gen_0> compiled
+Compiling verilog file "../implementation/USB2/okLibrary.v" in library work
+Module <blk_mem_gen2> compiled
+Module <okHost> compiled
+Module <okCore> compiled
+Module <okWireIn> compiled
+Module <okWireOut> compiled
+Module <okTriggerIn> compiled
+Module <okTriggerOut> compiled
+Module <okPipeIn> compiled
+Module <okPipeOut> compiled
+Module <okBTPipeIn> compiled
+Module <okBTPipeOut> compiled
+Compiling verilog file "../implementation/RP2serial.v" in library work
+Module <okWireOR> compiled
+Compiling verilog file "../implementation/AER_mimic_wi_input.v" in library work
+Module <RP2serial> compiled
+Compiling verilog file "../implementation/testing_CNN_dbg.v" in library work
+Module <AER_mimic_wi_input> compiled
+Module <testing_CNN_dbg> compiled
+No errors in compilation
+Analysis of file <"testing_CNN_dbg.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <testing_CNN_dbg> in library <work> with parameters.
+	S0 = "0000"
+	S1 = "0001"
+	S2 = "0010"
+	S3 = "0011"
+	S4 = "0100"
+	S_dbg = "0101"
+	X_ADDR_WIDTH = "00000000000000000000000000001001"
+	X_LENGTH = "00000000000000000000000101000000"
+	Y_ADDR_WIDTH = "00000000000000000000000000001000"
+	Y_DEPTH = "00000000000000000000000011110000"
+
+Analyzing hierarchy for module <okWireOR> in library <work> with parameters.
+	N = "00000000000000000000000000001110"
+
+Analyzing hierarchy for module <okHost> in library <work>.
+
+Analyzing hierarchy for module <RP2serial> in library <work> with parameters.
+	CLK_DIVISOR = "00000000000000000000000000000101"
+	MAX_NUM_OBJ = "00000000000000000000000000010000"
+	X_WIDTH = "00000000000000000000000000001001"
+	Y_WIDTH = "00000000000000000000000000001001"
+
+Analyzing hierarchy for module <AER_mimic_wi_input> in library <work> with parameters.
+	MAX_SIZE = "00000000000000010010110000000000"
+	X_ADDR_WIDTH = "00000000000000000000000000001001"
+	X_LENGTH = "00000000000000000000000101000000"
+	Y_ADDR_WIDTH = "00000000000000000000000000001000"
+	Y_DEPTH = "00000000000000000000000011110000"
+	assert_low1 = "0011"
+	assert_low2 = "0111"
+	data_pass1 = "0010"
+	data_pass2 = "0110"
+	data_prepare1 = "0001"
+	data_prepare2 = "0101"
+	data_wait = "1001"
+	deassert_high1 = "0100"
+	deassert_high2 = "1000"
+	idle = "0000"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <testing_CNN_dbg>.
+	S0 = 4'b0000
+	S1 = 4'b0001
+	S2 = 4'b0010
+	S3 = 4'b0011
+	S4 = 4'b0100
+	S_dbg = 4'b0101
+	X_ADDR_WIDTH = 32'sb00000000000000000000000000001001
+	X_LENGTH = 32'sb00000000000000000000000101000000
+	Y_ADDR_WIDTH = 32'sb00000000000000000000000000001000
+	Y_DEPTH = 32'sb00000000000000000000000011110000
+WARNING:Xst:905 - "../implementation/testing_CNN_dbg.v" line 451: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <frame_cnt>
+WARNING:Xst:2211 - "../ipcore_dir/blk_mem_gen_0.v" line 315: Instantiating black box module <blk_mem_gen_0>.
+WARNING:Xst:2211 - "../ipcore_dir/blk_mem_gen_0.v" line 322: Instantiating black box module <blk_mem_gen_0>.
+WARNING:Xst:2211 - "../ipcore_dir/blk_mem_gen_1.v" line 404: Instantiating black box module <blk_mem_gen_1>.
+WARNING:Xst:2211 - "../ipcore_dir/blk_mem_gen_1.v" line 411: Instantiating black box module <blk_mem_gen_1>.
+WARNING:Xst:2211 - "../ipcore_dir/blk_mem_gen2.v" line 680: Instantiating black box module <blk_mem_gen2>.
+WARNING:Xst:2211 - "../ipcore_dir/fifo_76800x1.v" line 751: Instantiating black box module <fifo_76800x1>.
+WARNING:Xst:2211 - "../ipcore_dir/fifo_512x8b.v" line 762: Instantiating black box module <fifo_512x8b>.
+Module <testing_CNN_dbg> is correct for synthesis.
+ 
+    Set user-defined property "KEEP =  TRUE" for signal <clk_trig>.
+    Set user-defined property "KEEP =  TRUE" for signal <clk_div>.
+Analyzing module <okWireOR> in library <work>.
+	N = 32'sb00000000000000000000000000001110
+Module <okWireOR> is correct for synthesis.
+ 
+Analyzing module <okHost> in library <work>.
+Module <okHost> is correct for synthesis.
+ 
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <clkbuf> in unit <okHost>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf0> in unit <okHost>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf0> in unit <okHost>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf0> in unit <okHost>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf0> in unit <okHost>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf0> in unit <okHost>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf0> in unit <okHost>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf0> in unit <okHost>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf1> in unit <okHost>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf1> in unit <okHost>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf1> in unit <okHost>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf1> in unit <okHost>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf1> in unit <okHost>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf1> in unit <okHost>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf1> in unit <okHost>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf2> in unit <okHost>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf2> in unit <okHost>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf2> in unit <okHost>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf2> in unit <okHost>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf2> in unit <okHost>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf2> in unit <okHost>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf2> in unit <okHost>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf3> in unit <okHost>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf3> in unit <okHost>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf3> in unit <okHost>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf3> in unit <okHost>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf3> in unit <okHost>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf3> in unit <okHost>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf3> in unit <okHost>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf4> in unit <okHost>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf4> in unit <okHost>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf4> in unit <okHost>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf4> in unit <okHost>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf4> in unit <okHost>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf4> in unit <okHost>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf4> in unit <okHost>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf5> in unit <okHost>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf5> in unit <okHost>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf5> in unit <okHost>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf5> in unit <okHost>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf5> in unit <okHost>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf5> in unit <okHost>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf5> in unit <okHost>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf6> in unit <okHost>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf6> in unit <okHost>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf6> in unit <okHost>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf6> in unit <okHost>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf6> in unit <okHost>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf6> in unit <okHost>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf6> in unit <okHost>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf7> in unit <okHost>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf7> in unit <okHost>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf7> in unit <okHost>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf7> in unit <okHost>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf7> in unit <okHost>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf7> in unit <okHost>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf7> in unit <okHost>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf8> in unit <okHost>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf8> in unit <okHost>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf8> in unit <okHost>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf8> in unit <okHost>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf8> in unit <okHost>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf8> in unit <okHost>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf8> in unit <okHost>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf9> in unit <okHost>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf9> in unit <okHost>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf9> in unit <okHost>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf9> in unit <okHost>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf9> in unit <okHost>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf9> in unit <okHost>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf9> in unit <okHost>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf10> in unit <okHost>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf10> in unit <okHost>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf10> in unit <okHost>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf10> in unit <okHost>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf10> in unit <okHost>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf10> in unit <okHost>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf10> in unit <okHost>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf11> in unit <okHost>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf11> in unit <okHost>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf11> in unit <okHost>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf11> in unit <okHost>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf11> in unit <okHost>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf11> in unit <okHost>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf11> in unit <okHost>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf12> in unit <okHost>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf12> in unit <okHost>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf12> in unit <okHost>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf12> in unit <okHost>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf12> in unit <okHost>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf12> in unit <okHost>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf12> in unit <okHost>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf13> in unit <okHost>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf13> in unit <okHost>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf13> in unit <okHost>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf13> in unit <okHost>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf13> in unit <okHost>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf13> in unit <okHost>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf13> in unit <okHost>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf14> in unit <okHost>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf14> in unit <okHost>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf14> in unit <okHost>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf14> in unit <okHost>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf14> in unit <okHost>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf14> in unit <okHost>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf14> in unit <okHost>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf15> in unit <okHost>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf15> in unit <okHost>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf15> in unit <okHost>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf15> in unit <okHost>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf15> in unit <okHost>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf15> in unit <okHost>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf15> in unit <okHost>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <obuf0> in unit <okHost>.
+    Set user-defined property "DRIVE =  12" for instance <obuf0> in unit <okHost>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <obuf0> in unit <okHost>.
+    Set user-defined property "SLEW =  SLOW" for instance <obuf0> in unit <okHost>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <obuf1> in unit <okHost>.
+    Set user-defined property "DRIVE =  12" for instance <obuf1> in unit <okHost>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <obuf1> in unit <okHost>.
+    Set user-defined property "SLEW =  SLOW" for instance <obuf1> in unit <okHost>.
+Analyzing module <RP2serial> in library <work>.
+	CLK_DIVISOR = 32'sb00000000000000000000000000000101
+	MAX_NUM_OBJ = 32'sb00000000000000000000000000010000
+	X_WIDTH = 32'sb00000000000000000000000000001001
+	Y_WIDTH = 32'sb00000000000000000000000000001001
+INFO:Xst:1433 - Contents of array <region_x_list> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <region_y_list> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+Module <RP2serial> is correct for synthesis.
+ 
+Analyzing module <AER_mimic_wi_input> in library <work>.
+	MAX_SIZE = 32'sb00000000000000010010110000000000
+	X_ADDR_WIDTH = 32'sb00000000000000000000000000001001
+	X_LENGTH = 32'sb00000000000000000000000101000000
+	Y_ADDR_WIDTH = 32'sb00000000000000000000000000001000
+	Y_DEPTH = 32'sb00000000000000000000000011110000
+	assert_low1 = 4'b0011
+	assert_low2 = 4'b0111
+	data_pass1 = 4'b0010
+	data_pass2 = 4'b0110
+	data_prepare1 = 4'b0001
+	data_prepare2 = 4'b0101
+	data_wait = 4'b1001
+	deassert_high1 = 4'b0100
+	deassert_high2 = 4'b1000
+	idle = 4'b0000
+Module <AER_mimic_wi_input> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <clk_div> in unit <testing_CNN_dbg> has a constant value of 0 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <okWireOR>.
+    Related source file is "../implementation/USB2/okLibrary.v".
+Unit <okWireOR> synthesized.
+
+
+Synthesizing Unit <RP2serial>.
+    Related source file is "../implementation/RP2serial.v".
+    Found 32x9-bit dual-port RAM <Mram_region_x_list> for signal <region_x_list>.
+    Found 32x9-bit dual-port RAM <Mram_region_y_list> for signal <region_y_list>.
+    Found finite state machine <FSM_0> for signal <read_stm_state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 000                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_1> for signal <main_stm_state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 9                                              |
+    | Inputs             | 4                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk_div                   (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 000                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <region_rd_en>.
+    Found 1-bit register for signal <cnn_region_done>.
+    Found 1-bit register for signal <cnn_region_valid>.
+    Found 5-bit register for signal <bit_cnt>.
+    Found 5-bit adder for signal <bit_cnt$addsub0000> created at line 229.
+    Found 1-bit register for signal <clk_div>.
+    Found 8-bit up counter for signal <cnt>.
+    Found 6-bit register for signal <cnt_index>.
+    Found 6-bit adder for signal <cnt_index$addsub0000> created at line 217.
+    Found 7-bit comparator less for signal <main_stm_state$cmp_lt0000> created at line 212.
+    Found 5-bit comparator less for signal <main_stm_state$cmp_lt0001> created at line 228.
+    Found 5-bit comparator greater for signal <read_stm_state$cmp_gt0000> created at line 79.
+    Found 5-bit register for signal <region_cnt>.
+    Found 5-bit adder for signal <region_cnt$addsub0000> created at line 91.
+    Found 5-bit register for signal <region_num>.
+    Found 5-bit comparator lessequal for signal <region_num$cmp_le0000> created at line 79.
+    Found 1-bit register for signal <region_rd_over>.
+    Found 1-bit register for signal <state_sync>.
+    Found 1-bit register for signal <x_bit_internal>.
+    Found 9-bit register for signal <x_out_buf>.
+    Found 1-bit register for signal <y_bit_internal>.
+    Found 9-bit register for signal <y_out_buf>.
+    Summary:
+	inferred   2 Finite State Machine(s).
+	inferred   2 RAM(s).
+	inferred   1 Counter(s).
+	inferred  47 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred   4 Comparator(s).
+Unit <RP2serial> synthesized.
+
+
+Synthesizing Unit <AER_mimic_wi_input>.
+    Related source file is "../implementation/AER_mimic_wi_input.v".
+    Found finite state machine <FSM_2> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 10                                             |
+    | Transitions        | 22                                             |
+    | Inputs             | 7                                              |
+    | Outputs            | 10                                             |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | rst                       (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0000                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+WARNING:Xst:643 - "../implementation/AER_mimic_wi_input.v" line 64: The result of a 8x10-bit multiplication is partially used. Only the 17 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+    Found 10-bit register for signal <AER_data>.
+    Found 17-bit adder for signal <addr>.
+    Found 1-bit register for signal <AER_nreq>.
+    Found 8x10-bit multiplier for signal <addr$mult0001> created at line 64.
+    Found 9-bit register for signal <addr_x>.
+    Found 9-bit adder for signal <addr_x$share0000> created at line 90.
+    Found 8-bit register for signal <addr_y>.
+    Found 8-bit adder for signal <addr_y$share0000> created at line 90.
+    Found 8-bit adder for signal <AER_data$sub0000> created at line 119.
+    Found 1-bit register for signal <polarity>.
+    Found 9-bit comparator less for signal <state$cmp_lt0000> created at line 110.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  29 D-type flip-flop(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred   1 Multiplier(s).
+	inferred   1 Comparator(s).
+Unit <AER_mimic_wi_input> synthesized.
+
+
+Synthesizing Unit <okHost>.
+    Related source file is "../implementation/USB2/okLibrary.v".
+Unit <okHost> synthesized.
+
+
+Synthesizing Unit <testing_CNN_dbg>.
+    Related source file is "../implementation/testing_CNN_dbg.v".
+WARNING:Xst:647 - Input <top_BiasBitIN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rst_n_sync> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <top_BiasLatch> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <top_BiasClock> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <dbg_dout_valid> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <top_BiasDiagSel> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <top_BiasAddrSel> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <conv_done1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <wi05_data<15:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <wi04_data<15:1>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <wi03_data<15:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <wi01_data<15:7>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <wi00_data<15:8>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <to61_trig> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000.
+WARNING:Xst:653 - Signal <to60_trig<15:2>> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000.
+WARNING:Xst:646 - Signal <ti41_trig<15:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ti40_trig> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <rg_valid> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <region_rd_en> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pi83_data<15:1>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pi80_data<15:1>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <mem_dout_classout> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <dbg_cnn> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cnt_addr<4>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cnn_busy_reg1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1580 - Signal <clk_trig> with a "KEEP" property is assigned but never used. Related logic will not be removed.
+WARNING:Xst:1780 - Signal <clk_aer> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <class_output<4><7:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <class_output<3><7:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <class_output<2><7:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <class_output<1><7:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <class_output<0><7:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <busy_frame> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <aer_input_go> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_3> for signal <state_read_cnn>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 15                                             |
+    | Inputs             | 8                                              |
+    | Outputs            | 7                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0000                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+WARNING:Xst:737 - Found 4-bit latch for signal <frame_cnt>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:643 - "../implementation/testing_CNN_dbg.v" line 272: The result of a 8x10-bit multiplication is partially used. Only the 17 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "../implementation/testing_CNN_dbg.v" line 271: The result of a 8x10-bit multiplication is partially used. Only the 17 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "../implementation/testing_CNN_dbg.v" line 270: The result of a 8x10-bit multiplication is partially used. Only the 17 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+    Found 1-bit tristate buffer for signal <i2c_scl>.
+    Found 1-bit tristate buffer for signal <i2c_sda>.
+    Found 6-bit adder for signal <add0000$add0000> created at line 363.
+    Found 9-bit up counter for signal <addr_x_0>.
+    Found 9-bit comparator greatequal for signal <addr_x_0$cmp_ge0000> created at line 281.
+    Found 9-bit comparator less for signal <addr_x_0$cmp_lt0000> created at line 282.
+    Found 9-bit up counter for signal <addr_x_1>.
+    Found 9-bit comparator greatequal for signal <addr_x_1$cmp_ge0000> created at line 292.
+    Found 9-bit comparator less for signal <addr_x_1$cmp_lt0000> created at line 293.
+    Found 8-bit up counter for signal <addr_y_0>.
+    Found 8-bit up counter for signal <addr_y_1>.
+    Found 160-bit register for signal <class_output>.
+    Found 5-bit comparator less for signal <class_output_0$cmp_lt0000> created at line 626.
+    Found 5-bit comparator greatequal for signal <class_output_1$cmp_ge0000> created at line 626.
+    Found 5-bit comparator less for signal <class_output_1$cmp_lt0000> created at line 625.
+    Found 5-bit comparator greatequal for signal <class_output_2$cmp_ge0000> created at line 625.
+    Found 5-bit comparator less for signal <class_output_2$cmp_lt0000> created at line 624.
+    Found 5-bit comparator greatequal for signal <class_output_3$cmp_ge0000> created at line 624.
+    Found 5-bit comparator less for signal <class_output_3$cmp_lt0000> created at line 623.
+    Found 5-bit comparator greatequal for signal <class_output_4$cmp_ge0000> created at line 623.
+    Found 24-bit register for signal <clk_capture>.
+    Found 1-bit register for signal <cnn_busy>.
+    Found 1-bit register for signal <cnn_computing>.
+    Found 10-bit comparator less for signal <cnn_computing$cmp_lt0000> created at line 721.
+    Found 1-bit register for signal <cnn_computing_reg1>.
+    Found 1-bit register for signal <cnn_done_flag>.
+    Found 5-bit register for signal <cnt>.
+    Found 5-bit adder for signal <cnt$addsub0000> created at line 364.
+    Found 6-bit comparator less for signal <cnt$cmp_lt0000> created at line 363.
+    Found 5-bit register for signal <cnt_addr>.
+    Found 10-bit register for signal <cnt_after_start_cnn>.
+    Found 10-bit adder for signal <cnt_after_start_cnn$addsub0000> created at line 722.
+    Found 5-bit register for signal <counter1>.
+    Found 5-bit adder for signal <counter1$addsub0000> created at line 619.
+    Found 5-bit up counter for signal <counter3>.
+    Found 23-bit register for signal <data_in1>.
+    Found 24-bit register for signal <data_out>.
+    Found 5-bit comparator less for signal <data_out$cmp_lt0000> created at line 923.
+    Found 17-bit up counter for signal <dbg_rd80_addr>.
+    Found 5-bit up counter for signal <dbg_rd81_addr>.
+    Found 5-bit up counter for signal <dbg_rd82_addr>.
+    Found 17-bit up counter for signal <dbg_rd83_addr>.
+    Found 5-bit register for signal <dbg_region_num>.
+    Found 1-bit register for signal <dbg_valid_rden>.
+    Found 1-bit register for signal <dbg_valid_wren>.
+    Found 1-bit register for signal <ext_cnn_rd_done_reg>.
+    Found 4-bit adder for signal <frame_cnt$add0000> created at line 453.
+    Found 4-bit comparator less for signal <frame_cnt$cmp_lt0000> created at line 452.
+    Found 4-bit up counter for signal <mem_addr1_wr>.
+    Found 4-bit up counter for signal <mem_addr2_wr>.
+    Found 17-bit adder for signal <mem_addr_rd>.
+    Found 8x10-bit multiplier for signal <mem_addr_rd$mult0001> created at line 270.
+    Found 17-bit adder for signal <mem_addr_wr_0>.
+    Found 8x10-bit multiplier for signal <mem_addr_wr_0$mult0001> created at line 271.
+    Found 17-bit adder for signal <mem_addr_wr_1>.
+    Found 8x10-bit multiplier for signal <mem_addr_wr_1$mult0001> created at line 272.
+    Found 11-bit register for signal <mem_addra_classout>.
+    Found 10-bit adder carry out for signal <mem_addra_classout$addsub0000> created at line 665.
+    Found 5x5-bit multiplier for signal <mem_addra_classout$mult0000> created at line 665.
+    Found 11-bit up counter for signal <mem_addrb_classout>.
+    Found 1-bit register for signal <read_cnn_data_out>.
+    Found 5-bit register for signal <readclass_cnt>.
+    Found 5-bit adder for signal <readclass_cnt$addsub0000> created at line 629.
+    Found 5-bit register for signal <region_cnt>.
+    Found 5-bit adder for signal <region_cnt$addsub0000> created at line 612.
+    Found 1-bit register for signal <region_valid>.
+    Found 7-bit register for signal <spi_addr_readcnn>.
+    Found 16-bit register for signal <spi_data_readcnn>.
+    Found 1-bit register for signal <spi_wr_readcnn>.
+    Found 1-bit register for signal <sr_read_cnn_data_out>.
+    Found 1-bit register for signal <sr_read_cnn_data_out_done>.
+    Found 5-bit comparator less for signal <state_read_cnn$cmp_lt0000> created at line 598.
+    Found 5-bit comparator less for signal <state_read_cnn$cmp_lt0001> created at line 618.
+    Found 24-bit register for signal <update>.
+    Found 16-bit register for signal <wo20_datareg>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  12 Counter(s).
+	inferred 357 D-type flip-flop(s).
+	inferred  11 Adder/Subtractor(s).
+	inferred   4 Multiplier(s).
+	inferred  18 Comparator(s).
+	inferred   2 Tristate(s).
+Unit <testing_CNN_dbg> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 32x9-bit dual-port RAM                                : 2
+# Multipliers                                          : 5
+ 5x5-bit multiplier                                    : 1
+ 8x10-bit multiplier                                   : 4
+# Adders/Subtractors                                   : 18
+ 10-bit adder                                          : 1
+ 10-bit adder carry out                                : 1
+ 17-bit adder                                          : 4
+ 4-bit adder                                           : 1
+ 5-bit adder                                           : 6
+ 6-bit adder                                           : 2
+ 8-bit adder                                           : 2
+ 9-bit adder                                           : 1
+# Counters                                             : 13
+ 11-bit up counter                                     : 1
+ 17-bit up counter                                     : 2
+ 4-bit up counter                                      : 2
+ 5-bit up counter                                      : 3
+ 8-bit up counter                                      : 3
+ 9-bit up counter                                      : 2
+# Registers                                            : 50
+ 1-bit register                                        : 21
+ 10-bit register                                       : 2
+ 11-bit register                                       : 1
+ 16-bit register                                       : 2
+ 23-bit register                                       : 1
+ 24-bit register                                       : 3
+ 32-bit register                                       : 5
+ 5-bit register                                        : 9
+ 6-bit register                                        : 1
+ 7-bit register                                        : 1
+ 8-bit register                                        : 1
+ 9-bit register                                        : 3
+# Latches                                              : 1
+ 4-bit latch                                           : 1
+# Comparators                                          : 23
+ 10-bit comparator less                                : 1
+ 4-bit comparator less                                 : 1
+ 5-bit comparator greatequal                           : 4
+ 5-bit comparator greater                              : 1
+ 5-bit comparator less                                 : 8
+ 5-bit comparator lessequal                            : 1
+ 6-bit comparator less                                 : 1
+ 7-bit comparator less                                 : 1
+ 9-bit comparator greatequal                           : 2
+ 9-bit comparator less                                 : 3
+# Tristates                                            : 2
+ 1-bit tristate buffer                                 : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_3> for best encoding.
+Optimizing FSM <state_read_cnn/FSM> on signal <state_read_cnn[1:3]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 000
+ 0001  | 001
+ 0010  | 010
+ 0011  | 110
+ 0100  | 111
+ 0101  | 011
+-------------------
+Analyzing FSM <FSM_2> for best encoding.
+Optimizing FSM <aer_mimic_u1/state/FSM> on signal <state[1:10]> with one-hot encoding.
+---------------------
+ State | Encoding
+---------------------
+ 0000  | 0000000001
+ 0001  | 0000000010
+ 0010  | 0000000100
+ 0011  | 0000001000
+ 0100  | 0000010000
+ 0101  | 0000100000
+ 0110  | 0001000000
+ 0111  | 0100000000
+ 1000  | 1000000000
+ 1001  | 0010000000
+---------------------
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <RP2serial_1/main_stm_state/FSM> on signal <main_stm_state[1:3]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 010   | 011
+ 011   | 010
+ 100   | 110
+-------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <RP2serial_1/read_stm_state/FSM> on signal <read_stm_state[1:2]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 00
+ 001   | 01
+ 010   | 10
+-------------------
+Reading core <okWireIn.ngc>.
+Reading core <okWireOut.ngc>.
+Reading core <okTriggerIn.ngc>.
+Reading core <okTriggerOut.ngc>.
+Reading core <okPipeIn.ngc>.
+Reading core <okPipeOut.ngc>.
+Reading core <../ipcore_dir/blk_mem_gen_0.ngc>.
+Reading core <../ipcore_dir/blk_mem_gen_1.ngc>.
+Reading core <../ipcore_dir/blk_mem_gen2.ngc>.
+Reading core <../ipcore_dir/fifo_76800x1.ngc>.
+Reading core <../ipcore_dir/fifo_512x8b.ngc>.
+Reading core <okCore.ngc>.
+Loading core <okWireIn> for timing and area information for instance <ep00>.
+Loading core <okWireIn> for timing and area information for instance <ep01>.
+Loading core <okWireIn> for timing and area information for instance <ep02>.
+Loading core <okWireIn> for timing and area information for instance <ep03>.
+Loading core <okWireIn> for timing and area information for instance <ep04>.
+Loading core <okWireIn> for timing and area information for instance <ep05>.
+Loading core <okWireOut> for timing and area information for instance <ep20>.
+Loading core <okWireOut> for timing and area information for instance <ep21>.
+Loading core <okTriggerIn> for timing and area information for instance <ep40>.
+Loading core <okTriggerIn> for timing and area information for instance <ep41>.
+Loading core <okTriggerOut> for timing and area information for instance <ep60>.
+Loading core <okTriggerOut> for timing and area information for instance <ep61>.
+Loading core <okPipeIn> for timing and area information for instance <ep80>.
+Loading core <okPipeIn> for timing and area information for instance <ep81>.
+Loading core <okPipeIn> for timing and area information for instance <ep82>.
+Loading core <okPipeIn> for timing and area information for instance <ep83>.
+Loading core <okPipeOut> for timing and area information for instance <epa0>.
+Loading core <okPipeOut> for timing and area information for instance <epa1>.
+Loading core <okPipeOut> for timing and area information for instance <epa2>.
+Loading core <okPipeOut> for timing and area information for instance <epa3>.
+Loading core <okPipeOut> for timing and area information for instance <epa4>.
+Loading core <okPipeOut> for timing and area information for instance <epa5>.
+Loading core <blk_mem_gen_0> for timing and area information for instance <ext_mem_0>.
+Loading core <blk_mem_gen_0> for timing and area information for instance <ext_mem_1>.
+Loading core <blk_mem_gen_1> for timing and area information for instance <rgn_x>.
+Loading core <blk_mem_gen_1> for timing and area information for instance <rgn_y>.
+Loading core <blk_mem_gen2> for timing and area information for instance <mem_classout>.
+Loading core <fifo_76800x1> for timing and area information for instance <fifo_valid>.
+Loading core <fifo_512x8b> for timing and area information for instance <fifo_data>.
+Loading core <okCore> for timing and area information for instance <hicore>.
+WARNING:Xst:1710 - FF/Latch <spi_addr_readcnn_0> (without init value) has a constant value of 0 in block <testing_CNN_dbg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <spi_addr_readcnn_2> (without init value) has a constant value of 0 in block <testing_CNN_dbg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <spi_addr_readcnn_6> (without init value) has a constant value of 0 in block <testing_CNN_dbg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <spi_data_readcnn_6> (without init value) has a constant value of 0 in block <testing_CNN_dbg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <spi_data_readcnn_7> (without init value) has a constant value of 0 in block <testing_CNN_dbg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <spi_data_readcnn_9> (without init value) has a constant value of 0 in block <testing_CNN_dbg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <spi_data_readcnn_10> (without init value) has a constant value of 0 in block <testing_CNN_dbg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <spi_data_readcnn_11> (without init value) has a constant value of 0 in block <testing_CNN_dbg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <spi_data_readcnn_12> (without init value) has a constant value of 0 in block <testing_CNN_dbg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <spi_data_readcnn_13> (without init value) has a constant value of 0 in block <testing_CNN_dbg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <spi_data_readcnn_14> (without init value) has a constant value of 0 in block <testing_CNN_dbg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <AER_data_4> of sequential type is unconnected in block <aer_mimic_u1>.
+WARNING:Xst:2677 - Node <AER_data_5> of sequential type is unconnected in block <aer_mimic_u1>.
+WARNING:Xst:2677 - Node <AER_data_6> of sequential type is unconnected in block <aer_mimic_u1>.
+WARNING:Xst:2677 - Node <AER_data_7> of sequential type is unconnected in block <aer_mimic_u1>.
+WARNING:Xst:2677 - Node <AER_data_8> of sequential type is unconnected in block <aer_mimic_u1>.
+WARNING:Xst:2677 - Node <AER_data_9> of sequential type is unconnected in block <aer_mimic_u1>.
+WARNING:Xst:2677 - Node <cnt_addr_4> of sequential type is unconnected in block <testing_CNN_dbg>.
+
+Synthesizing (advanced) Unit <RP2serial>.
+INFO:Xst:3231 - The small RAM <Mram_region_x_list> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 9-bit                     |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <region_valid_0> | high     |
+    |     addrA          | connected to signal <region_cnt>    |          |
+    |     diA            | connected to signal <region_x>      |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 9-bit                     |          |
+    |     addrB          | connected to signal <cnt_index>     |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_region_y_list> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 9-bit                     |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <region_valid_1> | high     |
+    |     addrA          | connected to signal <region_cnt>    |          |
+    |     diA            | connected to signal <region_y>      |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 9-bit                     |          |
+    |     addrB          | connected to signal <cnt_index>     |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <RP2serial> synthesized (advanced).
+WARNING:Xst:2677 - Node <cnt_addr_4> of sequential type is unconnected in block <testing_CNN_dbg>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 4
+# RAMs                                                 : 2
+ 32x9-bit dual-port distributed RAM                    : 2
+# Multipliers                                          : 5
+ 5x5-bit multiplier                                    : 1
+ 8x10-bit multiplier                                   : 4
+# Adders/Subtractors                                   : 18
+ 10-bit adder                                          : 1
+ 10-bit adder carry out                                : 1
+ 17-bit adder                                          : 4
+ 4-bit adder                                           : 1
+ 5-bit adder                                           : 6
+ 6-bit adder                                           : 2
+ 8-bit adder                                           : 2
+ 9-bit adder                                           : 1
+# Counters                                             : 13
+ 11-bit up counter                                     : 1
+ 17-bit up counter                                     : 2
+ 4-bit up counter                                      : 2
+ 5-bit up counter                                      : 3
+ 8-bit up counter                                      : 3
+ 9-bit up counter                                      : 2
+# Registers                                            : 271
+ Flip-Flops                                            : 271
+# Latches                                              : 1
+ 4-bit latch                                           : 1
+# Comparators                                          : 15
+ 10-bit comparator less                                : 1
+ 4-bit comparator less                                 : 1
+ 5-bit comparator greater                              : 1
+ 5-bit comparator less                                 : 4
+ 5-bit comparator lessequal                            : 1
+ 6-bit comparator less                                 : 1
+ 7-bit comparator less                                 : 1
+ 9-bit comparator greatequal                           : 2
+ 9-bit comparator less                                 : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <spi_addr_readcnn_0> (without init value) has a constant value of 0 in block <testing_CNN_dbg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <spi_addr_readcnn_2> (without init value) has a constant value of 0 in block <testing_CNN_dbg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <spi_addr_readcnn_6> (without init value) has a constant value of 0 in block <testing_CNN_dbg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <spi_data_readcnn_6> (without init value) has a constant value of 0 in block <testing_CNN_dbg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <spi_data_readcnn_7> (without init value) has a constant value of 0 in block <testing_CNN_dbg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <spi_data_readcnn_9> (without init value) has a constant value of 0 in block <testing_CNN_dbg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <spi_data_readcnn_10> (without init value) has a constant value of 0 in block <testing_CNN_dbg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <spi_data_readcnn_11> (without init value) has a constant value of 0 in block <testing_CNN_dbg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <spi_data_readcnn_12> (without init value) has a constant value of 0 in block <testing_CNN_dbg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <spi_data_readcnn_13> (without init value) has a constant value of 0 in block <testing_CNN_dbg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <spi_data_readcnn_14> (without init value) has a constant value of 0 in block <testing_CNN_dbg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <dbg_rd81_addr_4> of sequential type is unconnected in block <testing_CNN_dbg>.
+WARNING:Xst:2677 - Node <dbg_rd82_addr_4> of sequential type is unconnected in block <testing_CNN_dbg>.
+INFO:Xst:1901 - Instance U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp1x1.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp1x1.ram of type RAMB16_S1_S1 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s3_noinit.ram/dpram.dp1x1.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s3_noinit.ram/dpram.dp1x1.ram of type RAMB16_S1_S1 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/s3_noinit.ram/dpram.dp1x1.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/s3_noinit.ram/dpram.dp1x1.ram of type RAMB16_S1_S1 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s3_noinit.ram/dpram.dp1x1.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s3_noinit.ram/dpram.dp1x1.ram of type RAMB16_S1_S1 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s3_noinit.ram/dpram.dp1x1.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s3_noinit.ram/dpram.dp1x1.ram of type RAMB16_S1_S1 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s3_noinit.ram/dpram.dp1x1.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s3_noinit.ram/dpram.dp1x1.ram of type RAMB16_S1_S1 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3_noinit.ram/dpram.dp1x1.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3_noinit.ram/dpram.dp1x1.ram of type RAMB16_S1_S1 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp1x1.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp1x1.ram of type RAMB16_S1_S1 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp1x1.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp1x1.ram of type RAMB16_S1_S1 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s3_noinit.ram/dpram.dp1x1.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s3_noinit.ram/dpram.dp1x1.ram of type RAMB16_S1_S1 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/s3_noinit.ram/dpram.dp1x1.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/s3_noinit.ram/dpram.dp1x1.ram of type RAMB16_S1_S1 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s3_noinit.ram/dpram.dp1x1.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s3_noinit.ram/dpram.dp1x1.ram of type RAMB16_S1_S1 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s3_noinit.ram/dpram.dp1x1.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s3_noinit.ram/dpram.dp1x1.ram of type RAMB16_S1_S1 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s3_noinit.ram/dpram.dp1x1.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s3_noinit.ram/dpram.dp1x1.ram of type RAMB16_S1_S1 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3_noinit.ram/dpram.dp1x1.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3_noinit.ram/dpram.dp1x1.ram of type RAMB16_S1_S1 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp1x1.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp1x1.ram of type RAMB16_S1_S1 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/spram.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/spram.ram of type RAMB16_S36_S36 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/spram.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/spram.ram of type RAMB16_S36_S36 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp9x9.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp9x9.ram of type RAMB16_S9_S9 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3_noinit.ram/dpram.dp9x9.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3_noinit.ram/dpram.dp9x9.ram of type RAMB16_S9_S9 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp1x1.ram in unit U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp1x1.ram of type RAMB16_S1_S1 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s3_noinit.ram/dpram.dp1x1.ram in unit U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s3_noinit.ram/dpram.dp1x1.ram of type RAMB16_S1_S1 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/s3_noinit.ram/dpram.dp1x1.ram in unit U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/s3_noinit.ram/dpram.dp1x1.ram of type RAMB16_S1_S1 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s3_noinit.ram/dpram.dp1x1.ram in unit U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s3_noinit.ram/dpram.dp1x1.ram of type RAMB16_S1_S1 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s3_noinit.ram/dpram.dp1x1.ram in unit U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s3_noinit.ram/dpram.dp1x1.ram of type RAMB16_S1_S1 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s3_noinit.ram/dpram.dp1x1.ram in unit U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s3_noinit.ram/dpram.dp1x1.ram of type RAMB16_S1_S1 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3_noinit.ram/dpram.dp1x1.ram in unit U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3_noinit.ram/dpram.dp1x1.ram of type RAMB16_S1_S1 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp1x1.ram in unit U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp1x1.ram of type RAMB16_S1_S1 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp36x36.ram in unit U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp36x36.ram of type RAMB16_S36_S36 has been replaced by RAMB16
+WARNING:Xst:2677 - Node <frame_cnt_0> of sequential type is unconnected in block <testing_CNN_dbg>.
+WARNING:Xst:2677 - Node <frame_cnt_1> of sequential type is unconnected in block <testing_CNN_dbg>.
+WARNING:Xst:2677 - Node <frame_cnt_2> of sequential type is unconnected in block <testing_CNN_dbg>.
+WARNING:Xst:2677 - Node <frame_cnt_3> of sequential type is unconnected in block <testing_CNN_dbg>.
+
+Optimizing unit <testing_CNN_dbg> ...
+
+Optimizing unit <okWireOR> ...
+
+Optimizing unit <RP2serial> ...
+INFO:Xst:2261 - The FF/Latch <region_rd_en> in Unit <RP2serial> is equivalent to the following FF/Latch, which will be removed : <read_stm_state_FSM_FFd2> 
+INFO:Xst:2261 - The FF/Latch <region_rd_en> in Unit <RP2serial> is equivalent to the following FF/Latch, which will be removed : <read_stm_state_FSM_FFd2> 
+WARNING:Xst:1710 - FF/Latch <bit_cnt_4> (without init value) has a constant value of 0 in block <RP2serial>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <region_rd_en> in Unit <RP2serial> is equivalent to the following FF/Latch, which will be removed : <read_stm_state_FSM_FFd2> 
+WARNING:Xst:1710 - FF/Latch <bit_cnt_4> (without init value) has a constant value of 0 in block <RP2serial>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <region_rd_en> in Unit <RP2serial> is equivalent to the following FF/Latch, which will be removed : <read_stm_state_FSM_FFd2> 
+
+Optimizing unit <AER_mimic_wi_input> ...
+
+Optimizing unit <okHost> ...
+WARNING:Xst:2677 - Node <AER_data_4> of sequential type is unconnected in block <aer_mimic_u1>.
+WARNING:Xst:2677 - Node <AER_data_5> of sequential type is unconnected in block <aer_mimic_u1>.
+WARNING:Xst:2677 - Node <AER_data_6> of sequential type is unconnected in block <aer_mimic_u1>.
+WARNING:Xst:2677 - Node <AER_data_7> of sequential type is unconnected in block <aer_mimic_u1>.
+WARNING:Xst:2677 - Node <AER_data_8> of sequential type is unconnected in block <aer_mimic_u1>.
+WARNING:Xst:2677 - Node <AER_data_9> of sequential type is unconnected in block <aer_mimic_u1>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block testing_CNN_dbg, actual ratio is 9.
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> in Unit <fifo_valid> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1> in Unit <fifo_valid> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <fifo_valid> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2> in Unit <fifo_valid> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1> in Unit <fifo_data> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i> in Unit <fifo_data> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_fb> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <fifo_data> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2> in Unit <fifo_data> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> in Unit <fifo_valid> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1> in Unit <fifo_valid> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <fifo_valid> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2> in Unit <fifo_valid> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1> in Unit <fifo_data> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i> in Unit <fifo_data> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_fb> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <fifo_data> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2> in Unit <fifo_data> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 378
+ Flip-Flops                                            : 378
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : testing_CNN_dbg.ngr
+Top Level Output File Name         : testing_CNN_dbg
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : Yes
+
+Design Statistics
+# IOs                              : 101
+
+Cell Usage :
+# BELS                             : 2273
+#      GND                         : 56
+#      INV                         : 31
+#      LUT1                        : 130
+#      LUT2                        : 469
+#      LUT2_D                      : 10
+#      LUT2_L                      : 3
+#      LUT3                        : 214
+#      LUT3_D                      : 7
+#      LUT3_L                      : 5
+#      LUT4                        : 675
+#      LUT4_D                      : 11
+#      LUT4_L                      : 76
+#      MUXCY                       : 265
+#      MUXF5                       : 77
+#      MUXF6                       : 3
+#      VCC                         : 15
+#      XORCY                       : 226
+# FlipFlops/Latches                : 1399
+#      FD                          : 8
+#      FDC                         : 459
+#      FDCE                        : 375
+#      FDE                         : 92
+#      FDP                         : 27
+#      FDPE                        : 10
+#      FDR                         : 56
+#      FDRE                        : 336
+#      FDRS                        : 34
+#      FDRSE                       : 1
+#      FDS                         : 1
+# RAMS                             : 65
+#      RAM16X1D                    : 36
+#      RAMB16                      : 29
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGDLL                     : 1
+# IO Buffers                       : 92
+#      IBUF                        : 32
+#      IOBUF                       : 16
+#      OBUF                        : 42
+#      OBUFT                       : 2
+# MULTs                            : 4
+#      MULT18X18                   : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1500fg320-4 
+
+ Number of Slices:                     1196  out of  13312     8%  
+ Number of Slice Flip Flops:           1398  out of  26624     5%  
+ Number of 4 input LUTs:               1703  out of  26624     6%  
+    Number used as logic:              1631
+    Number used as RAMs:                 72
+ Number of IOs:                         101
+ Number of bonded IOBs:                  92  out of    221    41%  
+    IOB Flip Flops:                       1
+ Number of BRAMs:                        29  out of     32    90%  
+ Number of MULT18X18s:                    4  out of     32    12%  
+ Number of GCLKs:                         2  out of      8    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                                                                                                                                                                                            | Load  |
+-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+hi_in<0>                           | BUFGDLL                                                                                                                                                                                                                                          | 1428  |
+ext_mem_0/N1                       | NONE(ext_mem_0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp1x1.ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp1x1.ram)| 8     |
+ext_mem_1/N1                       | NONE(ext_mem_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp1x1.ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp1x1.ram)| 8     |
+RP2serial_1/cnn_region_clk         | BUFG                                                                                                                                                                                                                                             | 36    |
+-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                                                                                                                                       | Buffer(FF name)                                                                                                         | Load  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+-------+
+ep00/ep_dataout<0>(ep00/ep_dataout_0:Q)                                                                                                              | NONE(addr_x_0_0)                                                                                                        | 316   |
+okHI/hicore/ok1<25>(okHI/hicore/ti_reset:Q)                                                                                                          | NONE(ep40/ep_trigger_0)                                                                                                 | 196   |
+fifo_valid/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<1>(fifo_valid/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1:Q)| NONE(fifo_valid/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_0)| 68    |
+fifo_valid/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<0>(fifo_valid/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0:Q)| NONE(fifo_valid/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_0)| 68    |
+fifo_valid/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>(fifo_valid/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1:Q)| NONE(fifo_valid/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_0)                       | 51    |
+fifo_data/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<1>(fifo_data/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1:Q)  | NONE(fifo_data/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_0) | 36    |
+fifo_data/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<0>(fifo_data/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0:Q)  | NONE(fifo_data/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_0) | 36    |
+fifo_valid/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>(fifo_valid/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2:Q)| NONE(fifo_valid/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i)            | 36    |
+fifo_data/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>(fifo_data/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1:Q)  | NONE(fifo_data/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_0)                        | 27    |
+fifo_data/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>(fifo_data/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2:Q)  | NONE(fifo_data/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/curr_fwft_state_FSM_FFd1)   | 23    |
+fifo_data/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb(fifo_data/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb1:O)    | NONE(fifo_data/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0)                                           | 3     |
+fifo_valid/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb(fifo_valid/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb1:O)  | NONE(fifo_valid/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0)                                          | 3     |
+fifo_data/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2(fifo_data/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2:Q)               | NONE(fifo_data/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i)              | 2     |
+fifo_data/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb(fifo_data/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb1:O)    | NONE(fifo_data/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0)                                           | 2     |
+fifo_valid/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2(fifo_valid/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2:Q)             | NONE(fifo_valid/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i)             | 2     |
+fifo_valid/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb(fifo_valid/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb1:O)  | NONE(fifo_valid/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0)                                          | 2     |
+-----------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 14.720ns (Maximum Frequency: 67.935MHz)
+   Minimum input arrival time before clock: 15.161ns
+   Maximum output required time after clock: 11.517ns
+   Maximum combinational path delay: 12.270ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'hi_in<0>'
+  Clock period: 14.720ns (frequency: 67.935MHz)
+  Total number of paths / destination ports: 65617 / 3186
+-------------------------------------------------------------------------
+Delay:               14.720ns (Levels of Logic = 9)
+  Source:            aer_mimic_u1/addr_y_0 (FF)
+  Destination:       ext_mem_0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp1x1.ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp1x1.ram (RAM)
+  Source Clock:      hi_in<0> rising
+  Destination Clock: hi_in<0> rising
+
+  Data Path: aer_mimic_u1/addr_y_0 to ext_mem_0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp1x1.ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp1x1.ram
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              7   0.720   1.066  addr_y_0 (addr_y_0)
+     MULT18X18:A0->P15     1   3.615   1.140  Mmult_addr_mult0001 (addr_mult0001<15>)
+     LUT1:I0->O            1   0.551   0.000  Madd_addr_cy<15>_rt (Madd_addr_cy<15>_rt)
+     MUXCY:S->O            0   0.500   0.000  Madd_addr_cy<15> (Madd_addr_cy<15>)
+     XORCY:CI->O           1   0.904   0.996  Madd_addr_xor<16> (addr<16>)
+     end scope: 'aer_mimic_u1'
+     LUT2_D:I1->O          1   0.551   0.827  mem_addr_1<16>1 (mem_addr_0<16>1)
+     LUT4:I3->O            9   0.551   1.463  mem_addr_0<16>39 (mem_addr_0<16>)
+     begin scope: 'ext_mem_0'
+     LUT3:I0->O            1   0.551   0.801  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ADDR[2]_PWR_16_o_equal_5_o<2>1 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ena_array<4>)
+     begin scope: 'U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s3_noinit.ram/dpram.dp1x1.ram'
+     RAMB16:ENA                0.484          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s3_noinit.ram/dpram.dp1x1.ram
+    ----------------------------------------
+    Total                     14.720ns (8.427ns logic, 6.293ns route)
+                                       (57.2% logic, 42.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'RP2serial_1/cnn_region_clk'
+  Clock period: 11.826ns (frequency: 84.557MHz)
+  Total number of paths / destination ports: 1073 / 55
+-------------------------------------------------------------------------
+Delay:               11.826ns (Levels of Logic = 8)
+  Source:            RP2serial_1/cnt_index_1 (FF)
+  Destination:       RP2serial_1/cnt_index_5 (FF)
+  Source Clock:      RP2serial_1/cnn_region_clk rising
+  Destination Clock: RP2serial_1/cnn_region_clk rising
+
+  Data Path: RP2serial_1/cnt_index_1 to RP2serial_1/cnt_index_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             42   0.720   1.978  cnt_index_1 (cnt_index_1)
+     LUT4:I2->O            2   0.551   1.072  main_stm_state_cmp_lt0000143 (main_stm_state_cmp_lt0000143)
+     LUT4:I1->O            1   0.551   0.000  main_stm_state_cmp_lt00001701 (main_stm_state_cmp_lt0000170)
+     MUXF5:I1->O           3   0.360   0.975  main_stm_state_cmp_lt0000170_f5 (main_stm_state_cmp_lt00002)
+     LUT3_D:I2->O          7   0.551   1.092  main_stm_state_cmp_lt000021 (main_stm_state_cmp_lt0000)
+     LUT4:I3->O            3   0.551   0.933  cnt_index_mux0000<2>19 (N111)
+     LUT4:I3->O            1   0.551   0.827  cnt_index_mux0000<0>_SW1 (N32)
+     LUT4:I3->O            1   0.551   0.000  cnt_index_mux0000<0>_G (N591)
+     MUXF5:I1->O           1   0.360   0.000  cnt_index_mux0000<0> (cnt_index_mux0000<0>)
+     FDR:D                     0.203          cnt_index_5
+    ----------------------------------------
+    Total                     11.826ns (4.949ns logic, 6.877ns route)
+                                       (41.8% logic, 58.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'hi_in<0>'
+  Total number of paths / destination ports: 23953 / 464
+-------------------------------------------------------------------------
+Offset:              15.161ns (Levels of Logic = 9)
+  Source:            parallel_out<3> (PAD)
+  Destination:       ext_mem_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp1x1.ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp1x1.ram (RAM)
+  Destination Clock: hi_in<0> rising
+
+  Data Path: parallel_out<3> to ext_mem_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp1x1.ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp1x1.ram
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            11   0.821   1.144  parallel_out_3_IBUF (parallel_out_3_IBUF)
+     MULT18X18:A3->P15     1   3.615   1.140  Mmult_mem_addr_rd_mult0001 (mem_addr_rd_mult0001<15>)
+     LUT1:I0->O            1   0.551   0.000  Madd_mem_addr_rd_cy<15>_rt (Madd_mem_addr_rd_cy<15>_rt)
+     MUXCY:S->O            0   0.500   0.000  Madd_mem_addr_rd_cy<15> (Madd_mem_addr_rd_cy<15>)
+     XORCY:CI->O           2   0.904   1.216  Madd_mem_addr_rd_xor<16> (mem_addr_rd<16>)
+     LUT4:I0->O            1   0.551   0.869  mem_addr_1<16>16 (mem_addr_1<16>16)
+     LUT4:I2->O            9   0.551   1.463  mem_addr_1<16>39 (mem_addr_1<16>)
+     begin scope: 'ext_mem_1'
+     LUT3:I0->O            1   0.551   0.801  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ADDR[2]_PWR_16_o_equal_5_o<2>1 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ena_array<4>)
+     begin scope: 'U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s3_noinit.ram/dpram.dp1x1.ram'
+     RAMB16:ENA                0.484          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s3_noinit.ram/dpram.dp1x1.ram
+    ----------------------------------------
+    Total                     15.161ns (8.528ns logic, 6.633ns route)
+                                       (56.2% logic, 43.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'RP2serial_1/cnn_region_clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.402ns (Levels of Logic = 3)
+  Source:            rgn_rd_en (PAD)
+  Destination:       RP2serial_1/main_stm_state_FSM_FFd2 (FF)
+  Destination Clock: RP2serial_1/cnn_region_clk rising
+
+  Data Path: rgn_rd_en to RP2serial_1/main_stm_state_FSM_FFd2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.821   0.827  rgn_rd_en_IBUF (rgn_rd_en_IBUF)
+     begin scope: 'RP2serial_1'
+     LUT4:I3->O            1   0.551   0.000  main_stm_state_FSM_FFd2-In1 (main_stm_state_FSM_FFd2-In)
+     FDR:D                     0.203          main_stm_state_FSM_FFd2
+    ----------------------------------------
+    Total                      2.402ns (1.575ns logic, 0.827ns route)
+                                       (65.6% logic, 34.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'hi_in<0>'
+  Total number of paths / destination ports: 74 / 46
+-------------------------------------------------------------------------
+Offset:              11.517ns (Levels of Logic = 3)
+  Source:            ep00/ep_dataout_0 (FF)
+  Destination:       reset_n (PAD)
+  Source Clock:      hi_in<0> rising
+
+  Data Path: ep00/ep_dataout_0 to reset_n
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q           372   0.720   3.801  ep_dataout_0 (ep_dataout<0>)
+     end scope: 'ep00'
+     INV:I->O              1   0.551   0.801  reset_n1_INV_0 (reset_n_OBUF)
+     OBUF:I->O                 5.644          reset_n_OBUF (reset_n)
+    ----------------------------------------
+    Total                     11.517ns (6.915ns logic, 4.602ns route)
+                                       (60.0% logic, 40.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'RP2serial_1/cnn_region_clk'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              7.241ns (Levels of Logic = 2)
+  Source:            RP2serial_1/cnn_region_valid (FF)
+  Destination:       rgn_bit_valid (PAD)
+  Source Clock:      RP2serial_1/cnn_region_clk rising
+
+  Data Path: RP2serial_1/cnn_region_valid to rgn_bit_valid
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.720   0.877  cnn_region_valid (cnn_region_valid)
+     end scope: 'RP2serial_1'
+     OBUF:I->O                 5.644          rgn_bit_valid_OBUF (rgn_bit_valid)
+    ----------------------------------------
+    Total                      7.241ns (6.364ns logic, 0.877ns route)
+                                       (87.9% logic, 12.1% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Delay:               12.270ns (Levels of Logic = 4)
+  Source:            hi_in<0> (PAD)
+  Destination:       clk_update (PAD)
+
+  Data Path: hi_in<0> to clk_update
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     begin scope: 'okHI'
+     BUFGDLL:I->O       1445   0.401   4.873  clkbuf (ti_clk)
+     end scope: 'okHI'
+     LUT2:I0->O            1   0.551   0.801  clk_update1 (clk_update_OBUF)
+     OBUF:I->O                 5.644          clk_update_OBUF (clk_update)
+    ----------------------------------------
+    Total                     12.270ns (6.596ns logic, 5.674ns route)
+                                       (53.8% logic, 46.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 21.00 secs
+Total CPU time to Xst completion: 21.04 secs
+ 
+--> 
+
+Total memory usage is 4588252 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   92 (   0 filtered)
+Number of infos    :   56 (   0 filtered)
+

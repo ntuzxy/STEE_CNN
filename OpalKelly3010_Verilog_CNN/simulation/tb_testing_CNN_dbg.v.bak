@@ -1,0 +1,581 @@
+`timescale 1ns / 1ps
+
+////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer:
+//
+// Create Date:   19:31:40 09/13/2020
+// Design Name:   testing_CNN_dbg
+// Module Name:   F:/STEE_PROJ/CONV/CONV_ISE/simulation/tb_testing_CNN_dbg.v
+// Project Name:  CONV
+// Target Device:  
+// Tool versions:  
+// Description: 
+//
+// Verilog Test Fixture created by ISE for module: testing_CNN_dbg
+//
+// Dependencies:
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+////////////////////////////////////////////////////////////////////////////////
+
+module tb_testing_CNN_dbg;
+
+    // Inputs
+    reg [7:0] hi_in;
+    reg clk_pll;
+    wire rst_n_sync;
+    wire [7:0] parallel_out;
+    wire [8:0] ext_xAddressOut;
+    wire rgn_rd_en;
+    wire ext_cnn_ready;
+    wire ext_cnn_done;
+    wire top_AER_nack;
+    wire top_BiasAddrSel;
+    wire top_BiasDiagSel;
+    wire top_BiasBitIN;
+    wire top_BiasClock;
+    wire top_BiasLatch;
+    wire done;
+    wire conv_done1;
+    wire spi_out;
+
+    // Outputs
+    wire [1:0] hi_out;
+    wire i2c_sda;
+    wire i2c_scl;
+    wire hi_muxsel;
+    wire [7:0] led;
+    wire test_clk;
+    wire clk_top;
+    wire reset_n;
+    wire clk_phase1;
+    wire clk_phase2;
+    wire clk_update;
+    wire capture;
+    wire spi_din;
+    wire rgn_done;
+    wire rgn_bit_valid;
+    wire rgn_x_bit;
+    wire rgn_y_bit;
+    wire rgn_clk;
+    wire ext_dataIn_pos;
+    wire ext_dataIn_neg;
+    wire ext_cnn_rd_done;
+    wire dbg_dout_valid;
+    wire top_AER_nreq;
+    wire [9:0] top_AER_data;
+    wire en_evt2frame;
+    wire init;
+
+reg done_test = 0;
+    // Bidirs
+    wire [15:0] hi_inout;
+
+
+    parameter MAX_NUM_OBJ = 8;
+    parameter X_ADDR_WIDTH = 9;
+    parameter Y_ADDR_WIDTH = 8;
+    parameter X_LENGTH = 16;//320;
+    parameter Y_DEPTH  = 12;//240;
+
+    // Instantiate the Unit Under Test (UUT)
+    testing_CNN_dbg 
+    #(
+        .X_LENGTH     (X_LENGTH),
+        .Y_DEPTH      (Y_DEPTH),
+        .X_ADDR_WIDTH (X_ADDR_WIDTH),
+        .Y_ADDR_WIDTH (Y_ADDR_WIDTH)
+    )
+    uut (
+        .hi_in(hi_in), 
+        .hi_out(hi_out), 
+        .hi_inout(hi_inout), 
+        .i2c_sda(i2c_sda), 
+        .i2c_scl(i2c_scl), 
+        .hi_muxsel(hi_muxsel), 
+        .led(led), 
+        .clk_pll(clk_pll), 
+        .test_clk(test_clk), 
+        .clk_top(clk_top), 
+        .reset_n(reset_n), 
+        .clk_phase1(clk_phase1), 
+        .clk_phase2(clk_phase2), 
+        .clk_update(clk_update), 
+        .capture(capture), 
+        .spi_din(spi_din), 
+        .rgn_done(rgn_done), 
+        .rgn_bit_valid(rgn_bit_valid), 
+        .rgn_x_bit(rgn_x_bit), 
+        .rgn_y_bit(rgn_y_bit), 
+        .rgn_clk(rgn_clk), 
+        .ext_dataIn_pos(ext_dataIn_pos), 
+        .ext_dataIn_neg(ext_dataIn_neg), 
+        .ext_cnn_rd_done(ext_cnn_rd_done), 
+        .dbg_dout_valid(dbg_dout_valid), 
+        .top_AER_nreq(top_AER_nreq), 
+        .top_AER_data(top_AER_data), 
+        .en_evt2frame(en_evt2frame), 
+        .init(init), 
+        .rst_n_sync(rst_n_sync), 
+        .parallel_out(parallel_out), 
+        .rgn_rd_en(rgn_rd_en), 
+        .ext_xAddressOut(ext_xAddressOut), 
+        .ext_cnn_ready(ext_cnn_ready), 
+        .ext_cnn_done(ext_cnn_done), 
+        .top_AER_nack(top_AER_nack), 
+        .top_BiasAddrSel(top_BiasAddrSel), 
+        .top_BiasDiagSel(top_BiasDiagSel), 
+        .top_BiasBitIN(top_BiasBitIN), 
+        .top_BiasClock(top_BiasClock), 
+        .top_BiasLatch(top_BiasLatch), 
+        // .done(done), 
+        .done(done_test), 
+        .conv_done1(conv_done1), 
+        .spi_out(spi_out)
+    );
+
+
+//////////////////////////////////////////////////////
+//// DUT
+//////////////////////////////////////////////////////
+conv_top dut_conv_top(
+    .reset_n(reset_n), 
+    .rst_n_sync(rst_n_sync), 
+    .clk_phase1(clk_phase1), 
+    .clk_phase2(clk_phase2), 
+    .capture(capture), 
+    .clk_update(clk_update), 
+    .spi_din(spi_din), 
+    .spi_out(spi_out), 
+    .clk_top(clk_top), 
+    .parallel_out(parallel_out), 
+    .top_AER_data(top_AER_data), 
+    .top_AER_nreq(top_AER_nreq), 
+    .top_AER_nack(top_AER_nack), 
+    .top_BiasAddrSel(top_BiasAddrSel), 
+    .top_BiasBitIN(top_BiasBitIN), 
+    .top_BiasClock(top_BiasClock), 
+    .top_BiasLatch(top_BiasLatch), 
+    .top_BiasDiagSel(top_BiasDiagSel), 
+    .en_evt2frame(en_evt2frame), 
+    .rgn_rd_en(rgn_rd_en), 
+    .rgn_done(rgn_done), //
+    .rgn_bit_valid(rgn_bit_valid), //
+    .rgn_x_bit(rgn_x_bit), 
+    .rgn_y_bit(rgn_y_bit), 
+    .rgn_clk(rgn_clk), 
+    .init(init), 
+    .conv_done1(conv_done1), 
+    .done(done), 
+    .dbg_dout_valid(dbg_dout_valid), 
+    .ext_dataIn_pos(ext_dataIn_pos), 
+    .ext_dataIn_neg(ext_dataIn_neg), 
+    .ext_xAddressOut(ext_xAddressOut), 
+    .ext_cnn_done(ext_cnn_done), 
+    .ext_cnn_rd_done(ext_cnn_rd_done), 
+    .ext_cnn_ready(ext_cnn_ready)
+);
+
+
+
+    initial begin
+        // Initialize Inputs
+        hi_in = 0;
+        // clk_pll = 0;
+        // rst_n_sync = 0;
+        // parallel_out = 0;
+        // ext_xAddressOut = 0;
+        // rgn_rd_en = 0;
+        // ext_cnn_ready = 0;
+        // ext_cnn_done = 0;
+        // top_AER_nack = 0;
+        // top_BiasAddrSel = 0;
+        // top_BiasDiagSel = 0;
+        // top_BiasBitIN = 0;
+        // top_BiasClock = 0;
+        // top_BiasLatch = 0;
+        // done = 0;
+        // conv_done1 = 0;
+        // spi_dout = 0;
+
+        // Wait 100 ns for global reset to finish
+        #100;
+        
+        // Add stimulus here
+
+    end
+
+
+//// CLK
+initial clk_pll = 1'b0;
+always #5 clk_pll = ~clk_pll;
+//// RST is inserted by wi00_data[0]
+
+
+
+//-------------------------------------------------------------------------------------------------------------
+//// generate image with regions
+    // parameter Y_DEPTH = 180;
+    // parameter X_LENGTH = 240;
+
+
+    reg mem_data[Y_DEPTH*X_LENGTH-1:0];
+    integer ix,iy;
+    integer rx1,rx2,rx3,rx4;
+    integer ry1,ry2,ry3,ry4;
+    reg [X_ADDR_WIDTH-1:0] region_x_list [0:MAX_NUM_OBJ*2-1];
+    reg [Y_ADDR_WIDTH-1:0] region_y_list [0:MAX_NUM_OBJ*2-1];
+    reg [4:0] region_num;
+    initial begin
+        // clear mem
+        for (iy=0; iy<Y_DEPTH; iy=iy+1) begin
+            for (ix=0; ix<X_LENGTH; ix=ix+1) begin
+                mem_data[ix+iy*X_LENGTH] = 1'b0;
+            end
+        end
+        //clear region list
+        region_num = 0;
+        for (ix=0; ix<MAX_NUM_OBJ*2; ix=ix+1) region_x_list[ix] = 0;
+        for (iy=0; iy<MAX_NUM_OBJ*2; iy=iy+1) region_y_list[iy] = 0;
+
+        // generate region 1: 10x10 size
+        region_num = 1;
+        rx1 = 5;
+        ry1 = 5;
+        rx2 = 10;
+        ry2 = 10;
+        for (iy=ry1; iy<=ry2; iy=iy+1) begin
+            for (ix=rx1; ix<=rx2; ix=ix+1) begin
+                mem_data[ix+iy*X_LENGTH] = 1'b1;
+            end
+        end
+        region_x_list[region_num*2-2] = rx1; region_x_list[region_num*2-1] = rx2;//mimic matlab, rx1, rx2 are fed from matlab
+        region_y_list[region_num*2-2] = ry1; region_y_list[region_num*2-1] = ry2;
+
+        // // generate region 2 : 3x3 size (should be filtered)
+        // region_num = 2;
+        // rx1 = 100;
+        // ry1 = 101;
+        // rx2 = 102;
+        // ry2 = 103;
+        // for (iy=ry1; iy<=ry2; iy=iy+1) begin
+        //     for (ix=rx1; ix<=rx2; ix=ix+1) begin
+        //         mem_data[ix+iy*X_LENGTH] = 1'b1;
+        //     end
+        // end
+        // region_x_list[region_num*2-2] = rx1; region_x_list[region_num*2-1] = rx2;
+        // region_y_list[region_num*2-2] = ry1; region_y_list[region_num*2-1] = ry2;
+
+        // // generate region 3 : 100x10 size (should be cropped)
+        // region_num = 3;
+        // rx1 = 100;
+        // ry1 = 50;
+        // rx2 = 199;
+        // ry2 = 59;
+        // for (iy=ry1; iy<=ry2; iy=iy+1) begin
+        //     for (ix=rx1; ix<=rx2; ix=ix+1) begin
+        //         mem_data[ix+iy*X_LENGTH] = 1'b1;
+        //     end
+        // end
+        // region_x_list[region_num*2-2] = rx1; region_x_list[region_num*2-1] = rx2;
+        // region_y_list[region_num*2-2] = ry1; region_y_list[region_num*2-1] = ry2;
+
+
+
+    end
+//// save image to file
+    parameter final_data_file1  = "../data_input/mem_data.txt";
+    integer outfile1;
+    initial begin
+        // outfile1=$fopen(final_data_file1,"a"); //open the text file and append more text at the end of the file.
+        outfile1=$fopen(final_data_file1,"w"); //open the text file and overwrite the file.
+        for (iy=0; iy<Y_DEPTH; iy=iy+1) begin
+            for (ix=0; ix<X_LENGTH; ix=ix+1) begin
+                if (ix == X_LENGTH-1) $fwrite(outfile1,"%b\n",mem_data[ix+iy*X_LENGTH]); //line break
+                else $fwrite(outfile1,"%b ",mem_data[ix+iy*X_LENGTH]);
+            end
+        end
+        $fclose(final_data_file1);
+    end
+//-------------------------------------------------------------------------------------------------------------
+
+
+
+//-------------------------------------------------------------------------------------------------------------
+//// task for SPI config
+    localparam ARRAY_ADDR_WIDTH = 16;
+    localparam ADDR_WIDTH = 7;
+    localparam ARRAY_DEPTH = 2**ADDR_WIDTH;
+    
+    reg  [15:0] wo_data;
+    initial wo_data = 0;
+
+    task spi_config;
+        input [ADDR_WIDTH-1:0]  config_addr;
+        input [ARRAY_ADDR_WIDTH-1:0] config_data;
+        begin
+            SetWireInValue(8'h01,config_addr,16'hffff); // addr; 
+            SetWireInValue(8'h02,config_data,16'hffff); // data; 
+            UpdateWireIns;
+            ActivateTriggerIn(8'h41, 0);       // bit is an integer 0-15
+            UpdateTriggerOuts;
+            ActivateTriggerIn(8'h41, 1);       // bit is an integer 0-15
+            UpdateTriggerOuts;
+            UpdateWireOuts;
+            wo_data = GetWireOutValue(8'h20);
+            if (wo_data == config_data) 
+                $display("SUCCESS -- Address: 0d%03d   WriteIn: 0x%04h   ReadOut: 0x%04h", config_addr, config_data, wo_data);
+            else
+                $display("FAILURE -- Address: 0d%03d   WriteIn: 0x%04h   ReadOut: 0x%04h", config_addr, config_data, wo_data);
+        end
+    endtask
+//-------------------------------------------------------------------------------------------------------------
+
+
+
+//------------------------------------------------------------------------
+// Begin okHostInterface simulation user configurable  global data
+//------------------------------------------------------------------------
+parameter BlockDelayStates = 5;   // REQUIRED: # of clocks between blocks of pipe data
+parameter ReadyCheckDelay = 5;    // REQUIRED: # of clocks before block transfer before
+                                  //           host interface checks for ready (0-255)
+parameter PostReadyDelay = 5;     // REQUIRED: # of clocks after ready is asserted and
+                                  //           check that the block transfer begins (0-255)
+parameter pipeInSize = Y_DEPTH*X_LENGTH*2; // REQUIRED: byte (must be even) length of default
+                                  //           PipeIn; Integer 0-2^32
+parameter pipeOutSize = 42*42*8*2;     // REQUIRED: byte (must be even) length of default
+                                  //           PipeOut; Integer 0-2^32
+parameter pipeInSize1 = MAX_NUM_OBJ*2*2;
+parameter pipeInSize2 = MAX_NUM_OBJ*2*2;
+parameter pipeInSize3 = 1024;
+parameter pipeOutSize1 = 1024;
+parameter pipeOutSize2 = 1024;
+parameter pipeOutSize3 = 1024;
+// NOTICE: pipeIn/Out from host (PC) is 8bit while okPipeIn/Out is 16bit (FPGA)
+integer k, i;
+reg         pipeIn  [0:(pipeInSize-1)];
+reg  [7:0]  pipeIn1 [0:(pipeInSize1-1)];
+reg  [7:0]  pipeIn2 [0:(pipeInSize2-1)];
+reg  [7:0]  pipeIn3 [0:(pipeInSize3-1)];
+
+reg  [7:0]  pipeOut  [0:(pipeOutSize-1)];
+reg  [7:0]  pipeOut1 [0:(pipeOutSize1-1)];
+reg  [7:0]  pipeOut2 [0:(pipeOutSize2-1)];
+reg  [7:0]  pipeOut3 [0:(pipeOutSize3-1)];
+initial for (k=0; k<pipeInSize1; k=k+1) pipeIn1[k] = 8'h00;
+initial for (k=0; k<pipeInSize2; k=k+1) pipeIn2[k] = 8'h00;
+initial for (k=0; k<pipeInSize2; k=k+1) pipeIn3[k] = 8'h00;
+initial for (k=0; k<pipeOutSize; k=k+1) pipeOut[k] = 8'h00;
+
+`include "C:/ZXY/CNN/OpalKelly3010_Verilog_CNN_all/simulation/okHost/okHostCalls.v"   // Do not remove!  The tasks, functions, and data stored in okHostCalls.v must be included here.
+`include "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/simulation/okHost/okHostCalls_MultiplePipe.v" // This is for pipeIn2
+//------------------------------------------------------------------------
+//  Available User Task and Function Calls:
+//    FrontPanelReset;                  // Always start routine with FrontPanelReset;
+//    SetWireInValue(ep, val, mask);
+//    UpdateWireIns;
+//    UpdateWireOuts;
+//    GetWireOutValue(ep);
+//    ActivateTriggerIn(ep, bit);       // bit is an integer 0-15
+//    UpdateTriggerOuts;
+//    IsTriggered(ep, mask);            // Returns a 1 or 0
+//    WriteToPipeIn(ep, length);        // passes pipeIn array data
+//    ReadFromPipeOut(ep, length);      // passes data to pipeOut array
+//    WriteToBlockPipeIn(ep, blockSize, length);    // pass pipeIn array data; blockSize and length are integers
+//    ReadFromBlockPipeOut(ep, blockSize, length);  // pass data to pipeOut array; blockSize and length are integers
+//
+//    *Pipes operate by passing arrays of data back and forth to the user's
+//    design.  If you need multiple arrays, you can create a new procedure
+//    above and connect it to a differnet array.  More information is
+//    available in Opal Kelly documentation and online support tutorial.
+//------------------------------------------------------------------------
+
+// User configurable block of called FrontPanel operations.
+
+initial begin
+    FrontPanelReset;    // Start routine with FrontPanelReset;
+    $display("start");
+//// reset
+    SetWireInValue(8'h00,1,16'h0001); // reset; 
+    UpdateWireIns;
+    SetWireInValue(8'h00,0,16'h0001); // reset; 
+    UpdateWireIns;
+    $display("reset inserted");
+
+//// SPI config
+    // clear all
+    for (k=0; k<ARRAY_DEPTH; k=k+1) begin
+        spi_config(k, 0);
+    end
+    // param a = 1. 
+    spi_config(7'd0, 16'h0001);
+    // param b = 1. 
+    spi_config(7'd106, 16'h0001);
+    // param c = -7. 
+    spi_config(7'd126, 16'hfff9);
+
+    // burst_en=1. image_X_LENGTHs=320.
+    // spi_config(7'd1, 16'h0501);
+    spi_config(7'd1, 16'h0040);//16
+    // frame_len=1. frame_us=1.
+    spi_config(7'd2, 16'h0001);
+    // image_Y_DEPTHs=240. top_burst_len=1.
+    // spi_config(7'd127, 16'h00f0);
+    spi_config(7'd127, 16'h000c);//12
+    // // top_en_dbg=1.
+    // spi_config(7'd117, 16'h1000);
+
+
+    // dbg_reg[7:0] = config_reg110[15:8] = 8'hfc (disable CNN) or 8'h3c (enable CNN). 
+    spi_config(7'd110, 16'h3c00);
+    // config_reg58[15]=1 to output yAddress as parallel_out. 
+    // spi_config(7'd58, 16'h8000);
+    spi_config(7'd58, 16'd312);
+    // testing
+    spi_config(7'd58, 16'h0138); //config58=16'd312, read busy_frame to parallel_out
+
+    spi_config(7'd58, 16'h8000);
+    spi_config(7'd58, 16'h0138); 
+    spi_config(7'd58, 16'h8000);
+    // SPI config done
+    $display("SPI configure done!");
+
+
+//// write image and region
+    // write data to ext_mem
+    for (k=0; k<pipeInSize; k=k+1) pipeIn[k] = 0;
+    for (k=0; k<pipeInSize/2; k=k+1) pipeIn[k*2] = mem_data[k];
+    // for (j=0; j<Y_DEPTH; j=j+1)begin
+    //     for (i=0; i<X_LENGTH; i=i+1)begin
+    //         pipeIn[(i+j*X_LENGTH)*2] = mem_data[i+j*X_LENGTH];
+    //     end
+    // end
+    WriteToPipeIn(8'h80,pipeInSize);
+    WriteToPipeIn(8'h83,pipeInSize);
+    $display("write image to ext_mem done!");
+    // write region_x
+    for (k=0; k<region_num*2; k=k+1) pipeIn1[k*2] = region_x_list[k];
+    WriteToPipeIn1(8'h81,region_num*2*2);
+    // write region_y
+    for (k=0; k<region_num*2; k=k+1) pipeIn2[k*2] = region_y_list[k];
+    WriteToPipeIn2(8'h82,region_num*2*2);
+    // write region_num
+    SetWireInValue(8'h03,region_num,16'h001f); // wi03_data[4:0]; 
+    UpdateWireIns;
+    $display("write region done!");
+
+//// verify 
+    // NOTE: can only check objects smaller than 42x42
+    // NOTE: for larger objects, it's better to use MATLAB to visualize the results and compare
+    i = 0;
+    for (k=0; k<region_num; k=k+1) begin
+        for (iy=region_y_list[k*2]; iy<=region_y_list[k*2+1]; iy=iy+1) begin
+            for (ix=region_x_list[k*2]; ix<=region_x_list[k*2+1]; ix=ix+1) begin
+                if (pipeOut[i*2][0] != mem_data[ix+iy*X_LENGTH]) begin
+                    $display("Error! Raw image data mem_data[%d] = %d,    Read out_data[%d] = %d", ix+iy*X_LENGTH, mem_data[ix+iy*X_LENGTH], i, pipeOut[i*2][0]);
+                    i = i + 1;
+                end
+                else begin
+                    $display("Success! Raw image data mem_data[%d] = %d,    Read out_data[%d] = %d", ix+iy*X_LENGTH, mem_data[ix+iy*X_LENGTH], i, pipeOut[i*2][0]);
+                    i = i + 1;
+                end
+            end
+        end
+    end
+
+
+//// read region address
+    ReadFromPipeOut(8'ha1, 42*42*2);
+
+
+    spi_config(7'd58, 16'd312);
+
+    SetWireInValue(8'h00,8,16'h0008); // data_update = wi00_data[3]; //NOTE:trig after testing_CNN_dbg.aer_input_go
+    UpdateWireIns;
+    SetWireInValue(8'h00,0,16'h0008); // 
+    UpdateWireIns;
+
+    SetWireInValue(8'h00,4,16'h0004); // en_evt2frame = wi00_data[2];
+    UpdateWireIns;
+    SetWireInValue(8'h00,2,16'h0002); // init = wi00_data[1];
+    UpdateWireIns;
+
+    // @(posedge uut.aer_input_go);
+//// start input to chip
+    SetWireInValue(8'h03,32,16'h0020); // wi03_data[5]; 
+    UpdateWireIns;
+    $display ("%g start...", $time);
+    #10000;
+    SetWireInValue(8'h04,1,16'h0001); // read_cnn_data_out_done = wi04_data[0];
+    UpdateWireIns;
+    SetWireInValue(8'h04,0,16'h0001); // read_cnn_data_out_done = wi04_data[0];
+    UpdateWireIns;
+done_test = 1;
+# 20;
+done_test = 0;
+
+//// read the stored region for verifying
+    UpdateTriggerOuts;
+    while (IsTriggered(8'h60, 16'h0001) == 0) begin
+        $display("waiting...");
+        UpdateTriggerOuts;
+    end
+    $display("cnn done");
+    ReadFromPipeOut(8'ha0, 16383*2);
+
+
+//// start input to chip
+    #50000;
+    SetWireInValue(8'h03,0,16'h0020);
+    UpdateWireIns;
+    SetWireInValue(8'h03,32,16'h0020); // wi03_data[5]; 
+    UpdateWireIns;
+    #10000;
+    SetWireInValue(8'h04,1,16'h0001); // read_cnn_data_out_done = wi04_data[0];
+    UpdateWireIns;
+    SetWireInValue(8'h04,0,16'h0001); // read_cnn_data_out_done = wi04_data[0];
+    UpdateWireIns;
+done_test = 1;
+# 20;
+done_test = 0;
+
+//// start input to chip
+    #50000;
+    SetWireInValue(8'h03,0,16'h0020);
+    UpdateWireIns;
+    SetWireInValue(8'h03,32,16'h0020); // wi03_data[5]; 
+    UpdateWireIns;
+    #10000;
+    SetWireInValue(8'h04,1,16'h0001); // read_cnn_data_out_done = wi04_data[0];
+    UpdateWireIns;
+    SetWireInValue(8'h04,0,16'h0001); // read_cnn_data_out_done = wi04_data[0];
+    UpdateWireIns;
+done_test = 1;
+# 20;
+done_test = 0;
+
+//// start input to chip
+    #50000;
+    SetWireInValue(8'h03,0,16'h0020);
+    UpdateWireIns;
+    SetWireInValue(8'h03,32,16'h0020); // wi03_data[5]; 
+    UpdateWireIns;
+    #10000;
+    SetWireInValue(8'h04,1,16'h0001); // read_cnn_data_out_done = wi04_data[0];
+    UpdateWireIns;
+    SetWireInValue(8'h04,0,16'h0001); // read_cnn_data_out_done = wi04_data[0];
+    UpdateWireIns;
+done_test = 1;
+# 20;
+done_test = 0;
+    # 50000;
+   $stop;
+end
+
+
+endmodule
+

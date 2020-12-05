@@ -1,0 +1,2406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Zhang/Desktop/OpalKelly3010_Verilog/working_dir/OK_TOP_sim_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="OK_TOP_sim" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="349" />
+   <wvobject fp_name="/OK_TOP_sim/clk1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk1</obj_property>
+      <obj_property name="ObjectShortName">clk1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/hi_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">hi_out[1:0]</obj_property>
+      <obj_property name="ObjectShortName">hi_out[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/i2c_sda" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">i2c_sda</obj_property>
+      <obj_property name="ObjectShortName">i2c_sda</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/i2c_scl" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">i2c_scl</obj_property>
+      <obj_property name="ObjectShortName">i2c_scl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/hi_muxsel" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">hi_muxsel</obj_property>
+      <obj_property name="ObjectShortName">hi_muxsel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/CLK_AER" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">CLK_AER</obj_property>
+      <obj_property name="ObjectShortName">CLK_AER</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/CLK_EXT" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">CLK_EXT</obj_property>
+      <obj_property name="ObjectShortName">CLK_EXT</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/RESET_N" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RESET_N</obj_property>
+      <obj_property name="ObjectShortName">RESET_N</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/REGION_RD" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">REGION_RD</obj_property>
+      <obj_property name="ObjectShortName">REGION_RD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/CLK_PHS1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">CLK_PHS1</obj_property>
+      <obj_property name="ObjectShortName">CLK_PHS1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/CLK_PHS2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">CLK_PHS2</obj_property>
+      <obj_property name="ObjectShortName">CLK_PHS2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/CLK_UPDATE" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">CLK_UPDATE</obj_property>
+      <obj_property name="ObjectShortName">CLK_UPDATE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/SPI_DIN" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">SPI_DIN</obj_property>
+      <obj_property name="ObjectShortName">SPI_DIN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/CAPTURE" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">CAPTURE</obj_property>
+      <obj_property name="ObjectShortName">CAPTURE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/XDRE_SCE0_P" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">XDRE_SCE0_P</obj_property>
+      <obj_property name="ObjectShortName">XDRE_SCE0_P</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/XDCE_SCE1_P" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">XDCE_SCE1_P</obj_property>
+      <obj_property name="ObjectShortName">XDCE_SCE1_P</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/XES_SCE2_P" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">XES_SCE2_P</obj_property>
+      <obj_property name="ObjectShortName">XES_SCE2_P</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/XSI_SCE3_P" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">XSI_SCE3_P</obj_property>
+      <obj_property name="ObjectShortName">XSI_SCE3_P</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/XTRS_SCE4_P" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">XTRS_SCE4_P</obj_property>
+      <obj_property name="ObjectShortName">XTRS_SCE4_P</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/XSDQ_SCE5_P" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">XSDQ_SCE5_P</obj_property>
+      <obj_property name="ObjectShortName">XSDQ_SCE5_P</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/XSE_SCE6_P" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">XSE_SCE6_P</obj_property>
+      <obj_property name="ObjectShortName">XSE_SCE6_P</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/XRGD_SCE7_P" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">XRGD_SCE7_P</obj_property>
+      <obj_property name="ObjectShortName">XRGD_SCE7_P</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/XMC_SCE8_P" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">XMC_SCE8_P</obj_property>
+      <obj_property name="ObjectShortName">XMC_SCE8_P</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/SST0_P" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">SST0_P</obj_property>
+      <obj_property name="ObjectShortName">SST0_P</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/SST1_P" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">SST1_P</obj_property>
+      <obj_property name="ObjectShortName">SST1_P</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/XRE_SST2_P" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">XRE_SST2_P</obj_property>
+      <obj_property name="ObjectShortName">XRE_SST2_P</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/XIDO_SST3_P" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">XIDO_SST3_P</obj_property>
+      <obj_property name="ObjectShortName">XIDO_SST3_P</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/XIDI_SST4_P" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">XIDI_SST4_P</obj_property>
+      <obj_property name="ObjectShortName">XIDI_SST4_P</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/XE_CLK_P" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">XE_CLK_P</obj_property>
+      <obj_property name="ObjectShortName">XE_CLK_P</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/XEQ_SD_P" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">XEQ_SD_P</obj_property>
+      <obj_property name="ObjectShortName">XEQ_SD_P</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/XRR_SSUA_P" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">XRR_SSUA_P</obj_property>
+      <obj_property name="ObjectShortName">XRR_SSUA_P</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/XRP_SLC_P" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">XRP_SLC_P</obj_property>
+      <obj_property name="ObjectShortName">XRP_SLC_P</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/XWD_SWF_P" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">XWD_SWF_P</obj_property>
+      <obj_property name="ObjectShortName">XWD_SWF_P</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/XWR_SWD_P" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">XWR_SWD_P</obj_property>
+      <obj_property name="ObjectShortName">XWR_SWD_P</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/led" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">led[7:0]</obj_property>
+      <obj_property name="ObjectShortName">led[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/hi_inout" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">hi_inout[15:0]</obj_property>
+      <obj_property name="ObjectShortName">hi_inout[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/hi_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">hi_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">hi_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/N_SPI_bits" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">N_SPI_bits[15:0]</obj_property>
+      <obj_property name="ObjectShortName">N_SPI_bits[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/k" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">k[31:0]</obj_property>
+      <obj_property name="ObjectShortName">k[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/e" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e[31:0]</obj_property>
+      <obj_property name="ObjectShortName">e[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/hi_dataout" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">hi_dataout[15:0]</obj_property>
+      <obj_property name="ObjectShortName">hi_dataout[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/WireIns" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">WireIns[0:31,15:0]</obj_property>
+      <obj_property name="ObjectShortName">WireIns[0:31,15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/WireOuts" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">WireOuts[0:31,15:0]</obj_property>
+      <obj_property name="ObjectShortName">WireOuts[0:31,15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/Triggered" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Triggered[0:31,15:0]</obj_property>
+      <obj_property name="ObjectShortName">Triggered[0:31,15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/X_LENGTH" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">X_LENGTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">X_LENGTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/Y_DEPTH" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Y_DEPTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Y_DEPTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/BlockDelayStates" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">BlockDelayStates[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BlockDelayStates[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/ReadyCheckDelay" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ReadyCheckDelay[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ReadyCheckDelay[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/PostReadyDelay" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PostReadyDelay[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PostReadyDelay[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/pipeInSize" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pipeInSize[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pipeInSize[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/pipeOutSize" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pipeOutSize[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pipeOutSize[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/pipeInSize1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pipeInSize1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pipeInSize1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/pipeOutSize1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pipeOutSize1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pipeOutSize1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/pipeOutSize2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pipeOutSize2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pipeOutSize2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/UPDATE_TO_READOUT_CLOCKS" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">UPDATE_TO_READOUT_CLOCKS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">UPDATE_TO_READOUT_CLOCKS[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/Tti" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">Tti</obj_property>
+      <obj_property name="ObjectShortName">Tti</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/Tep" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Tep[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Tep[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/TDOUT_DELAY" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">TDOUT_DELAY[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TDOUT_DELAY[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/TTRIG_DELAY" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">TTRIG_DELAY[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TTRIG_DELAY[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/tCK" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">tCK</obj_property>
+      <obj_property name="ObjectShortName">tCK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/wr_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wr_en</obj_property>
+      <obj_property name="ObjectShortName">wr_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/rd_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rd_en</obj_property>
+      <obj_property name="ObjectShortName">rd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/WrReq" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">WrReq</obj_property>
+      <obj_property name="ObjectShortName">WrReq</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/RdReq" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RdReq</obj_property>
+      <obj_property name="ObjectShortName">RdReq</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/SDRAM_DQ" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">SDRAM_DQ</obj_property>
+      <obj_property name="ObjectShortName">SDRAM_DQ</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/TOP_ROW_SEL" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">TOP_ROW_SEL</obj_property>
+      <obj_property name="ObjectShortName">TOP_ROW_SEL</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/EQ" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">EQ</obj_property>
+      <obj_property name="ObjectShortName">EQ</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/SA_EN" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">SA_EN</obj_property>
+      <obj_property name="ObjectShortName">SA_EN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/RdPage" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RdPage</obj_property>
+      <obj_property name="ObjectShortName">RdPage</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/RdGnt_delay" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RdGnt_delay</obj_property>
+      <obj_property name="ObjectShortName">RdGnt_delay</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/MEM_CLR" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">MEM_CLR</obj_property>
+      <obj_property name="ObjectShortName">MEM_CLR</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/imc_diffusion" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">imc_diffusion</obj_property>
+      <obj_property name="ObjectShortName">imc_diffusion</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/imc_recovery" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">imc_recovery</obj_property>
+      <obj_property name="ObjectShortName">imc_recovery</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/imc_done" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">imc_done</obj_property>
+      <obj_property name="ObjectShortName">imc_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/decoder_row_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">decoder_row_en</obj_property>
+      <obj_property name="ObjectShortName">decoder_row_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/decoder_col_en_w" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">decoder_col_en_w</obj_property>
+      <obj_property name="ObjectShortName">decoder_col_en_w</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/reset_n" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addrx" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addrx[8:0]</obj_property>
+      <obj_property name="ObjectShortName">addrx[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addry" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addry[7:0]</obj_property>
+      <obj_property name="ObjectShortName">addry[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/write_debug" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">write_debug</obj_property>
+      <obj_property name="ObjectShortName">write_debug</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/clk_sys" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_sys</obj_property>
+      <obj_property name="ObjectShortName">clk_sys</obj_property>
+   </wvobject>
+   <wvobject fp_name="group152" type="group">
+      <obj_property name="label">addr_gen</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_gen_internal/clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_gen_internal/rst" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_gen_internal/rd_ready" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rd_ready</obj_property>
+         <obj_property name="ObjectShortName">rd_ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_gen_internal/wr_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">wr_en</obj_property>
+         <obj_property name="ObjectShortName">wr_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_gen_internal/rd_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rd_en</obj_property>
+         <obj_property name="ObjectShortName">rd_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_gen_internal/rp_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rp_en</obj_property>
+         <obj_property name="ObjectShortName">rp_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_gen_internal/addr_col" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">addr_col[8:0]</obj_property>
+         <obj_property name="ObjectShortName">addr_col[8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_gen_internal/addr_row" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">addr_row[7:0]</obj_property>
+         <obj_property name="ObjectShortName">addr_row[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_gen_internal/thresh0" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">thresh0</obj_property>
+         <obj_property name="ObjectShortName">thresh0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_gen_internal/thresh1" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">thresh1</obj_property>
+         <obj_property name="ObjectShortName">thresh1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_gen_internal/rst_col" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rst_col</obj_property>
+         <obj_property name="ObjectShortName">rst_col</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_gen_internal/rst_row" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rst_row</obj_property>
+         <obj_property name="ObjectShortName">rst_row</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_gen_internal/addr_valid" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">addr_valid</obj_property>
+         <obj_property name="ObjectShortName">addr_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_gen_internal/addr_done" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">addr_done</obj_property>
+         <obj_property name="ObjectShortName">addr_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_gen_internal/state" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">state[1:0]</obj_property>
+         <obj_property name="ObjectShortName">state[1:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="divider568" type="divider">
+      <obj_property name="label">cram_ctrl</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="group282" type="group">
+      <obj_property name="label">cram_ctrl</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/rst" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/diffusion_n_sel" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">diffusion_n_sel[1:0]</obj_property>
+         <obj_property name="ObjectShortName">diffusion_n_sel[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/diffusion_t_sel" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">diffusion_t_sel</obj_property>
+         <obj_property name="ObjectShortName">diffusion_t_sel</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/rd_ready" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rd_ready</obj_property>
+         <obj_property name="ObjectShortName">rd_ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/rp_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rp_en</obj_property>
+         <obj_property name="ObjectShortName">rp_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/RdReq" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">RdReq</obj_property>
+         <obj_property name="ObjectShortName">RdReq</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/RdGnt_delay" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">RdGnt_delay</obj_property>
+         <obj_property name="ObjectShortName">RdGnt_delay</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_x" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">addr_x[8:0]</obj_property>
+         <obj_property name="ObjectShortName">addr_x[8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_y" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">addr_y[7:0]</obj_property>
+         <obj_property name="ObjectShortName">addr_y[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/write_mode" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">write_mode</obj_property>
+         <obj_property name="ObjectShortName">write_mode</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/WrGnt" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">WrGnt</obj_property>
+         <obj_property name="ObjectShortName">WrGnt</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/WrData" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">WrData</obj_property>
+         <obj_property name="ObjectShortName">WrData</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/WrReq" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">WrReq</obj_property>
+         <obj_property name="ObjectShortName">WrReq</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/SDRAM_ADDR_COL" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">SDRAM_ADDR_COL[8:0]</obj_property>
+         <obj_property name="ObjectShortName">SDRAM_ADDR_COL[8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/SDRAM_ADDR_ROW" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">SDRAM_ADDR_ROW[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SDRAM_ADDR_ROW[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/SDRAM_DQ" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">SDRAM_DQ</obj_property>
+         <obj_property name="ObjectShortName">SDRAM_DQ</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/EQ_EN" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">EQ_EN</obj_property>
+         <obj_property name="ObjectShortName">EQ_EN</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/decoder_row_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">decoder_row_en</obj_property>
+         <obj_property name="ObjectShortName">decoder_row_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/RD_DONE" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">RD_DONE</obj_property>
+         <obj_property name="ObjectShortName">RD_DONE</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/imc_recovery" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">imc_recovery</obj_property>
+         <obj_property name="ObjectShortName">imc_recovery</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/WrValid_col" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">WrValid_col</obj_property>
+         <obj_property name="ObjectShortName">WrValid_col</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/write_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">write_en</obj_property>
+         <obj_property name="ObjectShortName">write_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/write_debug" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">write_debug</obj_property>
+         <obj_property name="ObjectShortName">write_debug</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/write_mode" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">write_mode</obj_property>
+         <obj_property name="ObjectShortName">write_mode</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/WrReq" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">WrReq</obj_property>
+         <obj_property name="ObjectShortName">WrReq</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_x_int" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">addr_x_int[8:0]</obj_property>
+         <obj_property name="ObjectShortName">addr_x_int[8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_y_int" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">addr_y_int[7:0]</obj_property>
+         <obj_property name="ObjectShortName">addr_y_int[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_valid" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">addr_valid</obj_property>
+         <obj_property name="ObjectShortName">addr_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_done" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">addr_done</obj_property>
+         <obj_property name="ObjectShortName">addr_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/mem_rd_valid" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_rd_valid</obj_property>
+         <obj_property name="ObjectShortName">mem_rd_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addrx" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">addrx[8:0]</obj_property>
+         <obj_property name="ObjectShortName">addrx[8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addry" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">addry[7:0]</obj_property>
+         <obj_property name="ObjectShortName">addry[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/ROW_TOP_SEL_a" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ROW_TOP_SEL_a</obj_property>
+         <obj_property name="ObjectShortName">ROW_TOP_SEL_a</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/SameRow" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">SameRow</obj_property>
+         <obj_property name="ObjectShortName">SameRow</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/read_start" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">read_start</obj_property>
+         <obj_property name="ObjectShortName">read_start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/write_stop" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">write_stop</obj_property>
+         <obj_property name="ObjectShortName">write_stop</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/read_new_row" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">read_new_row</obj_property>
+         <obj_property name="ObjectShortName">read_new_row</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/write_new_row" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">write_new_row</obj_property>
+         <obj_property name="ObjectShortName">write_new_row</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/WrGnt" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">WrGnt</obj_property>
+         <obj_property name="ObjectShortName">WrGnt</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/WR_DONE" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">WR_DONE</obj_property>
+         <obj_property name="ObjectShortName">WR_DONE</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/ROW_TOP_SEL" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ROW_TOP_SEL</obj_property>
+         <obj_property name="ObjectShortName">ROW_TOP_SEL</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/decoder_col_en_w" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">decoder_col_en_w</obj_property>
+         <obj_property name="ObjectShortName">decoder_col_en_w</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/SA_EN" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">SA_EN</obj_property>
+         <obj_property name="ObjectShortName">SA_EN</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/RD_PAGE" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">RD_PAGE</obj_property>
+         <obj_property name="ObjectShortName">RD_PAGE</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/MEM_CLR" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">MEM_CLR</obj_property>
+         <obj_property name="ObjectShortName">MEM_CLR</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/imc_diffusion" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">imc_diffusion</obj_property>
+         <obj_property name="ObjectShortName">imc_diffusion</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/imc_done" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">imc_done</obj_property>
+         <obj_property name="ObjectShortName">imc_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/EQ_READ" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">EQ_READ</obj_property>
+         <obj_property name="ObjectShortName">EQ_READ</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/EQ_WRITE" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">EQ_WRITE</obj_property>
+         <obj_property name="ObjectShortName">EQ_WRITE</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/WL_EN" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">WL_EN</obj_property>
+         <obj_property name="ObjectShortName">WL_EN</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/decoder_row_en_w" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">decoder_row_en_w</obj_property>
+         <obj_property name="ObjectShortName">decoder_row_en_w</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/imc_recovery1" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">imc_recovery1</obj_property>
+         <obj_property name="ObjectShortName">imc_recovery1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/read_start" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">read_start</obj_property>
+         <obj_property name="ObjectShortName">read_start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/read_new_row" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">read_new_row</obj_property>
+         <obj_property name="ObjectShortName">read_new_row</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/RdGnt" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">RdGnt</obj_property>
+         <obj_property name="ObjectShortName">RdGnt</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/RdGnt_reg1" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">RdGnt_reg1</obj_property>
+         <obj_property name="ObjectShortName">RdGnt_reg1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/RdGnt_reg2" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">RdGnt_reg2</obj_property>
+         <obj_property name="ObjectShortName">RdGnt_reg2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/RdGnt_reg3" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">RdGnt_reg3</obj_property>
+         <obj_property name="ObjectShortName">RdGnt_reg3</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/RdGnt_reg4" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">RdGnt_reg4</obj_property>
+         <obj_property name="ObjectShortName">RdGnt_reg4</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/RdGnt_reg5" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">RdGnt_reg5</obj_property>
+         <obj_property name="ObjectShortName">RdGnt_reg5</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/WrGnt_reg1" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">WrGnt_reg1</obj_property>
+         <obj_property name="ObjectShortName">WrGnt_reg1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/WrGnt_reg2" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">WrGnt_reg2</obj_property>
+         <obj_property name="ObjectShortName">WrGnt_reg2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/WrGnt_reg3" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">WrGnt_reg3</obj_property>
+         <obj_property name="ObjectShortName">WrGnt_reg3</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/WrGnt_reg4" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">WrGnt_reg4</obj_property>
+         <obj_property name="ObjectShortName">WrGnt_reg4</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/WrGnt_reg5" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">WrGnt_reg5</obj_property>
+         <obj_property name="ObjectShortName">WrGnt_reg5</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/WrGnt_reg6" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">WrGnt_reg6</obj_property>
+         <obj_property name="ObjectShortName">WrGnt_reg6</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addrx_reg1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">addrx_reg1[8:0]</obj_property>
+         <obj_property name="ObjectShortName">addrx_reg1[8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addrx_reg2" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">addrx_reg2[8:0]</obj_property>
+         <obj_property name="ObjectShortName">addrx_reg2[8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addrx_reg3" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">addrx_reg3[8:0]</obj_property>
+         <obj_property name="ObjectShortName">addrx_reg3[8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addrx_reg4" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">addrx_reg4[8:0]</obj_property>
+         <obj_property name="ObjectShortName">addrx_reg4[8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addrx_reg5" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">addrx_reg5[8:0]</obj_property>
+         <obj_property name="ObjectShortName">addrx_reg5[8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addrx_reg6" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">addrx_reg6[8:0]</obj_property>
+         <obj_property name="ObjectShortName">addrx_reg6[8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addry_reg1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">addry_reg1[7:0]</obj_property>
+         <obj_property name="ObjectShortName">addry_reg1[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addry_reg2" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">addry_reg2[7:0]</obj_property>
+         <obj_property name="ObjectShortName">addry_reg2[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addry_reg3" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">addry_reg3[7:0]</obj_property>
+         <obj_property name="ObjectShortName">addry_reg3[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addry_reg4" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">addry_reg4[7:0]</obj_property>
+         <obj_property name="ObjectShortName">addry_reg4[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addry_reg5" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">addry_reg5[7:0]</obj_property>
+         <obj_property name="ObjectShortName">addry_reg5[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addry_reg6" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">addry_reg6[7:0]</obj_property>
+         <obj_property name="ObjectShortName">addry_reg6[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/data_reg1" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">data_reg1</obj_property>
+         <obj_property name="ObjectShortName">data_reg1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/data_reg2" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">data_reg2</obj_property>
+         <obj_property name="ObjectShortName">data_reg2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/data_reg3" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">data_reg3</obj_property>
+         <obj_property name="ObjectShortName">data_reg3</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/data_reg4" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">data_reg4</obj_property>
+         <obj_property name="ObjectShortName">data_reg4</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/data_reg5" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">data_reg5</obj_property>
+         <obj_property name="ObjectShortName">data_reg5</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/state_mem" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">state_mem[3:0]</obj_property>
+         <obj_property name="ObjectShortName">state_mem[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/state_imc" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">state_imc[3:0]</obj_property>
+         <obj_property name="ObjectShortName">state_imc[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/X_LENGTH" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">X_LENGTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">X_LENGTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/Y_DEPTH" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">Y_DEPTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Y_DEPTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/X_ADDR_WIDTH" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">X_ADDR_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">X_ADDR_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/Y_ADDR_WIDTH" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">Y_ADDR_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Y_ADDR_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/state_mem_idle" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">state_mem_idle[3:0]</obj_property>
+         <obj_property name="ObjectShortName">state_mem_idle[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/state_mem_precharge_rd" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">state_mem_precharge_rd[3:0]</obj_property>
+         <obj_property name="ObjectShortName">state_mem_precharge_rd[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/state_precharge_wr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">state_precharge_wr[3:0]</obj_property>
+         <obj_property name="ObjectShortName">state_precharge_wr[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/state_mem_access_rd" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">state_mem_access_rd[3:0]</obj_property>
+         <obj_property name="ObjectShortName">state_mem_access_rd[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/state_access_wr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">state_access_wr[3:0]</obj_property>
+         <obj_property name="ObjectShortName">state_access_wr[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/state_mem_sense_rd" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">state_mem_sense_rd[3:0]</obj_property>
+         <obj_property name="ObjectShortName">state_mem_sense_rd[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/state_sense_wr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">state_sense_wr[3:0]</obj_property>
+         <obj_property name="ObjectShortName">state_sense_wr[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/state_mem_page_rd" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">state_mem_page_rd[3:0]</obj_property>
+         <obj_property name="ObjectShortName">state_mem_page_rd[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/state_page_wr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">state_page_wr[3:0]</obj_property>
+         <obj_property name="ObjectShortName">state_page_wr[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/state_mem_done_rd" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">state_mem_done_rd[3:0]</obj_property>
+         <obj_property name="ObjectShortName">state_mem_done_rd[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/state_done_wr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">state_done_wr[3:0]</obj_property>
+         <obj_property name="ObjectShortName">state_done_wr[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/state_mem_wr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">state_mem_wr[3:0]</obj_property>
+         <obj_property name="ObjectShortName">state_mem_wr[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/state_mem_wr_done" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">state_mem_wr_done[3:0]</obj_property>
+         <obj_property name="ObjectShortName">state_mem_wr_done[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/state_imc_idle" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">state_imc_idle[3:0]</obj_property>
+         <obj_property name="ObjectShortName">state_imc_idle[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/state_imc_diffusion10" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">state_imc_diffusion10[3:0]</obj_property>
+         <obj_property name="ObjectShortName">state_imc_diffusion10[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/state_imc_diffusion11" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">state_imc_diffusion11[3:0]</obj_property>
+         <obj_property name="ObjectShortName">state_imc_diffusion11[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/state_imc_delay1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">state_imc_delay1[3:0]</obj_property>
+         <obj_property name="ObjectShortName">state_imc_delay1[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/state_imc_recovery1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">state_imc_recovery1[3:0]</obj_property>
+         <obj_property name="ObjectShortName">state_imc_recovery1[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/state_imc_delay2" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">state_imc_delay2[3:0]</obj_property>
+         <obj_property name="ObjectShortName">state_imc_delay2[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/state_imc_diffusion20" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">state_imc_diffusion20[3:0]</obj_property>
+         <obj_property name="ObjectShortName">state_imc_diffusion20[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/state_imc_diffusion21" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">state_imc_diffusion21[3:0]</obj_property>
+         <obj_property name="ObjectShortName">state_imc_diffusion21[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/state_imc_delay3" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">state_imc_delay3[3:0]</obj_property>
+         <obj_property name="ObjectShortName">state_imc_delay3[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/state_imc_recovery2" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">state_imc_recovery2[3:0]</obj_property>
+         <obj_property name="ObjectShortName">state_imc_recovery2[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/state_imc_delay4" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">state_imc_delay4[3:0]</obj_property>
+         <obj_property name="ObjectShortName">state_imc_delay4[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/state_imc_diffusion30" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">state_imc_diffusion30[3:0]</obj_property>
+         <obj_property name="ObjectShortName">state_imc_diffusion30[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/state_imc_diffusion31" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">state_imc_diffusion31[3:0]</obj_property>
+         <obj_property name="ObjectShortName">state_imc_diffusion31[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/state_imc_delay5" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">state_imc_delay5[3:0]</obj_property>
+         <obj_property name="ObjectShortName">state_imc_delay5[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/state_imc_recovery3" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">state_imc_recovery3[3:0]</obj_property>
+         <obj_property name="ObjectShortName">state_imc_recovery3[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/state_imc_done" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">state_imc_done[3:0]</obj_property>
+         <obj_property name="ObjectShortName">state_imc_done[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/WL_EN" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">WL_EN</obj_property>
+         <obj_property name="ObjectShortName">WL_EN</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="divider524" type="divider">
+      <obj_property name="label">New Divider</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="group345" type="group">
+      <obj_property name="label">top</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/OK_TOP_sim/uut/state" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">state[1:0]</obj_property>
+         <obj_property name="ObjectShortName">state[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cnt" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">cnt[16:0]</obj_property>
+         <obj_property name="ObjectShortName">cnt[16:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/ser_in" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ser_in</obj_property>
+         <obj_property name="ObjectShortName">ser_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/rst" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/rp_valid2" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rp_valid2</obj_property>
+         <obj_property name="ObjectShortName">rp_valid2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/rp_valid1" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rp_valid1</obj_property>
+         <obj_property name="ObjectShortName">rp_valid1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/rp_valid" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rp_valid</obj_property>
+         <obj_property name="ObjectShortName">rp_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/rp_en2" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rp_en2</obj_property>
+         <obj_property name="ObjectShortName">rp_en2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/rp_en1" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rp_en1</obj_property>
+         <obj_property name="ObjectShortName">rp_en1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/rp_done2" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rp_done2</obj_property>
+         <obj_property name="ObjectShortName">rp_done2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/rp_done1" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rp_done1</obj_property>
+         <obj_property name="ObjectShortName">rp_done1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/rp_done" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rp_done</obj_property>
+         <obj_property name="ObjectShortName">rp_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/reset_n" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">reset_n</obj_property>
+         <obj_property name="ObjectShortName">reset_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/region_y2" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">region_y2[7:0]</obj_property>
+         <obj_property name="ObjectShortName">region_y2[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/region_y1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">region_y1[7:0]</obj_property>
+         <obj_property name="ObjectShortName">region_y1[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/region_y" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">region_y</obj_property>
+         <obj_property name="ObjectShortName">region_y</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/region_x2" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">region_x2[8:0]</obj_property>
+         <obj_property name="ObjectShortName">region_x2[8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/region_x1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">region_x1[8:0]</obj_property>
+         <obj_property name="ObjectShortName">region_x1[8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/region_x" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">region_x</obj_property>
+         <obj_property name="ObjectShortName">region_x</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/region_n2" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">region_n2[3:0]</obj_property>
+         <obj_property name="ObjectShortName">region_n2[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/region_n1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">region_n1[3:0]</obj_property>
+         <obj_property name="ObjectShortName">region_n1[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/region_n" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">region_n</obj_property>
+         <obj_property name="ObjectShortName">region_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/read_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">read_en</obj_property>
+         <obj_property name="ObjectShortName">read_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/rdwr" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rdwr</obj_property>
+         <obj_property name="ObjectShortName">rdwr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/rd_ready" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rd_ready</obj_property>
+         <obj_property name="ObjectShortName">rd_ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/rd_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rd_en</obj_property>
+         <obj_property name="ObjectShortName">rd_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/wr_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">wr_en</obj_property>
+         <obj_property name="ObjectShortName">wr_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/state" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">state[1:0]</obj_property>
+         <obj_property name="ObjectShortName">state[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cnt" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">cnt[16:0]</obj_property>
+         <obj_property name="ObjectShortName">cnt[16:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/clk_in" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk_in</obj_property>
+         <obj_property name="ObjectShortName">clk_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/clk_out" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk_out</obj_property>
+         <obj_property name="ObjectShortName">clk_out</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/EQ" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">EQ</obj_property>
+      <obj_property name="ObjectShortName">EQ</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/MEM_CLR" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">MEM_CLR</obj_property>
+      <obj_property name="ObjectShortName">MEM_CLR</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/RdPage" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RdPage</obj_property>
+      <obj_property name="ObjectShortName">RdPage</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/RdGnt_delay" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RdGnt_delay</obj_property>
+      <obj_property name="ObjectShortName">RdGnt_delay</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/SA_EN" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">SA_EN</obj_property>
+      <obj_property name="ObjectShortName">SA_EN</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/SDRAM_DQ" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">SDRAM_DQ</obj_property>
+      <obj_property name="ObjectShortName">SDRAM_DQ</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/TOP_ROW_SEL" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">TOP_ROW_SEL</obj_property>
+      <obj_property name="ObjectShortName">TOP_ROW_SEL</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/imc_recovery" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">imc_recovery</obj_property>
+      <obj_property name="ObjectShortName">imc_recovery</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/imc_done" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">imc_done</obj_property>
+      <obj_property name="ObjectShortName">imc_done</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/imc_diffusion" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">imc_diffusion</obj_property>
+      <obj_property name="ObjectShortName">imc_diffusion</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/RdGnt" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RdGnt</obj_property>
+      <obj_property name="ObjectShortName">RdGnt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/RdGnt_delay" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RdGnt_delay</obj_property>
+      <obj_property name="ObjectShortName">RdGnt_delay</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/RdGnt_delay" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RdGnt_delay</obj_property>
+      <obj_property name="ObjectShortName">RdGnt_delay</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/RdGnt_reg1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RdGnt_reg1</obj_property>
+      <obj_property name="ObjectShortName">RdGnt_reg1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/mem_rd_valid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_rd_valid</obj_property>
+      <obj_property name="ObjectShortName">mem_rd_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/WrGnt" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">WrGnt</obj_property>
+      <obj_property name="ObjectShortName">WrGnt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/WrValid_col" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">WrValid_col</obj_property>
+      <obj_property name="ObjectShortName">WrValid_col</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/write_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">write_en</obj_property>
+      <obj_property name="ObjectShortName">write_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/WrReq" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">WrReq</obj_property>
+      <obj_property name="ObjectShortName">WrReq</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/RdReq" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RdReq</obj_property>
+      <obj_property name="ObjectShortName">RdReq</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_valid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_valid</obj_property>
+      <obj_property name="ObjectShortName">addr_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/rd_en_reg2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rd_en_reg2</obj_property>
+      <obj_property name="ObjectShortName">rd_en_reg2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/rd_en_reg1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rd_en_reg1</obj_property>
+      <obj_property name="ObjectShortName">rd_en_reg1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/rd_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rd_en</obj_property>
+      <obj_property name="ObjectShortName">rd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/wr_en_reg2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wr_en_reg2</obj_property>
+      <obj_property name="ObjectShortName">wr_en_reg2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/wr_en_reg1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wr_en_reg1</obj_property>
+      <obj_property name="ObjectShortName">wr_en_reg1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/wr_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wr_en</obj_property>
+      <obj_property name="ObjectShortName">wr_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/WL_EN" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">WL_EN</obj_property>
+      <obj_property name="ObjectShortName">WL_EN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/EQ_READ" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">EQ_READ</obj_property>
+      <obj_property name="ObjectShortName">EQ_READ</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/state_mem" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">state_mem[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state_mem[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/read_new_row" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">read_new_row</obj_property>
+      <obj_property name="ObjectShortName">read_new_row</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/read_start" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">read_start</obj_property>
+      <obj_property name="ObjectShortName">read_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/SameRow" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">SameRow</obj_property>
+      <obj_property name="ObjectShortName">SameRow</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addrx" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addrx[8:0]</obj_property>
+      <obj_property name="ObjectShortName">addrx[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_x" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_x[8:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_x[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_x_int" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_x_int[8:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_x_int[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addry" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addry[7:0]</obj_property>
+      <obj_property name="ObjectShortName">addry[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_y" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_y[7:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_y[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addry_reg1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addry_reg1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">addry_reg1[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addry_reg2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addry_reg2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">addry_reg2[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/clk1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk1</obj_property>
+      <obj_property name="ObjectShortName">clk1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/clk_sys" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_sys</obj_property>
+      <obj_property name="ObjectShortName">clk_sys</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/piso_inst/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/piso_inst/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/piso_inst/pi" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pi[16:0]</obj_property>
+      <obj_property name="ObjectShortName">pi[16:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/piso_inst/load_piso" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">load_piso</obj_property>
+      <obj_property name="ObjectShortName">load_piso</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/piso_inst/so" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">so</obj_property>
+      <obj_property name="ObjectShortName">so</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/piso_inst/pi_temp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pi_temp[16:0]</obj_property>
+      <obj_property name="ObjectShortName">pi_temp[16:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/sipo_inst/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/sipo_inst/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/sipo_inst/si" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">si</obj_property>
+      <obj_property name="ObjectShortName">si</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/sipo_inst/en_sipo" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">en_sipo</obj_property>
+      <obj_property name="ObjectShortName">en_sipo</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/sipo_inst/po" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">po[16:0]</obj_property>
+      <obj_property name="ObjectShortName">po[16:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/sipo_inst/po_temp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">po_temp[16:0]</obj_property>
+      <obj_property name="ObjectShortName">po_temp[16:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cnt_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cnt_addr[16:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_addr[16:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cnt_sipo" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cnt_sipo[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_sipo[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/row" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">row[11:0]</obj_property>
+      <obj_property name="ObjectShortName">row[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/col_wr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">col_wr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">col_wr[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/col_rd" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">col_rd[15:0]</obj_property>
+      <obj_property name="ObjectShortName">col_rd[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/par_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">par_out[16:0]</obj_property>
+      <obj_property name="ObjectShortName">par_out[16:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/addr_x_debug" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_x_debug[8:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_x_debug[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/addr_y_debug" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_y_debug[7:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_y_debug[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/WL_EN" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">WL_EN</obj_property>
+      <obj_property name="ObjectShortName">WL_EN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/mem_rd_valid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_rd_valid</obj_property>
+      <obj_property name="ObjectShortName">mem_rd_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/rd_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rd_en</obj_property>
+      <obj_property name="ObjectShortName">rd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/decoder_row_en_w" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">decoder_row_en_w</obj_property>
+      <obj_property name="ObjectShortName">decoder_row_en_w</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/WL_EN" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">WL_EN</obj_property>
+      <obj_property name="ObjectShortName">WL_EN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/RdGnt" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RdGnt</obj_property>
+      <obj_property name="ObjectShortName">RdGnt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/state_mem" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">state_mem[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state_mem[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/decoder_row_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">decoder_row_en</obj_property>
+      <obj_property name="ObjectShortName">decoder_row_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/clk_sys" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_sys</obj_property>
+      <obj_property name="ObjectShortName">clk_sys</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/decoder_row_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">decoder_row_en</obj_property>
+      <obj_property name="ObjectShortName">decoder_row_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/decoder_row_en_int" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">decoder_row_en_int</obj_property>
+      <obj_property name="ObjectShortName">decoder_row_en_int</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/decoder_row_en_int_reg" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">decoder_row_en_int_reg</obj_property>
+      <obj_property name="ObjectShortName">decoder_row_en_int_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/WrGnt_reg1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">WrGnt_reg1</obj_property>
+      <obj_property name="ObjectShortName">WrGnt_reg1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/WrGnt" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">WrGnt</obj_property>
+      <obj_property name="ObjectShortName">WrGnt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/WrValid_col" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">WrValid_col</obj_property>
+      <obj_property name="ObjectShortName">WrValid_col</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/write_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">write_en</obj_property>
+      <obj_property name="ObjectShortName">write_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/write_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">write_en</obj_property>
+      <obj_property name="ObjectShortName">write_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/decoder_row_en_w" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">decoder_row_en_w</obj_property>
+      <obj_property name="ObjectShortName">decoder_row_en_w</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/WrGnt" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">WrGnt</obj_property>
+      <obj_property name="ObjectShortName">WrGnt</obj_property>
+   </wvobject>
+   <wvobject fp_name="group388" type="group">
+      <obj_property name="label">decoder_row</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/OK_TOP_sim/uut/decoder_row_inst/en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">en</obj_property>
+         <obj_property name="ObjectShortName">en</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/decoder_row_inst/set" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">set</obj_property>
+         <obj_property name="ObjectShortName">set</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/decoder_row_inst/addr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">addr[7:0]</obj_property>
+         <obj_property name="ObjectShortName">addr[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/decoder_row_inst/s" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">s[11:0]</obj_property>
+         <obj_property name="ObjectShortName">s[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/decoder_row_inst/enable" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">enable</obj_property>
+         <obj_property name="ObjectShortName">enable</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/decoder_row_inst/i" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/decoder_row_inst/s_int" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">s_int[11:0]</obj_property>
+         <obj_property name="ObjectShortName">s_int[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/decoder_row_inst/ADDR_WIDTH" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">ADDR_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ADDR_WIDTH[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/decoder_row_inst/ADDR_BOUND" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">ADDR_BOUND[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ADDR_BOUND[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/decoder_col_en_w" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">decoder_col_en_w</obj_property>
+      <obj_property name="ObjectShortName">decoder_col_en_w</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/decoder_col_en_w_int" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">decoder_col_en_w_int</obj_property>
+      <obj_property name="ObjectShortName">decoder_col_en_w_int</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/decoder_col_en_w" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">decoder_col_en_w</obj_property>
+      <obj_property name="ObjectShortName">decoder_col_en_w</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/RdGnt_delay_int" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RdGnt_delay_int</obj_property>
+      <obj_property name="ObjectShortName">RdGnt_delay_int</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/RdGnt_delay_int_reg" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RdGnt_delay_int_reg</obj_property>
+      <obj_property name="ObjectShortName">RdGnt_delay_int_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/RdGnt_delay" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RdGnt_delay</obj_property>
+      <obj_property name="ObjectShortName">RdGnt_delay</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_valid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_valid</obj_property>
+      <obj_property name="ObjectShortName">addr_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/clk_sys" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_sys</obj_property>
+      <obj_property name="ObjectShortName">clk_sys</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/clk1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk1</obj_property>
+      <obj_property name="ObjectShortName">clk1</obj_property>
+   </wvobject>
+   <wvobject fp_name="group398" type="group">
+      <obj_property name="label">decoder_col</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/OK_TOP_sim/uut/decoder_col_inst/col_en_wr" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">col_en_wr</obj_property>
+         <obj_property name="ObjectShortName">col_en_wr</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/decoder_col_inst/col_en_rd" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">col_en_rd</obj_property>
+         <obj_property name="ObjectShortName">col_en_rd</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/decoder_col_inst/addr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">addr[8:0]</obj_property>
+         <obj_property name="ObjectShortName">addr[8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/decoder_col_inst/s_wr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">s_wr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">s_wr[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/decoder_col_inst/s_rd" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">s_rd[15:0]</obj_property>
+         <obj_property name="ObjectShortName">s_rd[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/decoder_col_inst/i" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/decoder_col_inst/s_int" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">s_int[15:0]</obj_property>
+         <obj_property name="ObjectShortName">s_int[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/decoder_col_inst/ADDR_WIDTH" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">ADDR_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ADDR_WIDTH[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/decoder_col_inst/ADDR_BOUND" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">ADDR_BOUND[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ADDR_BOUND[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addrx" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addrx[8:0]</obj_property>
+      <obj_property name="ObjectShortName">addrx[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addry" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addry[7:0]</obj_property>
+      <obj_property name="ObjectShortName">addry[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/clk_addr_gen" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_addr_gen</obj_property>
+      <obj_property name="ObjectShortName">clk_addr_gen</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/WrGnt" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">WrGnt</obj_property>
+      <obj_property name="ObjectShortName">WrGnt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/SDRAM_ADDR_COL" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">SDRAM_ADDR_COL[8:0]</obj_property>
+      <obj_property name="ObjectShortName">SDRAM_ADDR_COL[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/SDRAM_ADDR_ROW" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">SDRAM_ADDR_ROW[7:0]</obj_property>
+      <obj_property name="ObjectShortName">SDRAM_ADDR_ROW[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/decoder_row_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">decoder_row_en</obj_property>
+      <obj_property name="ObjectShortName">decoder_row_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/WrGnt" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">WrGnt</obj_property>
+      <obj_property name="ObjectShortName">WrGnt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/write_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">write_en</obj_property>
+      <obj_property name="ObjectShortName">write_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/wr_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wr_en</obj_property>
+      <obj_property name="ObjectShortName">wr_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/wr_en_reg2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wr_en_reg2</obj_property>
+      <obj_property name="ObjectShortName">wr_en_reg2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/write_mode" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">write_mode</obj_property>
+      <obj_property name="ObjectShortName">write_mode</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/decoder_col_en_w" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">decoder_col_en_w</obj_property>
+      <obj_property name="ObjectShortName">decoder_col_en_w</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/decoder_row_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">decoder_row_en</obj_property>
+      <obj_property name="ObjectShortName">decoder_row_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/decoder_row_en_w" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">decoder_row_en_w</obj_property>
+      <obj_property name="ObjectShortName">decoder_row_en_w</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/EQ" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">EQ</obj_property>
+      <obj_property name="ObjectShortName">EQ</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/MEM_CLR" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">MEM_CLR</obj_property>
+      <obj_property name="ObjectShortName">MEM_CLR</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/RdGnt_delay" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RdGnt_delay</obj_property>
+      <obj_property name="ObjectShortName">RdGnt_delay</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/RdGnt_delay_int" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RdGnt_delay_int</obj_property>
+      <obj_property name="ObjectShortName">RdGnt_delay_int</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/RdGnt_delay_int_reg" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RdGnt_delay_int_reg</obj_property>
+      <obj_property name="ObjectShortName">RdGnt_delay_int_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/SA_EN" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">SA_EN</obj_property>
+      <obj_property name="ObjectShortName">SA_EN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/SDRAM_DQ" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">SDRAM_DQ</obj_property>
+      <obj_property name="ObjectShortName">SDRAM_DQ</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/RD_DONE" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RD_DONE</obj_property>
+      <obj_property name="ObjectShortName">RD_DONE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/RD_PAGE" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RD_PAGE</obj_property>
+      <obj_property name="ObjectShortName">RD_PAGE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/ROW_TOP_SEL" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ROW_TOP_SEL</obj_property>
+      <obj_property name="ObjectShortName">ROW_TOP_SEL</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/imc_diffusion" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">imc_diffusion</obj_property>
+      <obj_property name="ObjectShortName">imc_diffusion</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/imc_done" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">imc_done</obj_property>
+      <obj_property name="ObjectShortName">imc_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/imc_recovery" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">imc_recovery</obj_property>
+      <obj_property name="ObjectShortName">imc_recovery</obj_property>
+   </wvobject>
+   <wvobject fp_name="group432" type="group">
+      <obj_property name="label">addr_internal</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_gen_internal/clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_gen_internal/rst" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_gen_internal/rd_ready" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rd_ready</obj_property>
+         <obj_property name="ObjectShortName">rd_ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_gen_internal/wr_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">wr_en</obj_property>
+         <obj_property name="ObjectShortName">wr_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_gen_internal/rd_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rd_en</obj_property>
+         <obj_property name="ObjectShortName">rd_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_gen_internal/rp_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rp_en</obj_property>
+         <obj_property name="ObjectShortName">rp_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_gen_internal/addr_col" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">addr_col[8:0]</obj_property>
+         <obj_property name="ObjectShortName">addr_col[8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_gen_internal/addr_row" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">addr_row[7:0]</obj_property>
+         <obj_property name="ObjectShortName">addr_row[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_gen_internal/thresh0" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">thresh0</obj_property>
+         <obj_property name="ObjectShortName">thresh0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_gen_internal/thresh1" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">thresh1</obj_property>
+         <obj_property name="ObjectShortName">thresh1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_gen_internal/rst_col" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rst_col</obj_property>
+         <obj_property name="ObjectShortName">rst_col</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_gen_internal/rst_row" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rst_row</obj_property>
+         <obj_property name="ObjectShortName">rst_row</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_gen_internal/addr_valid" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">addr_valid</obj_property>
+         <obj_property name="ObjectShortName">addr_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_gen_internal/addr_done" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">addr_done</obj_property>
+         <obj_property name="ObjectShortName">addr_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_gen_internal/state" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">state[1:0]</obj_property>
+         <obj_property name="ObjectShortName">state[1:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group640" type="group">
+      <obj_property name="label">cnt_row</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_gen_internal/cnt_row/clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_gen_internal/cnt_row/ce" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ce</obj_property>
+         <obj_property name="ObjectShortName">ce</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_gen_internal/cnt_row/sclr" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sclr</obj_property>
+         <obj_property name="ObjectShortName">sclr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_gen_internal/cnt_row/thresh0" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">thresh0</obj_property>
+         <obj_property name="ObjectShortName">thresh0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_gen_internal/cnt_row/q" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">q[7:0]</obj_property>
+         <obj_property name="ObjectShortName">q[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group628" type="group">
+      <obj_property name="label">cnt_col</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_gen_internal/cnt_col/clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_gen_internal/cnt_col/ce" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ce</obj_property>
+         <obj_property name="ObjectShortName">ce</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_gen_internal/cnt_col/sclr" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sclr</obj_property>
+         <obj_property name="ObjectShortName">sclr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_gen_internal/cnt_col/thresh0" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">thresh0</obj_property>
+         <obj_property name="ObjectShortName">thresh0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_gen_internal/cnt_col/q" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">q[8:0]</obj_property>
+         <obj_property name="ObjectShortName">q[8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_gen_internal/cnt_col/ADDR_WIDTH" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">ADDR_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ADDR_WIDTH[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_gen_internal/cnt_col/FINAL_COUNT_VALUE" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">FINAL_COUNT_VALUE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">FINAL_COUNT_VALUE[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/col_wr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">col_wr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">col_wr[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/col_rd" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">col_rd[15:0]</obj_property>
+      <obj_property name="ObjectShortName">col_rd[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/row" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">row[11:0]</obj_property>
+      <obj_property name="ObjectShortName">row[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/SA_EN" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">SA_EN</obj_property>
+      <obj_property name="ObjectShortName">SA_EN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/clk_sys" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_sys</obj_property>
+      <obj_property name="ObjectShortName">clk_sys</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/addr_x_debug" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_x_debug[8:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_x_debug[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#0000ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/addr_y_debug" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_y_debug[7:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_y_debug[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#0000ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/addr_x_debug_reg4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_x_debug_reg4[8:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_x_debug_reg4[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/addr_y_debug_reg4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_y_debug_reg4[7:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_y_debug_reg4[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/addr_y_debug_reg4_neg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_y_debug_reg4_neg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_y_debug_reg4_neg[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/addr_x_int" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_x_int[8:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_x_int[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/addr_y_int" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_y_int[7:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_y_int[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cnt_sipo" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cnt_sipo[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_sipo[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cnt_addr_x" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cnt_addr_x[8:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_addr_x[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cnt_addr_y" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cnt_addr_y[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_addr_y[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/wi01_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wi01_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">wi01_data[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/ti41_trig" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ti41_trig[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ti41_trig[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/rd_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rd_en</obj_property>
+      <obj_property name="ObjectShortName">rd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/rd_en_reg1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rd_en_reg1</obj_property>
+      <obj_property name="ObjectShortName">rd_en_reg1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/rd_en_reg2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rd_en_reg2</obj_property>
+      <obj_property name="ObjectShortName">rd_en_reg2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/rd_en_reg6" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rd_en_reg6</obj_property>
+      <obj_property name="ObjectShortName">rd_en_reg6</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/clk1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk1</obj_property>
+      <obj_property name="ObjectShortName">clk1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/sipo_inst/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/SDRAM_ADDR_ROW" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">SDRAM_ADDR_ROW[7:0]</obj_property>
+      <obj_property name="ObjectShortName">SDRAM_ADDR_ROW[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#0000ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/SDRAM_ADDR_COL" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">SDRAM_ADDR_COL[8:0]</obj_property>
+      <obj_property name="ObjectShortName">SDRAM_ADDR_COL[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#0000ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cnt_addr_x" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cnt_addr_x[8:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_addr_x[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cnt_addr_y" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cnt_addr_y[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_addr_y[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/addr_x_debug" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_x_debug[8:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_x_debug[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/addr_y_debug" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_y_debug[7:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_y_debug[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider545" type="divider">
+      <obj_property name="label">piso</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/piso_inst/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/piso_inst/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cnt_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cnt_addr[16:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_addr[16:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/piso_inst/pi" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pi[16:0]</obj_property>
+      <obj_property name="ObjectShortName">pi[16:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/piso_inst/load_piso" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">load_piso</obj_property>
+      <obj_property name="ObjectShortName">load_piso</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/piso_inst/so" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">so</obj_property>
+      <obj_property name="ObjectShortName">so</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/piso_inst/pi_temp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pi_temp[16:0]</obj_property>
+      <obj_property name="ObjectShortName">pi_temp[16:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/piso_inst/WIDTH" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider536" type="divider">
+      <obj_property name="label">sipo</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/sipo_inst/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/sipo_inst/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/sipo_inst/si" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">si</obj_property>
+      <obj_property name="ObjectShortName">si</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/sipo_inst/en_sipo" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">en_sipo</obj_property>
+      <obj_property name="ObjectShortName">en_sipo</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/sipo_inst/po" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">po[16:0]</obj_property>
+      <obj_property name="ObjectShortName">po[16:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/sipo_inst/po_temp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">po_temp[16:0]</obj_property>
+      <obj_property name="ObjectShortName">po_temp[16:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/sipo_inst/WIDTH" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cnt_addr_x" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cnt_addr_x[8:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_addr_x[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/WrReq" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">WrReq</obj_property>
+      <obj_property name="ObjectShortName">WrReq</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/RdReq" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RdReq</obj_property>
+      <obj_property name="ObjectShortName">RdReq</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/rd_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rd_en</obj_property>
+      <obj_property name="ObjectShortName">rd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/rd_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rd_en</obj_property>
+      <obj_property name="ObjectShortName">rd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/clk_sys" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_sys</obj_property>
+      <obj_property name="ObjectShortName">clk_sys</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/addr_x_debug" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_x_debug[8:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_x_debug[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/SDRAM_ADDR_COL" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">SDRAM_ADDR_COL[8:0]</obj_property>
+      <obj_property name="ObjectShortName">SDRAM_ADDR_COL[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/SDRAM_ADDR_ROW" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">SDRAM_ADDR_ROW[7:0]</obj_property>
+      <obj_property name="ObjectShortName">SDRAM_ADDR_ROW[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_x" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_x[8:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_x[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addrx" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addrx[8:0]</obj_property>
+      <obj_property name="ObjectShortName">addrx[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addrx_reg1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addrx_reg1[8:0]</obj_property>
+      <obj_property name="ObjectShortName">addrx_reg1[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addrx_reg2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addrx_reg2[8:0]</obj_property>
+      <obj_property name="ObjectShortName">addrx_reg2[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addrx_reg3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addrx_reg3[8:0]</obj_property>
+      <obj_property name="ObjectShortName">addrx_reg3[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addrx_reg4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addrx_reg4[8:0]</obj_property>
+      <obj_property name="ObjectShortName">addrx_reg4[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addrx_reg5" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addrx_reg5[8:0]</obj_property>
+      <obj_property name="ObjectShortName">addrx_reg5[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addrx_reg6" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addrx_reg6[8:0]</obj_property>
+      <obj_property name="ObjectShortName">addrx_reg6[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_x_int" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_x_int[8:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_x_int[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/addr_x_debug" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_x_debug[8:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_x_debug[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/write_mode" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">write_mode</obj_property>
+      <obj_property name="ObjectShortName">write_mode</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/SDRAM_ADDR_COL" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">SDRAM_ADDR_COL[8:0]</obj_property>
+      <obj_property name="ObjectShortName">SDRAM_ADDR_COL[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffff00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/SDRAM_ADDR_ROW" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">SDRAM_ADDR_ROW[7:0]</obj_property>
+      <obj_property name="ObjectShortName">SDRAM_ADDR_ROW[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/addr_x_debug" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_x_debug[8:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_x_debug[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/addr_y_debug" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_y_debug[7:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_y_debug[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cnt_addr_x" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cnt_addr_x[8:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_addr_x[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cnt_addr_y" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cnt_addr_y[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_addr_y[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addrx" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addrx[8:0]</obj_property>
+      <obj_property name="ObjectShortName">addrx[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addrx_reg1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addrx_reg1[8:0]</obj_property>
+      <obj_property name="ObjectShortName">addrx_reg1[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addry" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addry[7:0]</obj_property>
+      <obj_property name="ObjectShortName">addry[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_y" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_y[7:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_y[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_y_int" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_y_int[7:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_y_int[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addry_reg1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addry_reg1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">addry_reg1[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/write_debug" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">write_debug</obj_property>
+      <obj_property name="ObjectShortName">write_debug</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/par_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">par_out[16:0]</obj_property>
+      <obj_property name="ObjectShortName">par_out[16:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_y" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_y[7:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_y[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_x" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_x[8:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_x[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_x_int" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_x_int[8:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_x_int[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_valid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_valid</obj_property>
+      <obj_property name="ObjectShortName">addr_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/RdGnt_delay" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RdGnt_delay</obj_property>
+      <obj_property name="ObjectShortName">RdGnt_delay</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addrx" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addrx[8:0]</obj_property>
+      <obj_property name="ObjectShortName">addrx[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_x" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_x[8:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_x[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/addr_x_int" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_x_int[8:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_x_int[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/addra_mem_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addra_mem_in[16:0]</obj_property>
+      <obj_property name="ObjectShortName">addra_mem_in[16:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/addra_mem_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addra_mem_out[16:0]</obj_property>
+      <obj_property name="ObjectShortName">addra_mem_out[16:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/addrb_mem_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addrb_mem_in[16:0]</obj_property>
+      <obj_property name="ObjectShortName">addrb_mem_in[16:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/addrb_mem_out1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addrb_mem_out1[16:0]</obj_property>
+      <obj_property name="ObjectShortName">addrb_mem_out1[16:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/addrb_mem_out2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addrb_mem_out2[16:0]</obj_property>
+      <obj_property name="ObjectShortName">addrb_mem_out2[16:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/WrReq" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">WrReq</obj_property>
+      <obj_property name="ObjectShortName">WrReq</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider617" type="divider">
+      <obj_property name="label">mem_in</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/mem_in/clka" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clka</obj_property>
+      <obj_property name="ObjectShortName">clka</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/mem_in/wea" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wea[0:0]</obj_property>
+      <obj_property name="ObjectShortName">wea[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/mem_in/addra" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addra[16:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[16:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/mem_in/dina" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dina[0:0]</obj_property>
+      <obj_property name="ObjectShortName">dina[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/mem_in/clkb" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clkb</obj_property>
+      <obj_property name="ObjectShortName">clkb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/mem_in/addrb" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addrb[16:0]</obj_property>
+      <obj_property name="ObjectShortName">addrb[16:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/mem_in/doutb" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">doutb[0:0]</obj_property>
+      <obj_property name="ObjectShortName">doutb[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider625" type="divider">
+      <obj_property name="label">mem_in_check</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/mem_in_check/clka" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clka</obj_property>
+      <obj_property name="ObjectShortName">clka</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/mem_in_check/wea" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wea[0:0]</obj_property>
+      <obj_property name="ObjectShortName">wea[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/mem_in_check/addra" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addra[16:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[16:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/mem_in_check/dina" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dina[0:0]</obj_property>
+      <obj_property name="ObjectShortName">dina[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/mem_in_check/clkb" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clkb</obj_property>
+      <obj_property name="ObjectShortName">clkb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/mem_in_check/addrb" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addrb[16:0]</obj_property>
+      <obj_property name="ObjectShortName">addrb[16:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/mem_in_check/doutb" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">doutb[0:0]</obj_property>
+      <obj_property name="ObjectShortName">doutb[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider633" type="divider">
+      <obj_property name="label">mem_out</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/mem_out/clka" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clka</obj_property>
+      <obj_property name="ObjectShortName">clka</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/mem_out/wea" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wea[0:0]</obj_property>
+      <obj_property name="ObjectShortName">wea[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/mem_out/addra" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addra[16:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[16:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/mem_out/dina" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dina[0:0]</obj_property>
+      <obj_property name="ObjectShortName">dina[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/mem_out/clkb" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clkb</obj_property>
+      <obj_property name="ObjectShortName">clkb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/mem_out/addrb" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addrb[16:0]</obj_property>
+      <obj_property name="ObjectShortName">addrb[16:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/mem_out/doutb" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">doutb[0:0]</obj_property>
+      <obj_property name="ObjectShortName">doutb[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/pi80_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pi80_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">pi80_data[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/pi80_write" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pi80_write</obj_property>
+      <obj_property name="ObjectShortName">pi80_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/wi01_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wi01_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">wi01_data[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/imc_recovery1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">imc_recovery1</obj_property>
+      <obj_property name="ObjectShortName">imc_recovery1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/imc_recovery" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">imc_recovery</obj_property>
+      <obj_property name="ObjectShortName">imc_recovery</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/WL_EN" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">WL_EN</obj_property>
+      <obj_property name="ObjectShortName">WL_EN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/MEM_CLR" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">MEM_CLR</obj_property>
+      <obj_property name="ObjectShortName">MEM_CLR</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cram_ctrl_inst/state_mem" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">state_mem[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state_mem[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/decoder_col_en_w" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">decoder_col_en_w</obj_property>
+      <obj_property name="ObjectShortName">decoder_col_en_w</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/clk1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk1</obj_property>
+      <obj_property name="ObjectShortName">clk1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/clk_sys" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_sys</obj_property>
+      <obj_property name="ObjectShortName">clk_sys</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/rd_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rd_en</obj_property>
+      <obj_property name="ObjectShortName">rd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/wr_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wr_en</obj_property>
+      <obj_property name="ObjectShortName">wr_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/rd_en_reg" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rd_en_reg</obj_property>
+      <obj_property name="ObjectShortName">rd_en_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cnt_addr_x" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cnt_addr_x[8:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_addr_x[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OK_TOP_sim/uut/cnt_addr_y" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cnt_addr_y[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_addr_y[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

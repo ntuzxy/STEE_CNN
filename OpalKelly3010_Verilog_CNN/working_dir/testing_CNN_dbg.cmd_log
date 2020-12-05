@@ -1,0 +1,239 @@
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/implementation/constraints/xem3010.ucf -p xc3s1500-fg320-4 testing_CNN_dbg.ngc testing_CNN_dbg.ngd  
+map -intstyle ise -p xc3s1500-fg320-4 -cm area -ir off -pr off -c 100 -o testing_CNN_dbg_map.ncd testing_CNN_dbg.ngd testing_CNN_dbg.pcf 
+par -w -intstyle ise -ol high -t 1 testing_CNN_dbg_map.ncd testing_CNN_dbg.ncd testing_CNN_dbg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml testing_CNN_dbg.twx testing_CNN_dbg.ncd -o testing_CNN_dbg.twr testing_CNN_dbg.pcf 
+bitgen -intstyle ise -f testing_CNN_dbg.ut testing_CNN_dbg.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/implementation/constraints/xem3010.ucf -p xc3s1500-fg320-4 testing_CNN_dbg_cs.ngc testing_CNN_dbg.ngd  
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/implementation/constraints/xem3010.ucf -p xc3s1500-fg320-4 testing_CNN_dbg_cs.ngc testing_CNN_dbg.ngd  
+map -intstyle ise -p xc3s1500-fg320-4 -cm area -ir off -pr off -c 100 -o testing_CNN_dbg_map.ncd testing_CNN_dbg.ngd testing_CNN_dbg.pcf 
+par -w -intstyle ise -ol high -t 1 testing_CNN_dbg_map.ncd testing_CNN_dbg.ncd testing_CNN_dbg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml testing_CNN_dbg.twx testing_CNN_dbg.ncd -o testing_CNN_dbg.twr testing_CNN_dbg.pcf 
+bitgen -intstyle ise -f testing_CNN_dbg.ut testing_CNN_dbg.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/implementation/constraints/xem3010.ucf -p xc3s1500-fg320-4 testing_CNN_dbg_cs.ngc testing_CNN_dbg.ngd  
+map -intstyle ise -p xc3s1500-fg320-4 -cm area -ir off -pr off -c 100 -o testing_CNN_dbg_map.ncd testing_CNN_dbg.ngd testing_CNN_dbg.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/implementation/constraints/xem3010.ucf -p xc3s1500-fg320-4 testing_CNN_dbg_cs.ngc testing_CNN_dbg.ngd  
+map -intstyle ise -p xc3s1500-fg320-4 -cm area -ir off -pr off -c 100 -o testing_CNN_dbg_map.ncd testing_CNN_dbg.ngd testing_CNN_dbg.pcf 
+par -w -intstyle ise -ol high -t 1 testing_CNN_dbg_map.ncd testing_CNN_dbg.ncd testing_CNN_dbg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml testing_CNN_dbg.twx testing_CNN_dbg.ncd -o testing_CNN_dbg.twr testing_CNN_dbg.pcf 
+bitgen -intstyle ise -f testing_CNN_dbg.ut testing_CNN_dbg.ncd 
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/implementation/constraints/xem3010.ucf -p xc3s1500-fg320-4 testing_CNN_dbg_cs.ngc testing_CNN_dbg.ngd  
+map -intstyle ise -p xc3s1500-fg320-4 -cm area -ir off -pr off -c 100 -o testing_CNN_dbg_map.ncd testing_CNN_dbg.ngd testing_CNN_dbg.pcf 
+par -w -intstyle ise -ol high -t 1 testing_CNN_dbg_map.ncd testing_CNN_dbg.ncd testing_CNN_dbg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml testing_CNN_dbg.twx testing_CNN_dbg.ncd -o testing_CNN_dbg.twr testing_CNN_dbg.pcf 
+bitgen -intstyle ise -f testing_CNN_dbg.ut testing_CNN_dbg.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/implementation/constraints/xem3010.ucf -p xc3s1500-fg320-4 testing_CNN_dbg_cs.ngc testing_CNN_dbg.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/implementation/constraints/xem3010.ucf -p xc3s1500-fg320-4 testing_CNN_dbg_cs.ngc testing_CNN_dbg.ngd  
+map -intstyle ise -p xc3s1500-fg320-4 -cm area -ir off -pr off -c 100 -o testing_CNN_dbg_map.ncd testing_CNN_dbg.ngd testing_CNN_dbg.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/implementation/constraints/xem3010.ucf -p xc3s1500-fg320-4 testing_CNN_dbg_cs.ngc testing_CNN_dbg.ngd  
+map -intstyle ise -p xc3s1500-fg320-4 -cm area -ir off -pr off -c 100 -o testing_CNN_dbg_map.ncd testing_CNN_dbg.ngd testing_CNN_dbg.pcf 
+par -w -intstyle ise -ol high -t 1 testing_CNN_dbg_map.ncd testing_CNN_dbg.ncd testing_CNN_dbg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml testing_CNN_dbg.twx testing_CNN_dbg.ncd -o testing_CNN_dbg.twr testing_CNN_dbg.pcf 
+bitgen -intstyle ise -f testing_CNN_dbg.ut testing_CNN_dbg.ncd 
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/implementation/constraints/xem3010.ucf -p xc3s1500-fg320-4 testing_CNN_dbg_cs.ngc testing_CNN_dbg.ngd  
+map -intstyle ise -p xc3s1500-fg320-4 -cm area -ir off -pr off -c 100 -o testing_CNN_dbg_map.ncd testing_CNN_dbg.ngd testing_CNN_dbg.pcf 
+par -w -intstyle ise -ol high -t 1 testing_CNN_dbg_map.ncd testing_CNN_dbg.ncd testing_CNN_dbg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml testing_CNN_dbg.twx testing_CNN_dbg.ncd -o testing_CNN_dbg.twr testing_CNN_dbg.pcf 
+bitgen -intstyle ise -f testing_CNN_dbg.ut testing_CNN_dbg.ncd 
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/implementation/constraints/xem3010.ucf -p xc3s1500-fg320-4 testing_CNN_dbg_cs.ngc testing_CNN_dbg.ngd  
+map -intstyle ise -p xc3s1500-fg320-4 -cm area -ir off -pr off -c 100 -o testing_CNN_dbg_map.ncd testing_CNN_dbg.ngd testing_CNN_dbg.pcf 
+par -w -intstyle ise -ol high -t 1 testing_CNN_dbg_map.ncd testing_CNN_dbg.ncd testing_CNN_dbg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml testing_CNN_dbg.twx testing_CNN_dbg.ncd -o testing_CNN_dbg.twr testing_CNN_dbg.pcf 
+bitgen -intstyle ise -f testing_CNN_dbg.ut testing_CNN_dbg.ncd 
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/implementation/constraints/xem3010.ucf -p xc3s1500-fg320-4 testing_CNN_dbg_cs.ngc testing_CNN_dbg.ngd  
+map -intstyle ise -p xc3s1500-fg320-4 -cm area -ir off -pr off -c 100 -o testing_CNN_dbg_map.ncd testing_CNN_dbg.ngd testing_CNN_dbg.pcf 
+par -w -intstyle ise -ol high -t 1 testing_CNN_dbg_map.ncd testing_CNN_dbg.ncd testing_CNN_dbg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml testing_CNN_dbg.twx testing_CNN_dbg.ncd -o testing_CNN_dbg.twr testing_CNN_dbg.pcf 
+bitgen -intstyle ise -f testing_CNN_dbg.ut testing_CNN_dbg.ncd 
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/implementation/constraints/xem3010.ucf -p xc3s1500-fg320-4 testing_CNN_dbg_cs.ngc testing_CNN_dbg.ngd  
+map -intstyle ise -p xc3s1500-fg320-4 -cm area -ir off -pr off -c 100 -o testing_CNN_dbg_map.ncd testing_CNN_dbg.ngd testing_CNN_dbg.pcf 
+par -w -intstyle ise -ol high -t 1 testing_CNN_dbg_map.ncd testing_CNN_dbg.ncd testing_CNN_dbg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml testing_CNN_dbg.twx testing_CNN_dbg.ncd -o testing_CNN_dbg.twr testing_CNN_dbg.pcf 
+bitgen -intstyle ise -f testing_CNN_dbg.ut testing_CNN_dbg.ncd 
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/implementation/constraints/xem3010.ucf -p xc3s1500-fg320-4 testing_CNN_dbg_cs.ngc testing_CNN_dbg.ngd  
+map -intstyle ise -p xc3s1500-fg320-4 -cm area -ir off -pr off -c 100 -o testing_CNN_dbg_map.ncd testing_CNN_dbg.ngd testing_CNN_dbg.pcf 
+par -w -intstyle ise -ol high -t 1 testing_CNN_dbg_map.ncd testing_CNN_dbg.ncd testing_CNN_dbg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml testing_CNN_dbg.twx testing_CNN_dbg.ncd -o testing_CNN_dbg.twr testing_CNN_dbg.pcf 
+bitgen -intstyle ise -f testing_CNN_dbg.ut testing_CNN_dbg.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/implementation/constraints/xem3010.ucf -p xc3s1500-fg320-4 testing_CNN_dbg_cs.ngc testing_CNN_dbg.ngd  
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/implementation/constraints/xem3010.ucf -p xc3s1500-fg320-4 testing_CNN_dbg_cs.ngc testing_CNN_dbg.ngd  
+map -intstyle ise -p xc3s1500-fg320-4 -cm area -ir off -pr off -c 100 -o testing_CNN_dbg_map.ncd testing_CNN_dbg.ngd testing_CNN_dbg.pcf 
+par -w -intstyle ise -ol high -t 1 testing_CNN_dbg_map.ncd testing_CNN_dbg.ncd testing_CNN_dbg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml testing_CNN_dbg.twx testing_CNN_dbg.ncd -o testing_CNN_dbg.twr testing_CNN_dbg.pcf 
+bitgen -intstyle ise -f testing_CNN_dbg.ut testing_CNN_dbg.ncd 
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/implementation/constraints/xem3010.ucf -p xc3s1500-fg320-4 testing_CNN_dbg_cs.ngc testing_CNN_dbg.ngd  
+map -intstyle ise -p xc3s1500-fg320-4 -cm area -ir off -pr off -c 100 -o testing_CNN_dbg_map.ncd testing_CNN_dbg.ngd testing_CNN_dbg.pcf 
+par -w -intstyle ise -ol high -t 1 testing_CNN_dbg_map.ncd testing_CNN_dbg.ncd testing_CNN_dbg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml testing_CNN_dbg.twx testing_CNN_dbg.ncd -o testing_CNN_dbg.twr testing_CNN_dbg.pcf 
+bitgen -intstyle ise -f testing_CNN_dbg.ut testing_CNN_dbg.ncd 
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/implementation/constraints/xem3010.ucf -p xc3s1500-fg320-4 testing_CNN_dbg_cs.ngc testing_CNN_dbg.ngd  
+map -intstyle ise -p xc3s1500-fg320-4 -cm area -ir off -pr off -c 100 -o testing_CNN_dbg_map.ncd testing_CNN_dbg.ngd testing_CNN_dbg.pcf 
+par -w -intstyle ise -ol high -t 1 testing_CNN_dbg_map.ncd testing_CNN_dbg.ncd testing_CNN_dbg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml testing_CNN_dbg.twx testing_CNN_dbg.ncd -o testing_CNN_dbg.twr testing_CNN_dbg.pcf 
+bitgen -intstyle ise -f testing_CNN_dbg.ut testing_CNN_dbg.ncd 
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/implementation/constraints/xem3010.ucf -p xc3s1500-fg320-4 testing_CNN_dbg.ngc testing_CNN_dbg.ngd  
+map -intstyle ise -p xc3s1500-fg320-4 -cm area -ir off -pr off -c 100 -o testing_CNN_dbg_map.ncd testing_CNN_dbg.ngd testing_CNN_dbg.pcf 
+par -w -intstyle ise -ol high -t 1 testing_CNN_dbg_map.ncd testing_CNN_dbg.ncd testing_CNN_dbg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml testing_CNN_dbg.twx testing_CNN_dbg.ncd -o testing_CNN_dbg.twr testing_CNN_dbg.pcf 
+bitgen -intstyle ise -f testing_CNN_dbg.ut testing_CNN_dbg.ncd 
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/implementation/constraints/xem3010.ucf -p xc3s1500-fg320-4 testing_CNN_dbg.ngc testing_CNN_dbg.ngd  
+map -intstyle ise -p xc3s1500-fg320-4 -cm area -ir off -pr off -c 100 -o testing_CNN_dbg_map.ncd testing_CNN_dbg.ngd testing_CNN_dbg.pcf 
+par -w -intstyle ise -ol high -t 1 testing_CNN_dbg_map.ncd testing_CNN_dbg.ncd testing_CNN_dbg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml testing_CNN_dbg.twx testing_CNN_dbg.ncd -o testing_CNN_dbg.twr testing_CNN_dbg.pcf 
+bitgen -intstyle ise -f testing_CNN_dbg.ut testing_CNN_dbg.ncd 
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/implementation/constraints/xem3010.ucf -p xc3s1500-fg320-4 testing_CNN_dbg.ngc testing_CNN_dbg.ngd  
+map -intstyle ise -p xc3s1500-fg320-4 -cm area -ir off -pr off -c 100 -o testing_CNN_dbg_map.ncd testing_CNN_dbg.ngd testing_CNN_dbg.pcf 
+par -w -intstyle ise -ol high -t 1 testing_CNN_dbg_map.ncd testing_CNN_dbg.ncd testing_CNN_dbg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml testing_CNN_dbg.twx testing_CNN_dbg.ncd -o testing_CNN_dbg.twr testing_CNN_dbg.pcf 
+bitgen -intstyle ise -f testing_CNN_dbg.ut testing_CNN_dbg.ncd 
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/implementation/constraints/xem3010.ucf -p xc3s1500-fg320-4 testing_CNN_dbg.ngc testing_CNN_dbg.ngd  
+map -intstyle ise -p xc3s1500-fg320-4 -cm area -ir off -pr off -c 100 -o testing_CNN_dbg_map.ncd testing_CNN_dbg.ngd testing_CNN_dbg.pcf 
+par -w -intstyle ise -ol high -t 1 testing_CNN_dbg_map.ncd testing_CNN_dbg.ncd testing_CNN_dbg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml testing_CNN_dbg.twx testing_CNN_dbg.ncd -o testing_CNN_dbg.twr testing_CNN_dbg.pcf 
+bitgen -intstyle ise -f testing_CNN_dbg.ut testing_CNN_dbg.ncd 
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/implementation/constraints/xem3010.ucf -p xc3s1500-fg320-4 testing_CNN_dbg.ngc testing_CNN_dbg.ngd  
+map -intstyle ise -p xc3s1500-fg320-4 -cm area -ir off -pr off -c 100 -o testing_CNN_dbg_map.ncd testing_CNN_dbg.ngd testing_CNN_dbg.pcf 
+par -w -intstyle ise -ol high -t 1 testing_CNN_dbg_map.ncd testing_CNN_dbg.ncd testing_CNN_dbg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml testing_CNN_dbg.twx testing_CNN_dbg.ncd -o testing_CNN_dbg.twr testing_CNN_dbg.pcf 
+bitgen -intstyle ise -f testing_CNN_dbg.ut testing_CNN_dbg.ncd 
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/implementation/constraints/xem3010.ucf -p xc3s1500-fg320-4 testing_CNN_dbg.ngc testing_CNN_dbg.ngd  
+map -intstyle ise -p xc3s1500-fg320-4 -cm area -ir off -pr off -c 100 -o testing_CNN_dbg_map.ncd testing_CNN_dbg.ngd testing_CNN_dbg.pcf 
+par -w -intstyle ise -ol high -t 1 testing_CNN_dbg_map.ncd testing_CNN_dbg.ncd testing_CNN_dbg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml testing_CNN_dbg.twx testing_CNN_dbg.ncd -o testing_CNN_dbg.twr testing_CNN_dbg.pcf 
+bitgen -intstyle ise -f testing_CNN_dbg.ut testing_CNN_dbg.ncd 
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/implementation/constraints/xem3010.ucf -p xc3s1500-fg320-4 testing_CNN_dbg.ngc testing_CNN_dbg.ngd  
+map -intstyle ise -p xc3s1500-fg320-4 -cm area -ir off -pr off -c 100 -o testing_CNN_dbg_map.ncd testing_CNN_dbg.ngd testing_CNN_dbg.pcf 
+par -w -intstyle ise -ol high -t 1 testing_CNN_dbg_map.ncd testing_CNN_dbg.ncd testing_CNN_dbg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml testing_CNN_dbg.twx testing_CNN_dbg.ncd -o testing_CNN_dbg.twr testing_CNN_dbg.pcf 
+bitgen -intstyle ise -f testing_CNN_dbg.ut testing_CNN_dbg.ncd 
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/implementation/constraints/xem3010.ucf -p xc3s1500-fg320-4 testing_CNN_dbg.ngc testing_CNN_dbg.ngd  
+map -intstyle ise -p xc3s1500-fg320-4 -cm area -ir off -pr off -c 100 -o testing_CNN_dbg_map.ncd testing_CNN_dbg.ngd testing_CNN_dbg.pcf 
+par -w -intstyle ise -ol high -t 1 testing_CNN_dbg_map.ncd testing_CNN_dbg.ncd testing_CNN_dbg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml testing_CNN_dbg.twx testing_CNN_dbg.ncd -o testing_CNN_dbg.twr testing_CNN_dbg.pcf 
+bitgen -intstyle ise -f testing_CNN_dbg.ut testing_CNN_dbg.ncd 
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/implementation/constraints/xem3010.ucf -p xc3s1500-fg320-4 testing_CNN_dbg.ngc testing_CNN_dbg.ngd  
+map -intstyle ise -p xc3s1500-fg320-4 -cm area -ir off -pr off -c 100 -o testing_CNN_dbg_map.ncd testing_CNN_dbg.ngd testing_CNN_dbg.pcf 
+par -w -intstyle ise -ol high -t 1 testing_CNN_dbg_map.ncd testing_CNN_dbg.ncd testing_CNN_dbg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml testing_CNN_dbg.twx testing_CNN_dbg.ncd -o testing_CNN_dbg.twr testing_CNN_dbg.pcf 
+bitgen -intstyle ise -f testing_CNN_dbg.ut testing_CNN_dbg.ncd 
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/implementation/constraints/xem3010.ucf -p xc3s1500-fg320-4 testing_CNN_dbg.ngc testing_CNN_dbg.ngd  
+map -intstyle ise -p xc3s1500-fg320-4 -cm area -ir off -pr off -c 100 -o testing_CNN_dbg_map.ncd testing_CNN_dbg.ngd testing_CNN_dbg.pcf 
+par -w -intstyle ise -ol high -t 1 testing_CNN_dbg_map.ncd testing_CNN_dbg.ncd testing_CNN_dbg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml testing_CNN_dbg.twx testing_CNN_dbg.ncd -o testing_CNN_dbg.twr testing_CNN_dbg.pcf 
+bitgen -intstyle ise -f testing_CNN_dbg.ut testing_CNN_dbg.ncd 
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/implementation/constraints/xem3010.ucf -p xc3s1500-fg320-4 testing_CNN_dbg.ngc testing_CNN_dbg.ngd  
+map -intstyle ise -p xc3s1500-fg320-4 -cm area -ir off -pr off -c 100 -o testing_CNN_dbg_map.ncd testing_CNN_dbg.ngd testing_CNN_dbg.pcf 
+par -w -intstyle ise -ol high -t 1 testing_CNN_dbg_map.ncd testing_CNN_dbg.ncd testing_CNN_dbg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml testing_CNN_dbg.twx testing_CNN_dbg.ncd -o testing_CNN_dbg.twr testing_CNN_dbg.pcf 
+bitgen -intstyle ise -f testing_CNN_dbg.ut testing_CNN_dbg.ncd 
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/implementation/constraints/xem3010.ucf -p xc3s1500-fg320-4 testing_CNN_dbg.ngc testing_CNN_dbg.ngd  
+map -intstyle ise -p xc3s1500-fg320-4 -cm area -ir off -pr off -c 100 -o testing_CNN_dbg_map.ncd testing_CNN_dbg.ngd testing_CNN_dbg.pcf 
+par -w -intstyle ise -ol high -t 1 testing_CNN_dbg_map.ncd testing_CNN_dbg.ncd testing_CNN_dbg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml testing_CNN_dbg.twx testing_CNN_dbg.ncd -o testing_CNN_dbg.twr testing_CNN_dbg.pcf 
+bitgen -intstyle ise -f testing_CNN_dbg.ut testing_CNN_dbg.ncd 
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/implementation/constraints/xem3010.ucf -p xc3s1500-fg320-4 testing_CNN_dbg.ngc testing_CNN_dbg.ngd  
+map -intstyle ise -p xc3s1500-fg320-4 -cm area -ir off -pr off -c 100 -o testing_CNN_dbg_map.ncd testing_CNN_dbg.ngd testing_CNN_dbg.pcf 
+par -w -intstyle ise -ol high -t 1 testing_CNN_dbg_map.ncd testing_CNN_dbg.ncd testing_CNN_dbg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml testing_CNN_dbg.twx testing_CNN_dbg.ncd -o testing_CNN_dbg.twr testing_CNN_dbg.pcf 
+bitgen -intstyle ise -f testing_CNN_dbg.ut testing_CNN_dbg.ncd 
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/implementation/constraints/xem3010.ucf -p xc3s1500-fg320-4 testing_CNN_dbg.ngc testing_CNN_dbg.ngd  
+map -intstyle ise -p xc3s1500-fg320-4 -cm area -ir off -pr off -c 100 -o testing_CNN_dbg_map.ncd testing_CNN_dbg.ngd testing_CNN_dbg.pcf 
+par -w -intstyle ise -ol high -t 1 testing_CNN_dbg_map.ncd testing_CNN_dbg.ncd testing_CNN_dbg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml testing_CNN_dbg.twx testing_CNN_dbg.ncd -o testing_CNN_dbg.twr testing_CNN_dbg.pcf 
+bitgen -intstyle ise -f testing_CNN_dbg.ut testing_CNN_dbg.ncd 
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/implementation/constraints/xem3010.ucf -p xc3s1500-fg320-4 testing_CNN_dbg.ngc testing_CNN_dbg.ngd  
+map -intstyle ise -p xc3s1500-fg320-4 -cm area -ir off -pr off -c 100 -o testing_CNN_dbg_map.ncd testing_CNN_dbg.ngd testing_CNN_dbg.pcf 
+par -w -intstyle ise -ol high -t 1 testing_CNN_dbg_map.ncd testing_CNN_dbg.ncd testing_CNN_dbg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml testing_CNN_dbg.twx testing_CNN_dbg.ncd -o testing_CNN_dbg.twr testing_CNN_dbg.pcf 
+bitgen -intstyle ise -f testing_CNN_dbg.ut testing_CNN_dbg.ncd 
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/implementation/constraints/xem3010.ucf -p xc3s1500-fg320-4 testing_CNN_dbg.ngc testing_CNN_dbg.ngd  
+map -intstyle ise -p xc3s1500-fg320-4 -cm area -ir off -pr off -c 100 -o testing_CNN_dbg_map.ncd testing_CNN_dbg.ngd testing_CNN_dbg.pcf 
+par -w -intstyle ise -ol high -t 1 testing_CNN_dbg_map.ncd testing_CNN_dbg.ncd testing_CNN_dbg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml testing_CNN_dbg.twx testing_CNN_dbg.ncd -o testing_CNN_dbg.twr testing_CNN_dbg.pcf 
+bitgen -intstyle ise -f testing_CNN_dbg.ut testing_CNN_dbg.ncd 
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/implementation/constraints/xem3010.ucf -p xc3s1500-fg320-4 testing_CNN_dbg.ngc testing_CNN_dbg.ngd  
+map -intstyle ise -p xc3s1500-fg320-4 -cm area -ir off -pr off -c 100 -o testing_CNN_dbg_map.ncd testing_CNN_dbg.ngd testing_CNN_dbg.pcf 
+par -w -intstyle ise -ol high -t 1 testing_CNN_dbg_map.ncd testing_CNN_dbg.ncd testing_CNN_dbg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml testing_CNN_dbg.twx testing_CNN_dbg.ncd -o testing_CNN_dbg.twr testing_CNN_dbg.pcf 
+bitgen -intstyle ise -f testing_CNN_dbg.ut testing_CNN_dbg.ncd 
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/implementation/constraints/xem3010.ucf -p xc3s1500-fg320-4 testing_CNN_dbg.ngc testing_CNN_dbg.ngd  
+map -intstyle ise -p xc3s1500-fg320-4 -cm area -ir off -pr off -c 100 -o testing_CNN_dbg_map.ncd testing_CNN_dbg.ngd testing_CNN_dbg.pcf 
+par -w -intstyle ise -ol high -t 1 testing_CNN_dbg_map.ncd testing_CNN_dbg.ncd testing_CNN_dbg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml testing_CNN_dbg.twx testing_CNN_dbg.ncd -o testing_CNN_dbg.twr testing_CNN_dbg.pcf 
+bitgen -intstyle ise -f testing_CNN_dbg.ut testing_CNN_dbg.ncd 
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/implementation/constraints/xem3010.ucf -p xc3s1500-fg320-4 testing_CNN_dbg.ngc testing_CNN_dbg.ngd  
+map -intstyle ise -p xc3s1500-fg320-4 -cm area -ir off -pr off -c 100 -o testing_CNN_dbg_map.ncd testing_CNN_dbg.ngd testing_CNN_dbg.pcf 
+par -w -intstyle ise -ol high -t 1 testing_CNN_dbg_map.ncd testing_CNN_dbg.ncd testing_CNN_dbg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml testing_CNN_dbg.twx testing_CNN_dbg.ncd -o testing_CNN_dbg.twr testing_CNN_dbg.pcf 
+bitgen -intstyle ise -f testing_CNN_dbg.ut testing_CNN_dbg.ncd 
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/implementation/constraints/xem3010.ucf -p xc3s1500-fg320-4 testing_CNN_dbg.ngc testing_CNN_dbg.ngd  
+map -intstyle ise -p xc3s1500-fg320-4 -cm area -ir off -pr off -c 100 -o testing_CNN_dbg_map.ncd testing_CNN_dbg.ngd testing_CNN_dbg.pcf 
+par -w -intstyle ise -ol high -t 1 testing_CNN_dbg_map.ncd testing_CNN_dbg.ncd testing_CNN_dbg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml testing_CNN_dbg.twx testing_CNN_dbg.ncd -o testing_CNN_dbg.twr testing_CNN_dbg.pcf 
+bitgen -intstyle ise -f testing_CNN_dbg.ut testing_CNN_dbg.ncd 
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/implementation/constraints/xem3010.ucf -p xc3s1500-fg320-4 testing_CNN_dbg.ngc testing_CNN_dbg.ngd  
+map -intstyle ise -p xc3s1500-fg320-4 -cm area -ir off -pr off -c 100 -o testing_CNN_dbg_map.ncd testing_CNN_dbg.ngd testing_CNN_dbg.pcf 
+par -w -intstyle ise -ol high -t 1 testing_CNN_dbg_map.ncd testing_CNN_dbg.ncd testing_CNN_dbg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml testing_CNN_dbg.twx testing_CNN_dbg.ncd -o testing_CNN_dbg.twr testing_CNN_dbg.pcf 
+bitgen -intstyle ise -f testing_CNN_dbg.ut testing_CNN_dbg.ncd 
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/implementation/constraints/xem3010.ucf -p xc3s1500-fg320-4 testing_CNN_dbg.ngc testing_CNN_dbg.ngd  
+map -intstyle ise -p xc3s1500-fg320-4 -cm area -ir off -pr off -c 100 -o testing_CNN_dbg_map.ncd testing_CNN_dbg.ngd testing_CNN_dbg.pcf 
+par -w -intstyle ise -ol high -t 1 testing_CNN_dbg_map.ncd testing_CNN_dbg.ncd testing_CNN_dbg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml testing_CNN_dbg.twx testing_CNN_dbg.ncd -o testing_CNN_dbg.twr testing_CNN_dbg.pcf 
+bitgen -intstyle ise -f testing_CNN_dbg.ut testing_CNN_dbg.ncd 
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/implementation/constraints/xem3010.ucf -p xc3s1500-fg320-4 testing_CNN_dbg.ngc testing_CNN_dbg.ngd  
+map -intstyle ise -p xc3s1500-fg320-4 -cm area -ir off -pr off -c 100 -o testing_CNN_dbg_map.ncd testing_CNN_dbg.ngd testing_CNN_dbg.pcf 
+par -w -intstyle ise -ol high -t 1 testing_CNN_dbg_map.ncd testing_CNN_dbg.ncd testing_CNN_dbg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml testing_CNN_dbg.twx testing_CNN_dbg.ncd -o testing_CNN_dbg.twr testing_CNN_dbg.pcf 
+bitgen -intstyle ise -f testing_CNN_dbg.ut testing_CNN_dbg.ncd 
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+xst -intstyle ise -ifn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.xst" -ofn "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/testing_CNN_dbg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/implementation/constraints/xem3010.ucf -p xc3s1500-fg320-4 testing_CNN_dbg.ngc testing_CNN_dbg.ngd  
+map -intstyle ise -p xc3s1500-fg320-4 -cm area -ir off -pr off -c 100 -o testing_CNN_dbg_map.ncd testing_CNN_dbg.ngd testing_CNN_dbg.pcf 
+par -w -intstyle ise -ol high -t 1 testing_CNN_dbg_map.ncd testing_CNN_dbg.ncd testing_CNN_dbg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml testing_CNN_dbg.twx testing_CNN_dbg.ncd -o testing_CNN_dbg.twr testing_CNN_dbg.pcf 
+bitgen -intstyle ise -f testing_CNN_dbg.ut testing_CNN_dbg.ncd 

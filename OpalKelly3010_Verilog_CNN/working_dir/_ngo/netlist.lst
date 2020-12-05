@@ -1,0 +1,14 @@
+F:\STEE_PROJ\CONV\OpalKelly3010_Verilog_CNN\working_dir\testing_CNN_dbg.ngc 1607160759
+F:\STEE_PROJ\CONV\OpalKelly3010_Verilog_CNN\working_dir/okCore.ngc 1350608904
+F:\STEE_PROJ\CONV\OpalKelly3010_Verilog_CNN\working_dir/okWireIn.ngc 1350608904
+F:\STEE_PROJ\CONV\OpalKelly3010_Verilog_CNN\working_dir/okWireOut.ngc 1350608904
+F:\STEE_PROJ\CONV\OpalKelly3010_Verilog_CNN\working_dir/okTriggerIn.ngc 1350608904
+F:\STEE_PROJ\CONV\OpalKelly3010_Verilog_CNN\working_dir/okTriggerOut.ngc 1350608904
+F:\STEE_PROJ\CONV\OpalKelly3010_Verilog_CNN\working_dir/okPipeIn.ngc 1350608904
+F:\STEE_PROJ\CONV\OpalKelly3010_Verilog_CNN\working_dir/okPipeOut.ngc 1350608904
+../ipcore_dir/blk_mem_gen_0.ngc 1603613940
+../ipcore_dir/blk_mem_gen_1.ngc 1603613584
+../ipcore_dir/blk_mem_gen2.ngc 1602640462
+../ipcore_dir/fifo_76800x1.ngc 1607063150
+../ipcore_dir/fifo_512x8b.ngc 1607071659
+OK

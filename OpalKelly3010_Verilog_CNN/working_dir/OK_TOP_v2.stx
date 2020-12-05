@@ -1,0 +1,65 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/Zhang/Desktop/OpalKelly3010_Verilog/working_dir/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.54 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/Zhang/Desktop/OpalKelly3010_Verilog/working_dir/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.54 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "../implementation/BinaryCounter.v" in library work
+Compiling verilog file "../implementation/addr_gen2.v" in library work
+Module <BinaryCounter> compiled
+Compiling verilog file "../implementation/USB2/okLibrary.v" in library work
+Module <addr_gen_v2> compiled
+Module <okHost> compiled
+Module <okCore> compiled
+Module <okWireIn> compiled
+Module <okWireOut> compiled
+Module <okTriggerIn> compiled
+Module <okTriggerOut> compiled
+Module <okPipeIn> compiled
+Module <okPipeOut> compiled
+Module <okBTPipeIn> compiled
+Module <okBTPipeOut> compiled
+Compiling verilog file "../implementation/sipo.v" in library work
+Module <okWireOR> compiled
+Compiling verilog file "../implementation/piso.v" in library work
+Module <sipo> compiled
+Compiling verilog file "../implementation/decoder_row.v" in library work
+Module <piso> compiled
+Compiling verilog file "../implementation/decoder_col.v" in library work
+Module <decoder_row> compiled
+Compiling verilog file "../implementation/cram_ctrl.v" in library work
+Module <decoder_col_v2> compiled
+Compiling verilog file "../implementation/clock_divider.v" in library work
+Module <cram_ctrl> compiled
+Compiling verilog file "../implementation/OK_TOP_v2.v" in library work
+Module <clock_divider> compiled
+Module <OK_TOP_v2> compiled
+No errors in compilation
+Analysis of file <"OK_TOP_v2.prj"> succeeded.
+ 
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.68 secs
+ 
+--> 
+
+Total memory usage is 4485672 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

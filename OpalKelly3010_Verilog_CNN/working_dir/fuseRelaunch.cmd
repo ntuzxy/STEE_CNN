@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/tb_testing_CNN_dbg_isim_beh.exe" -prj "F:/STEE_PROJ/CONV/OpalKelly3010_Verilog_CNN/working_dir/tb_testing_CNN_dbg_beh.prj" "work.tb_testing_CNN_dbg" "work.glbl" 

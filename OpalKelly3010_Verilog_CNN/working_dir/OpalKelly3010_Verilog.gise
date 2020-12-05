@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="../OpalKelly3010_Verilog.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_ASY" xil_pn:name="../ipcore_dir/blk_mem_gen_0.asy" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="../ipcore_dir/blk_mem_gen_0.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_VEO" xil_pn:name="../ipcore_dir/blk_mem_gen_0.veo" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_ASY" xil_pn:name="../ipcore_dir/blk_mem_gen_1.asy" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="../ipcore_dir/blk_mem_gen_1.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_VEO" xil_pn:name="../ipcore_dir/blk_mem_gen_1.veo" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="../ipcore_dir/coregen.log"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="OK_TOP_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tb_testing_CNN_dbg_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="tb_testing_CNN_dbg_isim_beh.wdb"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="testing_CNN_dbg.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="testing_CNN_dbg.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="testing_CNN_dbg.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="testing_CNN_dbg.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="testing_CNN_dbg.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="testing_CNN_dbg.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="testing_CNN_dbg.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="testing_CNN_dbg.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="testing_CNN_dbg.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="testing_CNN_dbg.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="testing_CNN_dbg.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="testing_CNN_dbg.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="testing_CNN_dbg.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="testing_CNN_dbg.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="testing_CNN_dbg.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="testing_CNN_dbg.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="testing_CNN_dbg.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="testing_CNN_dbg.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="testing_CNN_dbg.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="testing_CNN_dbg.xst"/>
+    <file xil_pn:fileType="FILE_BLIF" xil_pn:name="testing_CNN_dbg_cs.blc"/>
+    <file xil_pn:fileType="FILE_NGC" xil_pn:name="testing_CNN_dbg_cs.ngc"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="testing_CNN_dbg_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="testing_CNN_dbg_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="testing_CNN_dbg_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="testing_CNN_dbg_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="testing_CNN_dbg_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="testing_CNN_dbg_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="testing_CNN_dbg_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="testing_CNN_dbg_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="testing_CNN_dbg_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="testing_CNN_dbg_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="testing_CNN_dbg_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="testing_CNN_dbg_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="testing_CNN_dbg_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="testing_CNN_dbg_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="testing_CNN_dbg_xst.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="testing_cnn_dbg.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="testing_cnn_dbg.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="testing_cnn_dbg.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1603632288" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1603632288">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1606374584" xil_pn:in_ck="4597339223284947340" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1606374584">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="../implementation/AER_mimic_wi_input.v"/>
+      <outfile xil_pn:name="../implementation/CNN_input_gen.v"/>
+      <outfile xil_pn:name="../implementation/RP2serial.v"/>
+      <outfile xil_pn:name="../implementation/conv_top.v"/>
+      <outfile xil_pn:name="../implementation/ev_to_qvga_tsmc/ev_to_qvga_tsmc.v"/>
+      <outfile xil_pn:name="../implementation/ev_to_qvga_tsmc/raw_memory_if.v"/>
+      <outfile xil_pn:name="../implementation/ev_to_qvga_tsmc/translate_coor.v"/>
+      <outfile xil_pn:name="../implementation/ev_to_qvga_tsmc/tsdn65lplla16384x2m8s_200a_ff1p32v0c.v"/>
+      <outfile xil_pn:name="../implementation/ev_to_qvga_tsmc/tsdn65lplla65536x2m32s_200a_ff1p32v0c.v"/>
+      <outfile xil_pn:name="../implementation/reset_synchronizer.v"/>
+      <outfile xil_pn:name="../implementation/spi_cell_top.v"/>
+      <outfile xil_pn:name="../implementation/spi_top.v"/>
+      <outfile xil_pn:name="../implementation/testing_CNN_dbg.v"/>
+      <outfile xil_pn:name="../implementation/top_aer_roi_bias/TOP_AER_ROI_BIAS.vhd"/>
+      <outfile xil_pn:name="../implementation/top_aer_roi_bias/bias_clock_div.vhd"/>
+      <outfile xil_pn:name="../implementation/top_aer_roi_bias/davis_aer_interface.vhd"/>
+      <outfile xil_pn:name="../implementation/top_aer_roi_bias/davis_bias_config.vhd"/>
+      <outfile xil_pn:name="../implementation/top_aer_roi_bias/region_of_exclusion.vhd"/>
+      <outfile xil_pn:name="../simulation/okHost/mappings.v"/>
+      <outfile xil_pn:name="../simulation/okHost/okHost.v"/>
+      <outfile xil_pn:name="../simulation/okHost/okPipeIn.v"/>
+      <outfile xil_pn:name="../simulation/okHost/okPipeOut.v"/>
+      <outfile xil_pn:name="../simulation/okHost/okTriggerIn.v"/>
+      <outfile xil_pn:name="../simulation/okHost/okTriggerOut.v"/>
+      <outfile xil_pn:name="../simulation/okHost/okWireIn.v"/>
+      <outfile xil_pn:name="../simulation/okHost/okWireOR.v"/>
+      <outfile xil_pn:name="../simulation/okHost/okWireOut.v"/>
+      <outfile xil_pn:name="../simulation/okHost/parameters.v"/>
+      <outfile xil_pn:name="../simulation/tb_testing_CNN_dbg.v"/>
+      <outfile xil_pn:name="C:/ZXY/CNN/OpalKelly3010_Verilog_CNN/simulation/okHost/parameters.v"/>
+      <outfile xil_pn:name="C:/ZXY/CNN/OpalKelly3010_Verilog_CNN_all/simulation/okHost/okHostCalls.v"/>
+      <outfile xil_pn:name="C:/ZXY/CNN/OpalKelly3010_Verilog_CNN_all/simulation/okHost/okHostCalls_MultiplePipe.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1603632288" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-5740191979944708076" xil_pn:start_ts="1603632288">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1603632288" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="6839098261481054156" xil_pn:start_ts="1603632288">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1603632289" xil_pn:in_ck="4170676053900724553" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-6815464378286622866" xil_pn:start_ts="1603632288">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="../ipcore_dir/blk_mem_gen.ngc"/>
+      <outfile xil_pn:name="../ipcore_dir/blk_mem_gen.v"/>
+      <outfile xil_pn:name="../ipcore_dir/blk_mem_gen2.ngc"/>
+      <outfile xil_pn:name="../ipcore_dir/blk_mem_gen2.v"/>
+      <outfile xil_pn:name="../ipcore_dir/blk_mem_gen_0.ngc"/>
+      <outfile xil_pn:name="../ipcore_dir/blk_mem_gen_0.v"/>
+      <outfile xil_pn:name="../ipcore_dir/blk_mem_gen_1.ngc"/>
+      <outfile xil_pn:name="../ipcore_dir/blk_mem_gen_1.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1606374584" xil_pn:in_ck="4597339223284947340" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1606374584">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="../implementation/AER_mimic_wi_input.v"/>
+      <outfile xil_pn:name="../implementation/CNN_input_gen.v"/>
+      <outfile xil_pn:name="../implementation/RP2serial.v"/>
+      <outfile xil_pn:name="../implementation/conv_top.v"/>
+      <outfile xil_pn:name="../implementation/ev_to_qvga_tsmc/ev_to_qvga_tsmc.v"/>
+      <outfile xil_pn:name="../implementation/ev_to_qvga_tsmc/raw_memory_if.v"/>
+      <outfile xil_pn:name="../implementation/ev_to_qvga_tsmc/translate_coor.v"/>
+      <outfile xil_pn:name="../implementation/ev_to_qvga_tsmc/tsdn65lplla16384x2m8s_200a_ff1p32v0c.v"/>
+      <outfile xil_pn:name="../implementation/ev_to_qvga_tsmc/tsdn65lplla65536x2m32s_200a_ff1p32v0c.v"/>
+      <outfile xil_pn:name="../implementation/reset_synchronizer.v"/>
+      <outfile xil_pn:name="../implementation/spi_cell_top.v"/>
+      <outfile xil_pn:name="../implementation/spi_top.v"/>
+      <outfile xil_pn:name="../implementation/testing_CNN_dbg.v"/>
+      <outfile xil_pn:name="../implementation/top_aer_roi_bias/TOP_AER_ROI_BIAS.vhd"/>
+      <outfile xil_pn:name="../implementation/top_aer_roi_bias/bias_clock_div.vhd"/>
+      <outfile xil_pn:name="../implementation/top_aer_roi_bias/davis_aer_interface.vhd"/>
+      <outfile xil_pn:name="../implementation/top_aer_roi_bias/davis_bias_config.vhd"/>
+      <outfile xil_pn:name="../implementation/top_aer_roi_bias/region_of_exclusion.vhd"/>
+      <outfile xil_pn:name="../simulation/okHost/mappings.v"/>
+      <outfile xil_pn:name="../simulation/okHost/okHost.v"/>
+      <outfile xil_pn:name="../simulation/okHost/okPipeIn.v"/>
+      <outfile xil_pn:name="../simulation/okHost/okPipeOut.v"/>
+      <outfile xil_pn:name="../simulation/okHost/okTriggerIn.v"/>
+      <outfile xil_pn:name="../simulation/okHost/okTriggerOut.v"/>
+      <outfile xil_pn:name="../simulation/okHost/okWireIn.v"/>
+      <outfile xil_pn:name="../simulation/okHost/okWireOR.v"/>
+      <outfile xil_pn:name="../simulation/okHost/okWireOut.v"/>
+      <outfile xil_pn:name="../simulation/okHost/parameters.v"/>
+      <outfile xil_pn:name="../simulation/tb_testing_CNN_dbg.v"/>
+      <outfile xil_pn:name="C:/ZXY/CNN/OpalKelly3010_Verilog_CNN/simulation/okHost/parameters.v"/>
+      <outfile xil_pn:name="C:/ZXY/CNN/OpalKelly3010_Verilog_CNN_all/simulation/okHost/okHostCalls.v"/>
+      <outfile xil_pn:name="C:/ZXY/CNN/OpalKelly3010_Verilog_CNN_all/simulation/okHost/okHostCalls_MultiplePipe.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1606374588" xil_pn:in_ck="1053461554852552081" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="5735560658507101732" xil_pn:start_ts="1606374584">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+    </transform>
+    <transform xil_pn:end_ts="1603632304" xil_pn:in_ck="-1472038272919066918" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3364813465462124807" xil_pn:start_ts="1603632304">
+      <status xil_pn:value="AbortedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForced"/>
+      <outfile xil_pn:name="isim.cmd"/>
+    </transform>
+    <transform xil_pn:end_ts="1603633069" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1603633069">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1603633069" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="7706316034535894967" xil_pn:start_ts="1603633069">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1607160184" xil_pn:in_ck="-3369496162555596438" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-6815464378286622866" xil_pn:start_ts="1607160178">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="../ipcore_dir/blk_mem_gen.ngc"/>
+      <outfile xil_pn:name="../ipcore_dir/blk_mem_gen.v"/>
+      <outfile xil_pn:name="../ipcore_dir/blk_mem_gen2.ngc"/>
+      <outfile xil_pn:name="../ipcore_dir/blk_mem_gen2.v"/>
+      <outfile xil_pn:name="../ipcore_dir/blk_mem_gen_0.ngc"/>
+      <outfile xil_pn:name="../ipcore_dir/blk_mem_gen_0.v"/>
+      <outfile xil_pn:name="../ipcore_dir/blk_mem_gen_1.ngc"/>
+      <outfile xil_pn:name="../ipcore_dir/blk_mem_gen_1.v"/>
+      <outfile xil_pn:name="../ipcore_dir/fifo_512x8b.ngc"/>
+      <outfile xil_pn:name="../ipcore_dir/fifo_512x8b.v"/>
+      <outfile xil_pn:name="../ipcore_dir/fifo_76800x1.ngc"/>
+      <outfile xil_pn:name="../ipcore_dir/fifo_76800x1.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1603633069" xil_pn:in_ck="8905020490771541812" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1603633069">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1603633069" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="6127707791878392831" xil_pn:start_ts="1603633069">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1603633069" xil_pn:in_ck="8905020490771541812" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="1429692520443750485" xil_pn:start_ts="1603633069">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1603633069" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="9115839782533985272" xil_pn:start_ts="1603633069">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1607160761" xil_pn:in_ck="-5398974687061646277" xil_pn:name="TRANEXT_xstsynthesize_spartan3" xil_pn:prop_ck="736286928023452642" xil_pn:start_ts="1607160735">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="testing_CNN_dbg.lso"/>
+      <outfile xil_pn:name="testing_CNN_dbg.ngc"/>
+      <outfile xil_pn:name="testing_CNN_dbg.ngr"/>
+      <outfile xil_pn:name="testing_CNN_dbg.prj"/>
+      <outfile xil_pn:name="testing_CNN_dbg.stx"/>
+      <outfile xil_pn:name="testing_CNN_dbg.syr"/>
+      <outfile xil_pn:name="testing_CNN_dbg.xst"/>
+      <outfile xil_pn:name="testing_CNN_dbg_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1606215507" xil_pn:in_ck="-4534446447893475434" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="1925077560765618218" xil_pn:start_ts="1606215507">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1607160770" xil_pn:in_ck="90443411673260327" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="4442027317293683980" xil_pn:start_ts="1607160761">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="testing_CNN_dbg.bld"/>
+      <outfile xil_pn:name="testing_CNN_dbg.ngd"/>
+      <outfile xil_pn:name="testing_CNN_dbg_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1607160784" xil_pn:in_ck="-7693597251162931021" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="6308899157384625751" xil_pn:start_ts="1607160770">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="testing_CNN_dbg.pcf"/>
+      <outfile xil_pn:name="testing_CNN_dbg_map.map"/>
+      <outfile xil_pn:name="testing_CNN_dbg_map.mrp"/>
+      <outfile xil_pn:name="testing_CNN_dbg_map.ncd"/>
+      <outfile xil_pn:name="testing_CNN_dbg_map.ngm"/>
+      <outfile xil_pn:name="testing_CNN_dbg_map.xrpt"/>
+      <outfile xil_pn:name="testing_CNN_dbg_summary.xml"/>
+      <outfile xil_pn:name="testing_CNN_dbg_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1607160815" xil_pn:in_ck="880835394927522124" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-561354228862665646" xil_pn:start_ts="1607160784">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="testing_CNN_dbg.ncd"/>
+      <outfile xil_pn:name="testing_CNN_dbg.pad"/>
+      <outfile xil_pn:name="testing_CNN_dbg.par"/>
+      <outfile xil_pn:name="testing_CNN_dbg.ptwx"/>
+      <outfile xil_pn:name="testing_CNN_dbg.unroutes"/>
+      <outfile xil_pn:name="testing_CNN_dbg.xpi"/>
+      <outfile xil_pn:name="testing_CNN_dbg_pad.csv"/>
+      <outfile xil_pn:name="testing_CNN_dbg_pad.txt"/>
+      <outfile xil_pn:name="testing_CNN_dbg_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1607160830" xil_pn:in_ck="-7321582992930065575" xil_pn:name="TRANEXT_bitFile_spartan3" xil_pn:prop_ck="-2672950586390118423" xil_pn:start_ts="1607160815">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="testing_CNN_dbg.ut"/>
+      <outfile xil_pn:name="testing_cnn_dbg.bgn"/>
+      <outfile xil_pn:name="testing_cnn_dbg.bit"/>
+      <outfile xil_pn:name="testing_cnn_dbg.drc"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1606215998" xil_pn:in_ck="-7271042292824969853" xil_pn:name="TRAN_analyzeDesignUsingChipscope" xil_pn:prop_ck="4442027317293683980" xil_pn:start_ts="1606215998">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+    </transform>
+    <transform xil_pn:end_ts="1607160815" xil_pn:in_ck="-7693597251162931153" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1607160810">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="testing_CNN_dbg.twr"/>
+      <outfile xil_pn:name="testing_CNN_dbg.twx"/>
+    </transform>
+  </transforms>
+
+</generated_project>

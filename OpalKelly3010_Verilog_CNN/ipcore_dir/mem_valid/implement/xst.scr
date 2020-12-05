@@ -1,0 +1,14 @@
+
+run
+-ifmt VHDL
+-ent mem_valid_exdes 
+-p xc3s1500-fg320-4
+-ifn xst.prj
+-write_timing_constraints No
+-iobuf YES
+-max_fanout 100
+-ofn mem_valid_exdes 
+-ofmt NGC
+-bus_delimiter ()
+-hierarchy_separator /
+-case Maintain

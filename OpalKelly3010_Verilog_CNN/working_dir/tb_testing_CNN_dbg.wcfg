@@ -1,0 +1,1508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/ZXY/CNN/OpalKelly3010_Verilog_CNN - Input_gen work/working_dir/tb_testing_CNN_dbg_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_testing_CNN_dbg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="126" />
+   <wvobject fp_name="group43480" type="group">
+      <obj_property name="label">SPI</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/spi_top_1/reset_n" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">reset_n</obj_property>
+         <obj_property name="ObjectShortName">reset_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/spi_top_1/clk_phase1" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk_phase1</obj_property>
+         <obj_property name="ObjectShortName">clk_phase1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/spi_top_1/clk_phase2" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk_phase2</obj_property>
+         <obj_property name="ObjectShortName">clk_phase2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/spi_top_1/capture" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">capture</obj_property>
+         <obj_property name="ObjectShortName">capture</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/spi_top_1/clk_update" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk_update</obj_property>
+         <obj_property name="ObjectShortName">clk_update</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/spi_top_1/spi_din" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">spi_din</obj_property>
+         <obj_property name="ObjectShortName">spi_din</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/spi_top_1/spi_out" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">spi_out</obj_property>
+         <obj_property name="ObjectShortName">spi_out</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/region_num" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">region_num[4:0]</obj_property>
+      <obj_property name="ObjectShortName">region_num[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/region_x_list" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">region_x_list[0:15,8:0]</obj_property>
+      <obj_property name="ObjectShortName">region_x_list[0:15,8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/region_y_list" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">region_y_list[0:15,7:0]</obj_property>
+      <obj_property name="ObjectShortName">region_y_list[0:15,7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="group359" type="group">
+      <obj_property name="label">mem_rx</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/rgn_x/clka" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clka</obj_property>
+         <obj_property name="ObjectShortName">clka</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/rgn_x/wea" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">wea[0:0]</obj_property>
+         <obj_property name="ObjectShortName">wea[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/rgn_x/addra" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">addra[3:0]</obj_property>
+         <obj_property name="ObjectShortName">addra[3:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/rgn_x/dina" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dina[15:0]</obj_property>
+         <obj_property name="ObjectShortName">dina[15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/rgn_x/douta" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">douta[15:0]</obj_property>
+         <obj_property name="ObjectShortName">douta[15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group371" type="group">
+      <obj_property name="label">mem_ry</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/rgn_y/clka" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clka</obj_property>
+         <obj_property name="ObjectShortName">clka</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/rgn_y/wea" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">wea[0:0]</obj_property>
+         <obj_property name="ObjectShortName">wea[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/rgn_y/addra" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">addra[3:0]</obj_property>
+         <obj_property name="ObjectShortName">addra[3:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/rgn_y/dina" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dina[15:0]</obj_property>
+         <obj_property name="ObjectShortName">dina[15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/rgn_y/douta" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">douta[15:0]</obj_property>
+         <obj_property name="ObjectShortName">douta[15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/uut/region_valid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">region_valid</obj_property>
+      <obj_property name="ObjectShortName">region_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/uut/region_rd_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">region_rd_en</obj_property>
+      <obj_property name="ObjectShortName">region_rd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/uut/cnt" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cnt[4:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/uut/cnt_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cnt_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_addr[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/uut/num_obj" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">num_obj[4:0]</obj_property>
+      <obj_property name="ObjectShortName">num_obj[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/uut/pi80_write" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pi80_write</obj_property>
+      <obj_property name="ObjectShortName">pi80_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/uut/pi81_write" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pi81_write</obj_property>
+      <obj_property name="ObjectShortName">pi81_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/uut/poa0_read" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">poa0_read</obj_property>
+      <obj_property name="ObjectShortName">poa0_read</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/uut/wi00_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wi00_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">wi00_data[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/pipeIn1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pipeIn1[0:31,7:0]</obj_property>
+      <obj_property name="ObjectShortName">pipeIn1[0:31,7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/uut/pi81_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pi81_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">pi81_data[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/uut/pi80_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pi80_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">pi80_data[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="group125" type="group">
+      <obj_property name="label">RP2seiral</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/RP2serial_1/clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/RP2serial_1/reset" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/RP2serial_1/reset_new" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">reset_new</obj_property>
+         <obj_property name="ObjectShortName">reset_new</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/RP2serial_1/num_obj" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">num_obj[4:0]</obj_property>
+         <obj_property name="ObjectShortName">num_obj[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/RP2serial_1/region_x" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">region_x[8:0]</obj_property>
+         <obj_property name="ObjectShortName">region_x[8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/RP2serial_1/region_y" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">region_y[8:0]</obj_property>
+         <obj_property name="ObjectShortName">region_y[8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/RP2serial_1/region_valid" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">region_valid</obj_property>
+         <obj_property name="ObjectShortName">region_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/RP2serial_1/region_rd_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">region_rd_en</obj_property>
+         <obj_property name="ObjectShortName">region_rd_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/RP2serial_1/cnn_rd_region" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cnn_rd_region</obj_property>
+         <obj_property name="ObjectShortName">cnn_rd_region</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/RP2serial_1/cnn_region_x_bit" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cnn_region_x_bit</obj_property>
+         <obj_property name="ObjectShortName">cnn_region_x_bit</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/RP2serial_1/cnn_region_y_bit" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cnn_region_y_bit</obj_property>
+         <obj_property name="ObjectShortName">cnn_region_y_bit</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/RP2serial_1/cnn_region_clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cnn_region_clk</obj_property>
+         <obj_property name="ObjectShortName">cnn_region_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/RP2serial_1/cnn_region_done" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cnn_region_done</obj_property>
+         <obj_property name="ObjectShortName">cnn_region_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/RP2serial_1/cnn_region_valid" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cnn_region_valid</obj_property>
+         <obj_property name="ObjectShortName">cnn_region_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/RP2serial_1/region_x_list" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">region_x_list[0:31,8:0]</obj_property>
+         <obj_property name="ObjectShortName">region_x_list[0:31,8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/RP2serial_1/region_y_list" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">region_y_list[0:31,8:0]</obj_property>
+         <obj_property name="ObjectShortName">region_y_list[0:31,8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/RP2serial_1/region_cnt" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">region_cnt[4:0]</obj_property>
+         <obj_property name="ObjectShortName">region_cnt[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/RP2serial_1/region_num" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">region_num[4:0]</obj_property>
+         <obj_property name="ObjectShortName">region_num[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/RP2serial_1/region_rd_over" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">region_rd_over</obj_property>
+         <obj_property name="ObjectShortName">region_rd_over</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/RP2serial_1/state_sync" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">state_sync</obj_property>
+         <obj_property name="ObjectShortName">state_sync</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/RP2serial_1/read_stm_state" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">read_stm_state[2:0]</obj_property>
+         <obj_property name="ObjectShortName">read_stm_state[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/RP2serial_1/cnt" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">cnt[7:0]</obj_property>
+         <obj_property name="ObjectShortName">cnt[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/RP2serial_1/clk_div" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk_div</obj_property>
+         <obj_property name="ObjectShortName">clk_div</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/RP2serial_1/main_stm_state" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">main_stm_state[2:0]</obj_property>
+         <obj_property name="ObjectShortName">main_stm_state[2:0]</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#008000</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/RP2serial_1/cnt_index" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">cnt_index[5:0]</obj_property>
+         <obj_property name="ObjectShortName">cnt_index[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/RP2serial_1/x_out_buf" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">x_out_buf[8:0]</obj_property>
+         <obj_property name="ObjectShortName">x_out_buf[8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/RP2serial_1/y_out_buf" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">y_out_buf[8:0]</obj_property>
+         <obj_property name="ObjectShortName">y_out_buf[8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/RP2serial_1/bit_cnt" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">bit_cnt[4:0]</obj_property>
+         <obj_property name="ObjectShortName">bit_cnt[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/RP2serial_1/x_bit_internal" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">x_bit_internal</obj_property>
+         <obj_property name="ObjectShortName">x_bit_internal</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/RP2serial_1/y_bit_internal" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">y_bit_internal</obj_property>
+         <obj_property name="ObjectShortName">y_bit_internal</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group252" type="group">
+      <obj_property name="label">CNN_input_gen</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/reset_n" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">reset_n</obj_property>
+         <obj_property name="ObjectShortName">reset_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/dbg_reg" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dbg_reg[7:0]</obj_property>
+         <obj_property name="ObjectShortName">dbg_reg[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/dbg_dout_valid" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dbg_dout_valid</obj_property>
+         <obj_property name="ObjectShortName">dbg_dout_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/dbg_dout" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dbg_dout[7:0]</obj_property>
+         <obj_property name="ObjectShortName">dbg_dout[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/param_a" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">param_a[15:0]</obj_property>
+         <obj_property name="ObjectShortName">param_a[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/param_b" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">param_b[15:0]</obj_property>
+         <obj_property name="ObjectShortName">param_b[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/param_c" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">param_c[15:0]</obj_property>
+         <obj_property name="ObjectShortName">param_c[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/dbg_dout_mem" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dbg_dout_mem[7:0]</obj_property>
+         <obj_property name="ObjectShortName">dbg_dout_mem[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/dbg_dout_rp" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dbg_dout_rp[7:0]</obj_property>
+         <obj_property name="ObjectShortName">dbg_dout_rp[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/dbg_dout_rp_internal" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dbg_dout_rp_internal[7:0]</obj_property>
+         <obj_property name="ObjectShortName">dbg_dout_rp_internal[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/dbg_dout_y_addr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dbg_dout_y_addr[7:0]</obj_property>
+         <obj_property name="ObjectShortName">dbg_dout_y_addr[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/region_done" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">region_done</obj_property>
+         <obj_property name="ObjectShortName">region_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/region_bit_valid" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">region_bit_valid</obj_property>
+         <obj_property name="ObjectShortName">region_bit_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/region_x_bit" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">region_x_bit</obj_property>
+         <obj_property name="ObjectShortName">region_x_bit</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/region_y_bit" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">region_y_bit</obj_property>
+         <obj_property name="ObjectShortName">region_y_bit</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/region_clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">region_clk</obj_property>
+         <obj_property name="ObjectShortName">region_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/dataIn_pos" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dataIn_pos</obj_property>
+         <obj_property name="ObjectShortName">dataIn_pos</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/dataIn_neg" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dataIn_neg</obj_property>
+         <obj_property name="ObjectShortName">dataIn_neg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/xAddressOut" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">xAddressOut[8:0]</obj_property>
+         <obj_property name="ObjectShortName">xAddressOut[8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/yAddressOut" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">yAddressOut[8:0]</obj_property>
+         <obj_property name="ObjectShortName">yAddressOut[8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/cnn_done" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cnn_done</obj_property>
+         <obj_property name="ObjectShortName">cnn_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/cnn_read_valid" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cnn_read_valid</obj_property>
+         <obj_property name="ObjectShortName">cnn_read_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/ext_dataIn_pos" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ext_dataIn_pos</obj_property>
+         <obj_property name="ObjectShortName">ext_dataIn_pos</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/ext_dataIn_neg" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ext_dataIn_neg</obj_property>
+         <obj_property name="ObjectShortName">ext_dataIn_neg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/ext_xAddressOut" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">ext_xAddressOut[8:0]</obj_property>
+         <obj_property name="ObjectShortName">ext_xAddressOut[8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/ext_cnn_done" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ext_cnn_done</obj_property>
+         <obj_property name="ObjectShortName">ext_cnn_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/cnn_rd_done" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cnn_rd_done</obj_property>
+         <obj_property name="ObjectShortName">cnn_rd_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/cnn_ready" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cnn_ready</obj_property>
+         <obj_property name="ObjectShortName">cnn_ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/cnn_dout_ch0" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">cnn_dout_ch0[1763:0]</obj_property>
+         <obj_property name="ObjectShortName">cnn_dout_ch0[1763:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/cnn_dout_ch1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">cnn_dout_ch1[1763:0]</obj_property>
+         <obj_property name="ObjectShortName">cnn_dout_ch1[1763:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/ext_cnn_rd_done" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ext_cnn_rd_done</obj_property>
+         <obj_property name="ObjectShortName">ext_cnn_rd_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/ext_cnn_ready" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ext_cnn_ready</obj_property>
+         <obj_property name="ObjectShortName">ext_cnn_ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/dbg_dout_mem_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dbg_dout_mem_en</obj_property>
+         <obj_property name="ObjectShortName">dbg_dout_mem_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/dbg_dout_rp_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dbg_dout_rp_en</obj_property>
+         <obj_property name="ObjectShortName">dbg_dout_rp_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/dbg_ext_mem_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dbg_ext_mem_en</obj_property>
+         <obj_property name="ObjectShortName">dbg_ext_mem_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/dbg_dout_yaddr_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dbg_dout_yaddr_en</obj_property>
+         <obj_property name="ObjectShortName">dbg_dout_yaddr_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/dbg_xaddr_op_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dbg_xaddr_op_en</obj_property>
+         <obj_property name="ObjectShortName">dbg_xaddr_op_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/dbg_ext_cnn_rd_done_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dbg_ext_cnn_rd_done_en</obj_property>
+         <obj_property name="ObjectShortName">dbg_ext_cnn_rd_done_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/dbg_cnn_ready_op_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dbg_cnn_ready_op_en</obj_property>
+         <obj_property name="ObjectShortName">dbg_cnn_ready_op_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/dbg_cnn_done_op_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dbg_cnn_done_op_en</obj_property>
+         <obj_property name="ObjectShortName">dbg_cnn_done_op_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/dataIn_pos_internal" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dataIn_pos_internal</obj_property>
+         <obj_property name="ObjectShortName">dataIn_pos_internal</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/dataIn_neg_internal" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dataIn_neg_internal</obj_property>
+         <obj_property name="ObjectShortName">dataIn_neg_internal</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/cnn_rd_done_internal" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cnn_rd_done_internal</obj_property>
+         <obj_property name="ObjectShortName">cnn_rd_done_internal</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/reset" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/region_valid" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">region_valid</obj_property>
+         <obj_property name="ObjectShortName">region_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/dbg_dout_rp" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dbg_dout_rp[7:0]</obj_property>
+         <obj_property name="ObjectShortName">dbg_dout_rp[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/dbg_dout_rp_internal" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dbg_dout_rp_internal[7:0]</obj_property>
+         <obj_property name="ObjectShortName">dbg_dout_rp_internal[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/mem_addr_x" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_addr_x[9:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_addr_x[9:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/mem_addr_y" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_addr_y[9:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_addr_y[9:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/col_offset" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">col_offset[8:0]</obj_property>
+         <obj_property name="ObjectShortName">col_offset[8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/cnn_col_tmp" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">cnn_col_tmp[8:0]</obj_property>
+         <obj_property name="ObjectShortName">cnn_col_tmp[8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/cnn_col" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">cnn_col[8:0]</obj_property>
+         <obj_property name="ObjectShortName">cnn_col[8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/row_offset" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">row_offset[8:0]</obj_property>
+         <obj_property name="ObjectShortName">row_offset[8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/cnn_row_tmp" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">cnn_row_tmp[8:0]</obj_property>
+         <obj_property name="ObjectShortName">cnn_row_tmp[8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/cnn_row" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">cnn_row[8:0]</obj_property>
+         <obj_property name="ObjectShortName">cnn_row[8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/act_region_end" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">act_region_end</obj_property>
+         <obj_property name="ObjectShortName">act_region_end</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/dbg_dout_mem" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dbg_dout_mem[7:0]</obj_property>
+         <obj_property name="ObjectShortName">dbg_dout_mem[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/dbg_dout_y_addr_valid" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dbg_dout_y_addr_valid</obj_property>
+         <obj_property name="ObjectShortName">dbg_dout_y_addr_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/dbg_dout_y_addr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dbg_dout_y_addr[7:0]</obj_property>
+         <obj_property name="ObjectShortName">dbg_dout_y_addr[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/region_rd_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">region_rd_en</obj_property>
+         <obj_property name="ObjectShortName">region_rd_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/cnn_done_internal" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cnn_done_internal</obj_property>
+         <obj_property name="ObjectShortName">cnn_done_internal</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/cnn_ready_internal" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cnn_ready_internal</obj_property>
+         <obj_property name="ObjectShortName">cnn_ready_internal</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/read_bit_stm_state" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">read_bit_stm_state[2:0]</obj_property>
+         <obj_property name="ObjectShortName">read_bit_stm_state[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/region_x" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">region_x[8:0]</obj_property>
+         <obj_property name="ObjectShortName">region_x[8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/region_y" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">region_y[8:0]</obj_property>
+         <obj_property name="ObjectShortName">region_y[8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/bit_cnt" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">bit_cnt[4:0]</obj_property>
+         <obj_property name="ObjectShortName">bit_cnt[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/region_x_list" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">region_x_list[0:31,8:0]</obj_property>
+         <obj_property name="ObjectShortName">region_x_list[0:31,8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/region_y_list" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">region_y_list[0:31,8:0]</obj_property>
+         <obj_property name="ObjectShortName">region_y_list[0:31,8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/region_cnt" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">region_cnt[5:0]</obj_property>
+         <obj_property name="ObjectShortName">region_cnt[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/region_num" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">region_num[5:0]</obj_property>
+         <obj_property name="ObjectShortName">region_num[5:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/loop_index" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">loop_index[5:0]</obj_property>
+         <obj_property name="ObjectShortName">loop_index[5:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/histo_read_done" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">histo_read_done</obj_property>
+         <obj_property name="ObjectShortName">histo_read_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/read_stm_state" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">read_stm_state[2:0]</obj_property>
+         <obj_property name="ObjectShortName">read_stm_state[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/region_rd_over" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">region_rd_over</obj_property>
+         <obj_property name="ObjectShortName">region_rd_over</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/dbg_rp_cnt" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dbg_rp_cnt[5:0]</obj_property>
+         <obj_property name="ObjectShortName">dbg_rp_cnt[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/dbg_rp_buf" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dbg_rp_buf[8:0]</obj_property>
+         <obj_property name="ObjectShortName">dbg_rp_buf[8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/dbg_rp_ch" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dbg_rp_ch</obj_property>
+         <obj_property name="ObjectShortName">dbg_rp_ch</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/dbg_rp_lsb_msb" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dbg_rp_lsb_msb</obj_property>
+         <obj_property name="ObjectShortName">dbg_rp_lsb_msb</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/dbg_dout_rp_valid" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dbg_dout_rp_valid</obj_property>
+         <obj_property name="ObjectShortName">dbg_dout_rp_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/region_i" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">region_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">region_i[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/main_stm_state" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">main_stm_state[4:0]</obj_property>
+         <obj_property name="ObjectShortName">main_stm_state[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/region_dx" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">region_dx[8:0]</obj_property>
+         <obj_property name="ObjectShortName">region_dx[8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/region_dy" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">region_dy[8:0]</obj_property>
+         <obj_property name="ObjectShortName">region_dy[8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/region_filter" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">region_filter[32:0]</obj_property>
+         <obj_property name="ObjectShortName">region_filter[32:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/region_x_list" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">region_x_list[0:31,8:0]</obj_property>
+         <obj_property name="ObjectShortName">region_x_list[0:31,8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/region_y_list" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">region_y_list[0:31,8:0]</obj_property>
+         <obj_property name="ObjectShortName">region_y_list[0:31,8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/margin_x1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">margin_x1[8:0]</obj_property>
+         <obj_property name="ObjectShortName">margin_x1[8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/margin_x2" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">margin_x2[8:0]</obj_property>
+         <obj_property name="ObjectShortName">margin_x2[8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/margin_y1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">margin_y1[8:0]</obj_property>
+         <obj_property name="ObjectShortName">margin_y1[8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/margin_y2" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">margin_y2[8:0]</obj_property>
+         <obj_property name="ObjectShortName">margin_y2[8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/margin_x_center" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">margin_x_center[8:0]</obj_property>
+         <obj_property name="ObjectShortName">margin_x_center[8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/margin_y_center" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">margin_y_center[8:0]</obj_property>
+         <obj_property name="ObjectShortName">margin_y_center[8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/region_row" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">region_row[8:0]</obj_property>
+         <obj_property name="ObjectShortName">region_row[8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/region_col" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">region_col[8:0]</obj_property>
+         <obj_property name="ObjectShortName">region_col[8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/mem_addr_valid" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_addr_valid</obj_property>
+         <obj_property name="ObjectShortName">mem_addr_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/op_over" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">op_over</obj_property>
+         <obj_property name="ObjectShortName">op_over</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/mem_addr_valid_d" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_addr_valid_d[0:1]</obj_property>
+         <obj_property name="ObjectShortName">mem_addr_valid_d[0:1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/region_dx_d" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">region_dx_d[0:1,8:0]</obj_property>
+         <obj_property name="ObjectShortName">region_dx_d[0:1,8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/region_dy_d" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">region_dy_d[0:1,8:0]</obj_property>
+         <obj_property name="ObjectShortName">region_dy_d[0:1,8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/region_col_d" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">region_col_d[0:1,8:0]</obj_property>
+         <obj_property name="ObjectShortName">region_col_d[0:1,8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/region_row_d" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">region_row_d[0:1,8:0]</obj_property>
+         <obj_property name="ObjectShortName">region_row_d[0:1,8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/i" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/act_mem_data_valid" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">act_mem_data_valid</obj_property>
+         <obj_property name="ObjectShortName">act_mem_data_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/act_region_dx" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">act_region_dx[8:0]</obj_property>
+         <obj_property name="ObjectShortName">act_region_dx[8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/act_region_dy" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">act_region_dy[8:0]</obj_property>
+         <obj_property name="ObjectShortName">act_region_dy[8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/act_region_col" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">act_region_col[8:0]</obj_property>
+         <obj_property name="ObjectShortName">act_region_col[8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/act_region_row" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">act_region_row[8:0]</obj_property>
+         <obj_property name="ObjectShortName">act_region_row[8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/cnn_op_buffer_0" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">cnn_op_buffer_0[0:41,41:0]</obj_property>
+         <obj_property name="ObjectShortName">cnn_op_buffer_0[0:41,41:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/cnn_op_buffer_1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">cnn_op_buffer_1[0:41,41:0]</obj_property>
+         <obj_property name="ObjectShortName">cnn_op_buffer_1[0:41,41:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/op_stm" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">op_stm[3:0]</obj_property>
+         <obj_property name="ObjectShortName">op_stm[3:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/dbg_row_cnt" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dbg_row_cnt[6:0]</obj_property>
+         <obj_property name="ObjectShortName">dbg_row_cnt[6:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/dbg_op_buf" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dbg_op_buf[41:0]</obj_property>
+         <obj_property name="ObjectShortName">dbg_op_buf[41:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/dbg_op_ch" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dbg_op_ch</obj_property>
+         <obj_property name="ObjectShortName">dbg_op_ch</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/dbg_op_shift_cnt" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dbg_op_shift_cnt[4:0]</obj_property>
+         <obj_property name="ObjectShortName">dbg_op_shift_cnt[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/dbg_dout_mem_valid" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dbg_dout_mem_valid</obj_property>
+         <obj_property name="ObjectShortName">dbg_dout_mem_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/dbg_i" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dbg_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dbg_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/FILTERED_MEM_DELAY" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">FILTERED_MEM_DELAY[31:0]</obj_property>
+         <obj_property name="ObjectShortName">FILTERED_MEM_DELAY[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/MAX_NUM_OBJ" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">MAX_NUM_OBJ[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MAX_NUM_OBJ[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/X_WIDTH" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">X_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">X_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/Y_WIDTH" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">Y_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Y_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/CNN_W" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">CNN_W[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CNN_W[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/IDLE" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">IDLE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IDLE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/GET_REGION" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">GET_REGION[31:0]</obj_property>
+         <obj_property name="ObjectShortName">GET_REGION[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/CROP_REGION" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">CROP_REGION[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CROP_REGION[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/SCAN_REGION" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">SCAN_REGION[31:0]</obj_property>
+         <obj_property name="ObjectShortName">SCAN_REGION[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/ALL_OVER" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">ALL_OVER[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ALL_OVER[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/ONE_OVER" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">ONE_OVER[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ONE_OVER[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/FILTER_REGION_1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">FILTER_REGION_1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">FILTER_REGION_1[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/FILTER_REGION_2" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">FILTER_REGION_2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">FILTER_REGION_2[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/DBG_OUT_1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">DBG_OUT_1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DBG_OUT_1[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/CNN_input_gen1/DBG_OUT_2" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">DBG_OUT_2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DBG_OUT_2[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group90" type="group">
+      <obj_property name="label">ext_mem_0</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/ext_mem_0/clka" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clka</obj_property>
+         <obj_property name="ObjectShortName">clka</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/ext_mem_0/wea" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">wea[0:0]</obj_property>
+         <obj_property name="ObjectShortName">wea[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/ext_mem_0/addra" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">addra[16:0]</obj_property>
+         <obj_property name="ObjectShortName">addra[16:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/ext_mem_0/dina" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dina[0:0]</obj_property>
+         <obj_property name="ObjectShortName">dina[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/ext_mem_0/douta" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">douta[0:0]</obj_property>
+         <obj_property name="ObjectShortName">douta[0:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group444" type="group">
+      <obj_property name="label">ext_mem_1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/ext_mem_1/clka" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clka</obj_property>
+         <obj_property name="ObjectShortName">clka</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/ext_mem_1/wea" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">wea[0:0]</obj_property>
+         <obj_property name="ObjectShortName">wea[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/ext_mem_1/addra" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">addra[16:0]</obj_property>
+         <obj_property name="ObjectShortName">addra[16:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/ext_mem_1/dina" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dina[0:0]</obj_property>
+         <obj_property name="ObjectShortName">dina[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/ext_mem_1/douta" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">douta[0:0]</obj_property>
+         <obj_property name="ObjectShortName">douta[0:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/uut/pi80_write" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pi80_write</obj_property>
+      <obj_property name="ObjectShortName">pi80_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/uut/addr_x" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_x[319:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_x[319:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/uut/addr_y" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_y[239:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_y[239:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/uut/mem_addr_wr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_addr_wr[559:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_addr_wr[559:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/uut/mem_addr_rd" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_addr_rd[559:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_addr_rd[559:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/uut/mem_addra_bdg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_addra_bdg[15:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_addra_bdg[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/uut/mem_addrb_bdg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_addrb_bdg[15:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_addrb_bdg[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="group396" type="group">
+      <obj_property name="label">mem_dbg</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/mem_dbg/clka" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clka</obj_property>
+         <obj_property name="ObjectShortName">clka</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/mem_dbg/wea" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">wea[0:0]</obj_property>
+         <obj_property name="ObjectShortName">wea[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/mem_dbg/addra" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">addra[15:0]</obj_property>
+         <obj_property name="ObjectShortName">addra[15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/mem_dbg/dina" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dina[0:0]</obj_property>
+         <obj_property name="ObjectShortName">dina[0:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/mem_dbg/clkb" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clkb</obj_property>
+         <obj_property name="ObjectShortName">clkb</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/mem_dbg/addrb" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">addrb[15:0]</obj_property>
+         <obj_property name="ObjectShortName">addrb[15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/mem_dbg/doutb" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">doutb[0:0]</obj_property>
+         <obj_property name="ObjectShortName">doutb[0:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group422" type="group">
+      <obj_property name="label">mem_check</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/mem_check/clka" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clka</obj_property>
+         <obj_property name="ObjectShortName">clka</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/mem_check/wea" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">wea[0:0]</obj_property>
+         <obj_property name="ObjectShortName">wea[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/mem_check/addra" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">addra[10:0]</obj_property>
+         <obj_property name="ObjectShortName">addra[10:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/mem_check/dina" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dina[15:0]</obj_property>
+         <obj_property name="ObjectShortName">dina[15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/mem_check/clkb" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clkb</obj_property>
+         <obj_property name="ObjectShortName">clkb</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/mem_check/addrb" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">addrb[10:0]</obj_property>
+         <obj_property name="ObjectShortName">addrb[10:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/mem_check/doutb" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">doutb[15:0]</obj_property>
+         <obj_property name="ObjectShortName">doutb[15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/uut/mem_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_addr[559:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_addr[559:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/uut/mem_addr_rd" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_addr_rd[559:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_addr_rd[559:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/uut/mem_addr_wr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_addr_wr[559:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_addr_wr[559:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="group441" type="group">
+      <obj_property name="label">reset_sync</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/reset_synchronizer1/clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/reset_synchronizer1/asyc_rst_n" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">asyc_rst_n</obj_property>
+         <obj_property name="ObjectShortName">asyc_rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/reset_synchronizer1/sync_rst_n" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sync_rst_n</obj_property>
+         <obj_property name="ObjectShortName">sync_rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/reset_synchronizer1/sync_rst" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sync_rst</obj_property>
+         <obj_property name="ObjectShortName">sync_rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/reset_synchronizer1/rst_out" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rst_out</obj_property>
+         <obj_property name="ObjectShortName">rst_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/reset_synchronizer1/rst_out_int" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rst_out_int</obj_property>
+         <obj_property name="ObjectShortName">rst_out_int</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group434" type="group">
+      <obj_property name="label">aer_mimic</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/aer_mimic_u1/aer_trig" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">aer_trig</obj_property>
+         <obj_property name="ObjectShortName">aer_trig</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/aer_mimic_u1/AER_nack" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">AER_nack</obj_property>
+         <obj_property name="ObjectShortName">AER_nack</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/aer_mimic_u1/AER_nreq" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">AER_nreq</obj_property>
+         <obj_property name="ObjectShortName">AER_nreq</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/aer_mimic_u1/AER_data" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">AER_data[9:0]</obj_property>
+         <obj_property name="ObjectShortName">AER_data[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/aer_mimic_u1/addr_x" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">addr_x[8:0]</obj_property>
+         <obj_property name="ObjectShortName">addr_x[8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/aer_mimic_u1/addr_y" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">addr_y[7:0]</obj_property>
+         <obj_property name="ObjectShortName">addr_y[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/aer_mimic_u1/polarity" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">polarity</obj_property>
+         <obj_property name="ObjectShortName">polarity</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/aer_mimic_u1/addr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">addr[16:0]</obj_property>
+         <obj_property name="ObjectShortName">addr[16:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/aer_mimic_u1/read_data_pos" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">read_data_pos</obj_property>
+         <obj_property name="ObjectShortName">read_data_pos</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_testing_CNN_dbg/uut/aer_mimic_u1/read_data_neg" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">read_data_neg</obj_property>
+         <obj_property name="ObjectShortName">read_data_neg</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/parallel_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">parallel_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">parallel_out[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/ext_xAddressOut" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ext_xAddressOut[8:0]</obj_property>
+      <obj_property name="ObjectShortName">ext_xAddressOut[8:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/parallel_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">parallel_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">parallel_out[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/ext_xAddressOut" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ext_xAddressOut[8:0]</obj_property>
+      <obj_property name="ObjectShortName">ext_xAddressOut[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/dbg_dout_valid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dbg_dout_valid</obj_property>
+      <obj_property name="ObjectShortName">dbg_dout_valid</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/ext_cnn_ready" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ext_cnn_ready</obj_property>
+      <obj_property name="ObjectShortName">ext_cnn_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/ext_cnn_done" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ext_cnn_done</obj_property>
+      <obj_property name="ObjectShortName">ext_cnn_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/uut/to60_trig[0]" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">[0]</obj_property>
+      <obj_property name="ObjectShortName">to60_trig[0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/uut/poa0_read" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">poa0_read</obj_property>
+      <obj_property name="ObjectShortName">poa0_read</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/rst_n_sync" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst_n_sync</obj_property>
+      <obj_property name="ObjectShortName">rst_n_sync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/rgn_rd_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rgn_rd_en</obj_property>
+      <obj_property name="ObjectShortName">rgn_rd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/top_AER_nack" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">top_AER_nack</obj_property>
+      <obj_property name="ObjectShortName">top_AER_nack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/top_BiasAddrSel" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">top_BiasAddrSel</obj_property>
+      <obj_property name="ObjectShortName">top_BiasAddrSel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/top_BiasDiagSel" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">top_BiasDiagSel</obj_property>
+      <obj_property name="ObjectShortName">top_BiasDiagSel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/top_BiasBitIN" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">top_BiasBitIN</obj_property>
+      <obj_property name="ObjectShortName">top_BiasBitIN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/top_BiasClock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">top_BiasClock</obj_property>
+      <obj_property name="ObjectShortName">top_BiasClock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/top_BiasLatch" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">top_BiasLatch</obj_property>
+      <obj_property name="ObjectShortName">top_BiasLatch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/done" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/conv_done1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">conv_done1</obj_property>
+      <obj_property name="ObjectShortName">conv_done1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/spi_out" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">spi_out</obj_property>
+      <obj_property name="ObjectShortName">spi_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/hi_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">hi_out[1:0]</obj_property>
+      <obj_property name="ObjectShortName">hi_out[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/i2c_sda" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">i2c_sda</obj_property>
+      <obj_property name="ObjectShortName">i2c_sda</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/i2c_scl" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">i2c_scl</obj_property>
+      <obj_property name="ObjectShortName">i2c_scl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/hi_muxsel" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">hi_muxsel</obj_property>
+      <obj_property name="ObjectShortName">hi_muxsel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/led" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">led[7:0]</obj_property>
+      <obj_property name="ObjectShortName">led[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/test_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">test_clk</obj_property>
+      <obj_property name="ObjectShortName">test_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/clk_top" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_top</obj_property>
+      <obj_property name="ObjectShortName">clk_top</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/reset_n" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/clk_phase1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_phase1</obj_property>
+      <obj_property name="ObjectShortName">clk_phase1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/clk_phase2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_phase2</obj_property>
+      <obj_property name="ObjectShortName">clk_phase2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/clk_update" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_update</obj_property>
+      <obj_property name="ObjectShortName">clk_update</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/capture" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">capture</obj_property>
+      <obj_property name="ObjectShortName">capture</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/spi_din" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">spi_din</obj_property>
+      <obj_property name="ObjectShortName">spi_din</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/rgn_done" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rgn_done</obj_property>
+      <obj_property name="ObjectShortName">rgn_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/rgn_bit_valid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rgn_bit_valid</obj_property>
+      <obj_property name="ObjectShortName">rgn_bit_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/rgn_x_bit" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rgn_x_bit</obj_property>
+      <obj_property name="ObjectShortName">rgn_x_bit</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/rgn_y_bit" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rgn_y_bit</obj_property>
+      <obj_property name="ObjectShortName">rgn_y_bit</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/rgn_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rgn_clk</obj_property>
+      <obj_property name="ObjectShortName">rgn_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/ext_dataIn_pos" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ext_dataIn_pos</obj_property>
+      <obj_property name="ObjectShortName">ext_dataIn_pos</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/ext_dataIn_neg" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ext_dataIn_neg</obj_property>
+      <obj_property name="ObjectShortName">ext_dataIn_neg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/ext_cnn_rd_done" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ext_cnn_rd_done</obj_property>
+      <obj_property name="ObjectShortName">ext_cnn_rd_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/dbg_dout_valid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dbg_dout_valid</obj_property>
+      <obj_property name="ObjectShortName">dbg_dout_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/top_AER_nreq" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">top_AER_nreq</obj_property>
+      <obj_property name="ObjectShortName">top_AER_nreq</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/top_AER_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">top_AER_data[9:0]</obj_property>
+      <obj_property name="ObjectShortName">top_AER_data[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/en_evt2frame" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">en_evt2frame</obj_property>
+      <obj_property name="ObjectShortName">en_evt2frame</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/init" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">init</obj_property>
+      <obj_property name="ObjectShortName">init</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/hi_inout" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">hi_inout[15:0]</obj_property>
+      <obj_property name="ObjectShortName">hi_inout[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/hi_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">hi_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">hi_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/clk_pll" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_pll</obj_property>
+      <obj_property name="ObjectShortName">clk_pll</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/ix" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ix[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ix[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/iy" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">iy[31:0]</obj_property>
+      <obj_property name="ObjectShortName">iy[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/rx1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rx1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rx1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/rx2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rx2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rx2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/rx3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rx3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rx3[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/rx4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rx4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rx4[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/ry1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ry1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ry1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/ry2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ry2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ry2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/ry3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ry3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ry3[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/ry4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ry4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ry4[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/outfile1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">outfile1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">outfile1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/k" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">k[31:0]</obj_property>
+      <obj_property name="ObjectShortName">k[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/hi_dataout" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">hi_dataout[15:0]</obj_property>
+      <obj_property name="ObjectShortName">hi_dataout[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/WireIns" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">WireIns[0:31,15:0]</obj_property>
+      <obj_property name="ObjectShortName">WireIns[0:31,15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/WireOuts" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">WireOuts[0:31,15:0]</obj_property>
+      <obj_property name="ObjectShortName">WireOuts[0:31,15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/Triggered" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Triggered[0:31,15:0]</obj_property>
+      <obj_property name="ObjectShortName">Triggered[0:31,15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/wo_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wo_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">wo_data[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/row" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">row[31:0]</obj_property>
+      <obj_property name="ObjectShortName">row[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/col" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">col[31:0]</obj_property>
+      <obj_property name="ObjectShortName">col[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/final_data_file1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">final_data_file1[207:0]</obj_property>
+      <obj_property name="ObjectShortName">final_data_file1[207:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/BlockDelayStates" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">BlockDelayStates[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BlockDelayStates[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/ReadyCheckDelay" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ReadyCheckDelay[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ReadyCheckDelay[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/PostReadyDelay" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PostReadyDelay[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PostReadyDelay[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/pipeInSize" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pipeInSize[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pipeInSize[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/pipeOutSize" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pipeOutSize[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pipeOutSize[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/UPDATE_TO_READOUT_CLOCKS" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">UPDATE_TO_READOUT_CLOCKS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">UPDATE_TO_READOUT_CLOCKS[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/Tti" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">Tti</obj_property>
+      <obj_property name="ObjectShortName">Tti</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/Tep" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Tep[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Tep[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/TDOUT_DELAY" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">TDOUT_DELAY[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TDOUT_DELAY[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/TTRIG_DELAY" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">TTRIG_DELAY[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TTRIG_DELAY[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/tCK" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">tCK</obj_property>
+      <obj_property name="ObjectShortName">tCK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/ARRAY_WIDTH" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ARRAY_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ARRAY_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/ADDR_WIDTH" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ADDR_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ADDR_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/ARRAY_DEPTH" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ARRAY_DEPTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ARRAY_DEPTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/config_reg58_int2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">config_reg58_int2[15:0]</obj_property>
+      <obj_property name="ObjectShortName">config_reg58_int2[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/dut_conv_top/config_reg58" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">config_reg58[15:0]</obj_property>
+      <obj_property name="ObjectShortName">config_reg58[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/IsTriggered/ep" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ep[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ep[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/IsTriggered/mask" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mask[15:0]</obj_property>
+      <obj_property name="ObjectShortName">mask[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/IsTriggered/IsTriggered" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">IsTriggered</obj_property>
+      <obj_property name="ObjectShortName">IsTriggered</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/region_x_list" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">region_x_list[0:15,8:0]</obj_property>
+      <obj_property name="ObjectShortName">region_x_list[0:15,8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_testing_CNN_dbg/region_y_list" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">region_y_list[0:15,7:0]</obj_property>
+      <obj_property name="ObjectShortName">region_y_list[0:15,7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

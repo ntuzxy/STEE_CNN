@@ -1,0 +1,1530 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'testing_CNN_dbg'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s1500-fg320-4 -cm area -ir off -pr off
+-c 100 -o testing_CNN_dbg_map.ncd testing_CNN_dbg.ngd testing_CNN_dbg.pcf 
+Target Device  : xc3s1500
+Target Package : fg320
+Target Speed   : -4
+Mapper Version : spartan3 -- $Revision: 1.55 $
+Mapped Date    : Sat Dec 05 17:32:53 2020
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:  100
+Logic Utilization:
+  Number of Slice Flip Flops:         1,091 out of  26,624    4%
+  Number of 4 input LUTs:             1,425 out of  26,624    5%
+Logic Distribution:
+  Number of occupied Slices:          1,110 out of  13,312    8%
+    Number of Slices containing only related logic:   1,110 out of   1,110 100%
+    Number of Slices containing unrelated logic:          0 out of   1,110   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       1,566 out of  26,624    5%
+    Number used as logic:             1,353
+    Number used as a route-thru:        141
+    Number used for Dual Port RAMs:      72
+      (Two LUTs used per Dual Port RAM)
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 99 out of     221   44%
+    IOB Flip Flops:                       1
+  Number of RAMB16s:                     29 out of      32   90%
+  Number of MULT18X18s:                   4 out of      32   12%
+  Number of BUFGMUXs:                     2 out of       8   25%
+  Number of DCMs:                         1 out of       4   25%
+
+Average Fanout of Non-Clock Nets:                3.39
+
+Peak Memory Usage:  4433 MB
+Total REAL time to MAP completion:  9 secs 
+Total CPU time to MAP completion:   3 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:MapLib:701 - Signal i2c_sda connected to top level port i2c_sda has been
+   removed.
+WARNING:MapLib:701 - Signal i2c_scl connected to top level port i2c_scl has been
+   removed.
+WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol "okHI/physical_group_ok1<24>/clkbuf/BUFG" (output signal=clk_top_OBUF)
+   has a mix of clock and non-clock loads. The non-clock loads are:
+   Pin I0 of clk_update1
+WARNING:PhysDesignRules:367 - The signal <wireOR/GLOBAL_LOGIC0> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA2> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA3> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA4> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA5> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA6> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA7> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA10> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA11> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA12> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA13> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA14> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA15> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA18> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA19> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA20> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA21> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA22> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA23> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA26> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA27> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA28> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA29> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA30> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA31> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB2> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB3> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB4> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB5> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB6> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB7> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB10> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB11> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB12> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB13> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB14> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB15> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB18> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB19> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB20> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB21> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB22> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB23> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB26> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB27> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB28> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB29> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB30> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB31> on
+   block:<rgn_y/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA2> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA3> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA4> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA5> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA6> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA7> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA10> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA11> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA12> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA13> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA14> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA15> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA18> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA19> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA20> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA21> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA22> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA23> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA26> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA27> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA28> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA29> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA30> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA31> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB2> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB3> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB4> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB5> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB6> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB7> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB10> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB11> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB12> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB13> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB14> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB15> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB18> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB19> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB20> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB21> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB22> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB23> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB26> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB27> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB28> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB29> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB30> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB31> on
+   block:<rgn_x/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_noinit.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+
+Section 3 - Informational
+-------------------------
+INFO:Map:110 - output buffer 'rgn_done_OBUF' driving design level port
+   'rgn_done' is being pushed into module 'RP2serial_1' to enable I/O register
+   usage. The buffer has been renamed as 'RP2serial_1/rgn_done_OBUF'.
+INFO:LIT:243 - Logical network N196 has no load.
+INFO:LIT:395 - The above info message is repeated 178 more times for the
+   following (max. 5 shown):
+   N197,
+   N198,
+   N199,
+   N200,
+   N201
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 338 block(s) removed
+ 148 block(s) optimized away
+ 338 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "ok1<30>" is loadless and has been removed.
+ Loadless block "okHI/hicore/ti_blockstrobe" (SFF) removed.
+The signal "ep00/ep_dataout<15>" is loadless and has been removed.
+ Loadless block "ep00/ep_dataout_15" (SFF) removed.
+  The signal "ep00/ep_datahold<15>" is loadless and has been removed.
+   Loadless block "ep00/ep_datahold_15" (SFF) removed.
+The signal "ep00/ep_dataout<14>" is loadless and has been removed.
+ Loadless block "ep00/ep_dataout_14" (SFF) removed.
+  The signal "ep00/ep_datahold<14>" is loadless and has been removed.
+   Loadless block "ep00/ep_datahold_14" (SFF) removed.
+The signal "ep00/ep_dataout<13>" is loadless and has been removed.
+ Loadless block "ep00/ep_dataout_13" (SFF) removed.
+  The signal "ep00/ep_datahold<13>" is loadless and has been removed.
+   Loadless block "ep00/ep_datahold_13" (SFF) removed.
+The signal "ep00/ep_dataout<12>" is loadless and has been removed.
+ Loadless block "ep00/ep_dataout_12" (SFF) removed.
+  The signal "ep00/ep_datahold<12>" is loadless and has been removed.
+   Loadless block "ep00/ep_datahold_12" (SFF) removed.
+The signal "ep00/ep_dataout<11>" is loadless and has been removed.
+ Loadless block "ep00/ep_dataout_11" (SFF) removed.
+  The signal "ep00/ep_datahold<11>" is loadless and has been removed.
+   Loadless block "ep00/ep_datahold_11" (SFF) removed.
+The signal "ep00/ep_dataout<10>" is loadless and has been removed.
+ Loadless block "ep00/ep_dataout_10" (SFF) removed.
+  The signal "ep00/ep_datahold<10>" is loadless and has been removed.
+   Loadless block "ep00/ep_datahold_10" (SFF) removed.
+The signal "ep00/ep_dataout<9>" is loadless and has been removed.
+ Loadless block "ep00/ep_dataout_9" (SFF) removed.
+  The signal "ep00/ep_datahold<9>" is loadless and has been removed.
+   Loadless block "ep00/ep_datahold_9" (SFF) removed.
+The signal "ep00/ep_dataout<8>" is loadless and has been removed.
+ Loadless block "ep00/ep_dataout_8" (SFF) removed.
+  The signal "ep00/ep_datahold<8>" is loadless and has been removed.
+   Loadless block "ep00/ep_datahold_8" (SFF) removed.
+The signal "ep01/ep_dataout<15>" is loadless and has been removed.
+ Loadless block "ep01/ep_dataout_15" (SFF) removed.
+  The signal "ep01/ep_datahold<15>" is loadless and has been removed.
+   Loadless block "ep01/ep_datahold_15" (SFF) removed.
+The signal "ep01/ep_dataout<14>" is loadless and has been removed.
+ Loadless block "ep01/ep_dataout_14" (SFF) removed.
+  The signal "ep01/ep_datahold<14>" is loadless and has been removed.
+   Loadless block "ep01/ep_datahold_14" (SFF) removed.
+The signal "ep01/ep_dataout<13>" is loadless and has been removed.
+ Loadless block "ep01/ep_dataout_13" (SFF) removed.
+  The signal "ep01/ep_datahold<13>" is loadless and has been removed.
+   Loadless block "ep01/ep_datahold_13" (SFF) removed.
+The signal "ep01/ep_dataout<12>" is loadless and has been removed.
+ Loadless block "ep01/ep_dataout_12" (SFF) removed.
+  The signal "ep01/ep_datahold<12>" is loadless and has been removed.
+   Loadless block "ep01/ep_datahold_12" (SFF) removed.
+The signal "ep01/ep_dataout<11>" is loadless and has been removed.
+ Loadless block "ep01/ep_dataout_11" (SFF) removed.
+  The signal "ep01/ep_datahold<11>" is loadless and has been removed.
+   Loadless block "ep01/ep_datahold_11" (SFF) removed.
+The signal "ep01/ep_dataout<10>" is loadless and has been removed.
+ Loadless block "ep01/ep_dataout_10" (SFF) removed.
+  The signal "ep01/ep_datahold<10>" is loadless and has been removed.
+   Loadless block "ep01/ep_datahold_10" (SFF) removed.
+The signal "ep01/ep_dataout<9>" is loadless and has been removed.
+ Loadless block "ep01/ep_dataout_9" (SFF) removed.
+  The signal "ep01/ep_datahold<9>" is loadless and has been removed.
+   Loadless block "ep01/ep_datahold_9" (SFF) removed.
+The signal "ep01/ep_dataout<8>" is loadless and has been removed.
+ Loadless block "ep01/ep_dataout_8" (SFF) removed.
+  The signal "ep01/ep_datahold<8>" is loadless and has been removed.
+   Loadless block "ep01/ep_datahold_8" (SFF) removed.
+The signal "ep01/ep_dataout<7>" is loadless and has been removed.
+ Loadless block "ep01/ep_dataout_7" (SFF) removed.
+  The signal "ep01/ep_datahold<7>" is loadless and has been removed.
+   Loadless block "ep01/ep_datahold_7" (SFF) removed.
+The signal "ep03/ep_dataout<15>" is loadless and has been removed.
+ Loadless block "ep03/ep_dataout_15" (SFF) removed.
+  The signal "ep03/ep_datahold<15>" is loadless and has been removed.
+   Loadless block "ep03/ep_datahold_15" (SFF) removed.
+The signal "ep03/ep_dataout<14>" is loadless and has been removed.
+ Loadless block "ep03/ep_dataout_14" (SFF) removed.
+  The signal "ep03/ep_datahold<14>" is loadless and has been removed.
+   Loadless block "ep03/ep_datahold_14" (SFF) removed.
+The signal "ep03/ep_dataout<13>" is loadless and has been removed.
+ Loadless block "ep03/ep_dataout_13" (SFF) removed.
+  The signal "ep03/ep_datahold<13>" is loadless and has been removed.
+   Loadless block "ep03/ep_datahold_13" (SFF) removed.
+The signal "ep03/ep_dataout<12>" is loadless and has been removed.
+ Loadless block "ep03/ep_dataout_12" (SFF) removed.
+  The signal "ep03/ep_datahold<12>" is loadless and has been removed.
+   Loadless block "ep03/ep_datahold_12" (SFF) removed.
+The signal "ep03/ep_dataout<11>" is loadless and has been removed.
+ Loadless block "ep03/ep_dataout_11" (SFF) removed.
+  The signal "ep03/ep_datahold<11>" is loadless and has been removed.
+   Loadless block "ep03/ep_datahold_11" (SFF) removed.
+The signal "ep03/ep_dataout<10>" is loadless and has been removed.
+ Loadless block "ep03/ep_dataout_10" (SFF) removed.
+  The signal "ep03/ep_datahold<10>" is loadless and has been removed.
+   Loadless block "ep03/ep_datahold_10" (SFF) removed.
+The signal "ep03/ep_dataout<9>" is loadless and has been removed.
+ Loadless block "ep03/ep_dataout_9" (SFF) removed.
+  The signal "ep03/ep_datahold<9>" is loadless and has been removed.
+   Loadless block "ep03/ep_datahold_9" (SFF) removed.
+The signal "ep03/ep_dataout<8>" is loadless and has been removed.
+ Loadless block "ep03/ep_dataout_8" (SFF) removed.
+  The signal "ep03/ep_datahold<8>" is loadless and has been removed.
+   Loadless block "ep03/ep_datahold_8" (SFF) removed.
+The signal "ep03/ep_dataout<7>" is loadless and has been removed.
+ Loadless block "ep03/ep_dataout_7" (SFF) removed.
+  The signal "ep03/ep_datahold<7>" is loadless and has been removed.
+   Loadless block "ep03/ep_datahold_7" (SFF) removed.
+The signal "ep03/ep_dataout<6>" is loadless and has been removed.
+ Loadless block "ep03/ep_dataout_6" (SFF) removed.
+  The signal "ep03/ep_datahold<6>" is loadless and has been removed.
+   Loadless block "ep03/ep_datahold_6" (SFF) removed.
+The signal "ep04/ep_dataout<15>" is loadless and has been removed.
+ Loadless block "ep04/ep_dataout_15" (SFF) removed.
+  The signal "ep04/ep_datahold<15>" is loadless and has been removed.
+   Loadless block "ep04/ep_datahold_15" (SFF) removed.
+The signal "ep04/ep_dataout<14>" is loadless and has been removed.
+ Loadless block "ep04/ep_dataout_14" (SFF) removed.
+  The signal "ep04/ep_datahold<14>" is loadless and has been removed.
+   Loadless block "ep04/ep_datahold_14" (SFF) removed.
+The signal "ep04/ep_dataout<13>" is loadless and has been removed.
+ Loadless block "ep04/ep_dataout_13" (SFF) removed.
+  The signal "ep04/ep_datahold<13>" is loadless and has been removed.
+   Loadless block "ep04/ep_datahold_13" (SFF) removed.
+The signal "ep04/ep_dataout<12>" is loadless and has been removed.
+ Loadless block "ep04/ep_dataout_12" (SFF) removed.
+  The signal "ep04/ep_datahold<12>" is loadless and has been removed.
+   Loadless block "ep04/ep_datahold_12" (SFF) removed.
+The signal "ep04/ep_dataout<11>" is loadless and has been removed.
+ Loadless block "ep04/ep_dataout_11" (SFF) removed.
+  The signal "ep04/ep_datahold<11>" is loadless and has been removed.
+   Loadless block "ep04/ep_datahold_11" (SFF) removed.
+The signal "ep04/ep_dataout<10>" is loadless and has been removed.
+ Loadless block "ep04/ep_dataout_10" (SFF) removed.
+  The signal "ep04/ep_datahold<10>" is loadless and has been removed.
+   Loadless block "ep04/ep_datahold_10" (SFF) removed.
+The signal "ep04/ep_dataout<9>" is loadless and has been removed.
+ Loadless block "ep04/ep_dataout_9" (SFF) removed.
+  The signal "ep04/ep_datahold<9>" is loadless and has been removed.
+   Loadless block "ep04/ep_datahold_9" (SFF) removed.
+The signal "ep04/ep_dataout<8>" is loadless and has been removed.
+ Loadless block "ep04/ep_dataout_8" (SFF) removed.
+  The signal "ep04/ep_datahold<8>" is loadless and has been removed.
+   Loadless block "ep04/ep_datahold_8" (SFF) removed.
+The signal "ep04/ep_dataout<7>" is loadless and has been removed.
+ Loadless block "ep04/ep_dataout_7" (SFF) removed.
+  The signal "ep04/ep_datahold<7>" is loadless and has been removed.
+   Loadless block "ep04/ep_datahold_7" (SFF) removed.
+The signal "ep04/ep_dataout<6>" is loadless and has been removed.
+ Loadless block "ep04/ep_dataout_6" (SFF) removed.
+  The signal "ep04/ep_datahold<6>" is loadless and has been removed.
+   Loadless block "ep04/ep_datahold_6" (SFF) removed.
+The signal "ep04/ep_dataout<5>" is loadless and has been removed.
+ Loadless block "ep04/ep_dataout_5" (SFF) removed.
+  The signal "ep04/ep_datahold<5>" is loadless and has been removed.
+   Loadless block "ep04/ep_datahold_5" (SFF) removed.
+The signal "ep04/ep_dataout<4>" is loadless and has been removed.
+ Loadless block "ep04/ep_dataout_4" (SFF) removed.
+  The signal "ep04/ep_datahold<4>" is loadless and has been removed.
+   Loadless block "ep04/ep_datahold_4" (SFF) removed.
+The signal "ep04/ep_dataout<3>" is loadless and has been removed.
+ Loadless block "ep04/ep_dataout_3" (SFF) removed.
+  The signal "ep04/ep_datahold<3>" is loadless and has been removed.
+   Loadless block "ep04/ep_datahold_3" (SFF) removed.
+The signal "ep04/ep_dataout<2>" is loadless and has been removed.
+ Loadless block "ep04/ep_dataout_2" (SFF) removed.
+  The signal "ep04/ep_datahold<2>" is loadless and has been removed.
+   Loadless block "ep04/ep_datahold_2" (SFF) removed.
+The signal "ep04/ep_dataout<1>" is loadless and has been removed.
+ Loadless block "ep04/ep_dataout_1" (SFF) removed.
+  The signal "ep04/ep_datahold<1>" is loadless and has been removed.
+   Loadless block "ep04/ep_datahold_1" (SFF) removed.
+The signal "ep05/ep_dataout<15>" is loadless and has been removed.
+ Loadless block "ep05/ep_dataout_15" (SFF) removed.
+  The signal "ep05/ep_datahold<15>" is loadless and has been removed.
+   Loadless block "ep05/ep_datahold_15" (SFF) removed.
+The signal "ep05/ep_dataout<14>" is loadless and has been removed.
+ Loadless block "ep05/ep_dataout_14" (SFF) removed.
+  The signal "ep05/ep_datahold<14>" is loadless and has been removed.
+   Loadless block "ep05/ep_datahold_14" (SFF) removed.
+The signal "ep05/ep_dataout<13>" is loadless and has been removed.
+ Loadless block "ep05/ep_dataout_13" (SFF) removed.
+  The signal "ep05/ep_datahold<13>" is loadless and has been removed.
+   Loadless block "ep05/ep_datahold_13" (SFF) removed.
+The signal "ep05/ep_dataout<12>" is loadless and has been removed.
+ Loadless block "ep05/ep_dataout_12" (SFF) removed.
+  The signal "ep05/ep_datahold<12>" is loadless and has been removed.
+   Loadless block "ep05/ep_datahold_12" (SFF) removed.
+The signal "ep05/ep_dataout<11>" is loadless and has been removed.
+ Loadless block "ep05/ep_dataout_11" (SFF) removed.
+  The signal "ep05/ep_datahold<11>" is loadless and has been removed.
+   Loadless block "ep05/ep_datahold_11" (SFF) removed.
+The signal "ep05/ep_dataout<10>" is loadless and has been removed.
+ Loadless block "ep05/ep_dataout_10" (SFF) removed.
+  The signal "ep05/ep_datahold<10>" is loadless and has been removed.
+   Loadless block "ep05/ep_datahold_10" (SFF) removed.
+The signal "ep05/ep_dataout<9>" is loadless and has been removed.
+ Loadless block "ep05/ep_dataout_9" (SFF) removed.
+  The signal "ep05/ep_datahold<9>" is loadless and has been removed.
+   Loadless block "ep05/ep_datahold_9" (SFF) removed.
+The signal "ep05/ep_dataout<8>" is loadless and has been removed.
+ Loadless block "ep05/ep_dataout_8" (SFF) removed.
+  The signal "ep05/ep_datahold<8>" is loadless and has been removed.
+   Loadless block "ep05/ep_datahold_8" (SFF) removed.
+The signal "ep05/ep_dataout<7>" is loadless and has been removed.
+ Loadless block "ep05/ep_dataout_7" (SFF) removed.
+  The signal "ep05/ep_datahold<7>" is loadless and has been removed.
+   Loadless block "ep05/ep_datahold_7" (SFF) removed.
+The signal "ep05/ep_dataout<6>" is loadless and has been removed.
+ Loadless block "ep05/ep_dataout_6" (SFF) removed.
+  The signal "ep05/ep_datahold<6>" is loadless and has been removed.
+   Loadless block "ep05/ep_datahold_6" (SFF) removed.
+The signal "ep05/ep_dataout<5>" is loadless and has been removed.
+ Loadless block "ep05/ep_dataout_5" (SFF) removed.
+  The signal "ep05/ep_datahold<5>" is loadless and has been removed.
+   Loadless block "ep05/ep_datahold_5" (SFF) removed.
+The signal "ep05/ep_dataout<4>" is loadless and has been removed.
+ Loadless block "ep05/ep_dataout_4" (SFF) removed.
+  The signal "ep05/ep_datahold<4>" is loadless and has been removed.
+   Loadless block "ep05/ep_datahold_4" (SFF) removed.
+The signal "ep05/ep_dataout<3>" is loadless and has been removed.
+ Loadless block "ep05/ep_dataout_3" (SFF) removed.
+  The signal "ep05/ep_datahold<3>" is loadless and has been removed.
+   Loadless block "ep05/ep_datahold_3" (SFF) removed.
+The signal "ep05/ep_dataout<2>" is loadless and has been removed.
+ Loadless block "ep05/ep_dataout_2" (SFF) removed.
+  The signal "ep05/ep_datahold<2>" is loadless and has been removed.
+   Loadless block "ep05/ep_datahold_2" (SFF) removed.
+The signal "ep40/ep_trigger<15>" is loadless and has been removed.
+ Loadless block "ep40/ep_trigger_15" (FF) removed.
+  The signal "ep40/ep_trigger_xor0000<15>" is loadless and has been removed.
+   Loadless block "ep40/Mxor_ep_trigger_xor0000_Result<15>1" (ROM) removed.
+    The signal "ep40/trigff1<15>" is loadless and has been removed.
+     Loadless block "ep40/trigff1_15" (FF) removed.
+      The signal "ep40/trigff0<15>" is loadless and has been removed.
+       Loadless block "ep40/trigff0_15" (FF) removed.
+        The signal "ep40/eptrig<15>" is loadless and has been removed.
+         Loadless block "ep40/eptrig_15" (SFF) removed.
+          The signal "ep40/eptrig_and0000" is loadless and has been removed.
+           Loadless block "ep40/eptrig_and0000141" (ROM) removed.
+            The signal "ep40/eptrig_and000026" is loadless and has been removed.
+             Loadless block "ep40/eptrig_and000026" (ROM) removed.
+            The signal "ep40/eptrig_and000053" is loadless and has been removed.
+             Loadless block "ep40/eptrig_and000053" (ROM) removed.
+            The signal "ep40/eptrig_and000093" is loadless and has been removed.
+             Loadless block "ep40/eptrig_and000093" (ROM) removed.
+            The signal "ep40/eptrig_and0000117" is loadless and has been removed.
+             Loadless block "ep40/eptrig_and0000117_f5" (MUX) removed.
+              The signal "ep40/N3" is loadless and has been removed.
+               Loadless block "ep40/XST_GND" (ZERO) removed.
+              The signal "ep40/eptrig_and00001171" is loadless and has been removed.
+               Loadless block "ep40/eptrig_and00001171" (ROM) removed.
+          The signal "ep40/eptrig_xor0000<15>" is loadless and has been removed.
+           Loadless block "ep40/Mxor_eptrig_xor0000_Result<15>1" (ROM) removed.
+The signal "ep40/ep_trigger<14>" is loadless and has been removed.
+ Loadless block "ep40/ep_trigger_14" (FF) removed.
+  The signal "ep40/ep_trigger_xor0000<14>" is loadless and has been removed.
+   Loadless block "ep40/Mxor_ep_trigger_xor0000_Result<14>1" (ROM) removed.
+    The signal "ep40/trigff1<14>" is loadless and has been removed.
+     Loadless block "ep40/trigff1_14" (FF) removed.
+      The signal "ep40/trigff0<14>" is loadless and has been removed.
+       Loadless block "ep40/trigff0_14" (FF) removed.
+        The signal "ep40/eptrig<14>" is loadless and has been removed.
+         Loadless block "ep40/eptrig_14" (SFF) removed.
+          The signal "ep40/eptrig_xor0000<14>" is loadless and has been removed.
+           Loadless block "ep40/Mxor_eptrig_xor0000_Result<14>1" (ROM) removed.
+The signal "ep40/ep_trigger<13>" is loadless and has been removed.
+ Loadless block "ep40/ep_trigger_13" (FF) removed.
+  The signal "ep40/ep_trigger_xor0000<13>" is loadless and has been removed.
+   Loadless block "ep40/Mxor_ep_trigger_xor0000_Result<13>1" (ROM) removed.
+    The signal "ep40/trigff1<13>" is loadless and has been removed.
+     Loadless block "ep40/trigff1_13" (FF) removed.
+      The signal "ep40/trigff0<13>" is loadless and has been removed.
+       Loadless block "ep40/trigff0_13" (FF) removed.
+        The signal "ep40/eptrig<13>" is loadless and has been removed.
+         Loadless block "ep40/eptrig_13" (SFF) removed.
+          The signal "ep40/eptrig_xor0000<13>" is loadless and has been removed.
+           Loadless block "ep40/Mxor_eptrig_xor0000_Result<13>1" (ROM) removed.
+The signal "ep40/ep_trigger<12>" is loadless and has been removed.
+ Loadless block "ep40/ep_trigger_12" (FF) removed.
+  The signal "ep40/ep_trigger_xor0000<12>" is loadless and has been removed.
+   Loadless block "ep40/Mxor_ep_trigger_xor0000_Result<12>1" (ROM) removed.
+    The signal "ep40/trigff1<12>" is loadless and has been removed.
+     Loadless block "ep40/trigff1_12" (FF) removed.
+      The signal "ep40/trigff0<12>" is loadless and has been removed.
+       Loadless block "ep40/trigff0_12" (FF) removed.
+        The signal "ep40/eptrig<12>" is loadless and has been removed.
+         Loadless block "ep40/eptrig_12" (SFF) removed.
+          The signal "ep40/eptrig_xor0000<12>" is loadless and has been removed.
+           Loadless block "ep40/Mxor_eptrig_xor0000_Result<12>1" (ROM) removed.
+The signal "ep40/ep_trigger<11>" is loadless and has been removed.
+ Loadless block "ep40/ep_trigger_11" (FF) removed.
+  The signal "ep40/ep_trigger_xor0000<11>" is loadless and has been removed.
+   Loadless block "ep40/Mxor_ep_trigger_xor0000_Result<11>1" (ROM) removed.
+    The signal "ep40/trigff1<11>" is loadless and has been removed.
+     Loadless block "ep40/trigff1_11" (FF) removed.
+      The signal "ep40/trigff0<11>" is loadless and has been removed.
+       Loadless block "ep40/trigff0_11" (FF) removed.
+        The signal "ep40/eptrig<11>" is loadless and has been removed.
+         Loadless block "ep40/eptrig_11" (SFF) removed.
+          The signal "ep40/eptrig_xor0000<11>" is loadless and has been removed.
+           Loadless block "ep40/Mxor_eptrig_xor0000_Result<11>1" (ROM) removed.
+The signal "ep40/ep_trigger<10>" is loadless and has been removed.
+ Loadless block "ep40/ep_trigger_10" (FF) removed.
+  The signal "ep40/ep_trigger_xor0000<10>" is loadless and has been removed.
+   Loadless block "ep40/Mxor_ep_trigger_xor0000_Result<10>1" (ROM) removed.
+    The signal "ep40/trigff1<10>" is loadless and has been removed.
+     Loadless block "ep40/trigff1_10" (FF) removed.
+      The signal "ep40/trigff0<10>" is loadless and has been removed.
+       Loadless block "ep40/trigff0_10" (FF) removed.
+        The signal "ep40/eptrig<10>" is loadless and has been removed.
+         Loadless block "ep40/eptrig_10" (SFF) removed.
+          The signal "ep40/eptrig_xor0000<10>" is loadless and has been removed.
+           Loadless block "ep40/Mxor_eptrig_xor0000_Result<10>1" (ROM) removed.
+The signal "ep40/ep_trigger<9>" is loadless and has been removed.
+ Loadless block "ep40/ep_trigger_9" (FF) removed.
+  The signal "ep40/ep_trigger_xor0000<9>" is loadless and has been removed.
+   Loadless block "ep40/Mxor_ep_trigger_xor0000_Result<9>1" (ROM) removed.
+    The signal "ep40/trigff1<9>" is loadless and has been removed.
+     Loadless block "ep40/trigff1_9" (FF) removed.
+      The signal "ep40/trigff0<9>" is loadless and has been removed.
+       Loadless block "ep40/trigff0_9" (FF) removed.
+        The signal "ep40/eptrig<9>" is loadless and has been removed.
+         Loadless block "ep40/eptrig_9" (SFF) removed.
+          The signal "ep40/eptrig_xor0000<9>" is loadless and has been removed.
+           Loadless block "ep40/Mxor_eptrig_xor0000_Result<9>1" (ROM) removed.
+The signal "ep40/ep_trigger<8>" is loadless and has been removed.
+ Loadless block "ep40/ep_trigger_8" (FF) removed.
+  The signal "ep40/ep_trigger_xor0000<8>" is loadless and has been removed.
+   Loadless block "ep40/Mxor_ep_trigger_xor0000_Result<8>1" (ROM) removed.
+    The signal "ep40/trigff1<8>" is loadless and has been removed.
+     Loadless block "ep40/trigff1_8" (FF) removed.
+      The signal "ep40/trigff0<8>" is loadless and has been removed.
+       Loadless block "ep40/trigff0_8" (FF) removed.
+        The signal "ep40/eptrig<8>" is loadless and has been removed.
+         Loadless block "ep40/eptrig_8" (SFF) removed.
+          The signal "ep40/eptrig_xor0000<8>" is loadless and has been removed.
+           Loadless block "ep40/Mxor_eptrig_xor0000_Result<8>1" (ROM) removed.
+The signal "ep40/ep_trigger<7>" is loadless and has been removed.
+ Loadless block "ep40/ep_trigger_7" (FF) removed.
+  The signal "ep40/ep_trigger_xor0000<7>" is loadless and has been removed.
+   Loadless block "ep40/Mxor_ep_trigger_xor0000_Result<7>1" (ROM) removed.
+    The signal "ep40/trigff1<7>" is loadless and has been removed.
+     Loadless block "ep40/trigff1_7" (FF) removed.
+      The signal "ep40/trigff0<7>" is loadless and has been removed.
+       Loadless block "ep40/trigff0_7" (FF) removed.
+        The signal "ep40/eptrig<7>" is loadless and has been removed.
+         Loadless block "ep40/eptrig_7" (SFF) removed.
+          The signal "ep40/eptrig_xor0000<7>" is loadless and has been removed.
+           Loadless block "ep40/Mxor_eptrig_xor0000_Result<7>1" (ROM) removed.
+The signal "ep40/ep_trigger<6>" is loadless and has been removed.
+ Loadless block "ep40/ep_trigger_6" (FF) removed.
+  The signal "ep40/ep_trigger_xor0000<6>" is loadless and has been removed.
+   Loadless block "ep40/Mxor_ep_trigger_xor0000_Result<6>1" (ROM) removed.
+    The signal "ep40/trigff1<6>" is loadless and has been removed.
+     Loadless block "ep40/trigff1_6" (FF) removed.
+      The signal "ep40/trigff0<6>" is loadless and has been removed.
+       Loadless block "ep40/trigff0_6" (FF) removed.
+        The signal "ep40/eptrig<6>" is loadless and has been removed.
+         Loadless block "ep40/eptrig_6" (SFF) removed.
+          The signal "ep40/eptrig_xor0000<6>" is loadless and has been removed.
+           Loadless block "ep40/Mxor_eptrig_xor0000_Result<6>1" (ROM) removed.
+The signal "ep40/ep_trigger<5>" is loadless and has been removed.
+ Loadless block "ep40/ep_trigger_5" (FF) removed.
+  The signal "ep40/ep_trigger_xor0000<5>" is loadless and has been removed.
+   Loadless block "ep40/Mxor_ep_trigger_xor0000_Result<5>1" (ROM) removed.
+    The signal "ep40/trigff1<5>" is loadless and has been removed.
+     Loadless block "ep40/trigff1_5" (FF) removed.
+      The signal "ep40/trigff0<5>" is loadless and has been removed.
+       Loadless block "ep40/trigff0_5" (FF) removed.
+        The signal "ep40/eptrig<5>" is loadless and has been removed.
+         Loadless block "ep40/eptrig_5" (SFF) removed.
+          The signal "ep40/eptrig_xor0000<5>" is loadless and has been removed.
+           Loadless block "ep40/Mxor_eptrig_xor0000_Result<5>1" (ROM) removed.
+The signal "ep40/ep_trigger<4>" is loadless and has been removed.
+ Loadless block "ep40/ep_trigger_4" (FF) removed.
+  The signal "ep40/ep_trigger_xor0000<4>" is loadless and has been removed.
+   Loadless block "ep40/Mxor_ep_trigger_xor0000_Result<4>1" (ROM) removed.
+    The signal "ep40/trigff1<4>" is loadless and has been removed.
+     Loadless block "ep40/trigff1_4" (FF) removed.
+      The signal "ep40/trigff0<4>" is loadless and has been removed.
+       Loadless block "ep40/trigff0_4" (FF) removed.
+        The signal "ep40/eptrig<4>" is loadless and has been removed.
+         Loadless block "ep40/eptrig_4" (SFF) removed.
+          The signal "ep40/eptrig_xor0000<4>" is loadless and has been removed.
+           Loadless block "ep40/Mxor_eptrig_xor0000_Result<4>1" (ROM) removed.
+The signal "ep40/ep_trigger<3>" is loadless and has been removed.
+ Loadless block "ep40/ep_trigger_3" (FF) removed.
+  The signal "ep40/ep_trigger_xor0000<3>" is loadless and has been removed.
+   Loadless block "ep40/Mxor_ep_trigger_xor0000_Result<3>1" (ROM) removed.
+    The signal "ep40/trigff1<3>" is loadless and has been removed.
+     Loadless block "ep40/trigff1_3" (FF) removed.
+      The signal "ep40/trigff0<3>" is loadless and has been removed.
+       Loadless block "ep40/trigff0_3" (FF) removed.
+        The signal "ep40/eptrig<3>" is loadless and has been removed.
+         Loadless block "ep40/eptrig_3" (SFF) removed.
+          The signal "ep40/eptrig_xor0000<3>" is loadless and has been removed.
+           Loadless block "ep40/Mxor_eptrig_xor0000_Result<3>1" (ROM) removed.
+The signal "ep40/ep_trigger<2>" is loadless and has been removed.
+ Loadless block "ep40/ep_trigger_2" (FF) removed.
+  The signal "ep40/ep_trigger_xor0000<2>" is loadless and has been removed.
+   Loadless block "ep40/Mxor_ep_trigger_xor0000_Result<2>1" (ROM) removed.
+    The signal "ep40/trigff1<2>" is loadless and has been removed.
+     Loadless block "ep40/trigff1_2" (FF) removed.
+      The signal "ep40/trigff0<2>" is loadless and has been removed.
+       Loadless block "ep40/trigff0_2" (FF) removed.
+        The signal "ep40/eptrig<2>" is loadless and has been removed.
+         Loadless block "ep40/eptrig_2" (SFF) removed.
+          The signal "ep40/eptrig_xor0000<2>" is loadless and has been removed.
+           Loadless block "ep40/Mxor_eptrig_xor0000_Result<2>1" (ROM) removed.
+The signal "ep40/ep_trigger<1>" is loadless and has been removed.
+ Loadless block "ep40/ep_trigger_1" (FF) removed.
+  The signal "ep40/ep_trigger_xor0000<1>" is loadless and has been removed.
+   Loadless block "ep40/Mxor_ep_trigger_xor0000_Result<1>1" (ROM) removed.
+    The signal "ep40/trigff1<1>" is loadless and has been removed.
+     Loadless block "ep40/trigff1_1" (FF) removed.
+      The signal "ep40/trigff0<1>" is loadless and has been removed.
+       Loadless block "ep40/trigff0_1" (FF) removed.
+        The signal "ep40/eptrig<1>" is loadless and has been removed.
+         Loadless block "ep40/eptrig_1" (SFF) removed.
+          The signal "ep40/eptrig_xor0000<1>" is loadless and has been removed.
+           Loadless block "ep40/Mxor_eptrig_xor0000_Result<1>1" (ROM) removed.
+The signal "ep40/ep_trigger<0>" is loadless and has been removed.
+ Loadless block "ep40/ep_trigger_0" (FF) removed.
+  The signal "ep40/ep_trigger_xor0000<0>" is loadless and has been removed.
+   Loadless block "ep40/Mxor_ep_trigger_xor0000_Result<0>1" (ROM) removed.
+    The signal "ep40/trigff1<0>" is loadless and has been removed.
+     Loadless block "ep40/trigff1_0" (FF) removed.
+      The signal "ep40/trigff0<0>" is loadless and has been removed.
+       Loadless block "ep40/trigff0_0" (FF) removed.
+        The signal "ep40/eptrig<0>" is loadless and has been removed.
+         Loadless block "ep40/eptrig_0" (SFF) removed.
+          The signal "ep40/eptrig_xor0000<0>" is loadless and has been removed.
+           Loadless block "ep40/Mxor_eptrig_xor0000_Result<0>1" (ROM) removed.
+The signal "ep41/ep_trigger<15>" is loadless and has been removed.
+ Loadless block "ep41/ep_trigger_15" (FF) removed.
+  The signal "ep41/ep_trigger_xor0000<15>" is loadless and has been removed.
+   Loadless block "ep41/Mxor_ep_trigger_xor0000_Result<15>1" (ROM) removed.
+    The signal "ep41/trigff1<15>" is loadless and has been removed.
+     Loadless block "ep41/trigff1_15" (FF) removed.
+      The signal "ep41/trigff0<15>" is loadless and has been removed.
+       Loadless block "ep41/trigff0_15" (FF) removed.
+        The signal "ep41/eptrig<15>" is loadless and has been removed.
+         Loadless block "ep41/eptrig_15" (SFF) removed.
+          The signal "ep41/eptrig_xor0000<15>" is loadless and has been removed.
+           Loadless block "ep41/Mxor_eptrig_xor0000_Result<15>1" (ROM) removed.
+The signal "ep41/ep_trigger<14>" is loadless and has been removed.
+ Loadless block "ep41/ep_trigger_14" (FF) removed.
+  The signal "ep41/ep_trigger_xor0000<14>" is loadless and has been removed.
+   Loadless block "ep41/Mxor_ep_trigger_xor0000_Result<14>1" (ROM) removed.
+    The signal "ep41/trigff1<14>" is loadless and has been removed.
+     Loadless block "ep41/trigff1_14" (FF) removed.
+      The signal "ep41/trigff0<14>" is loadless and has been removed.
+       Loadless block "ep41/trigff0_14" (FF) removed.
+        The signal "ep41/eptrig<14>" is loadless and has been removed.
+         Loadless block "ep41/eptrig_14" (SFF) removed.
+          The signal "ep41/eptrig_xor0000<14>" is loadless and has been removed.
+           Loadless block "ep41/Mxor_eptrig_xor0000_Result<14>1" (ROM) removed.
+The signal "ep41/ep_trigger<13>" is loadless and has been removed.
+ Loadless block "ep41/ep_trigger_13" (FF) removed.
+  The signal "ep41/ep_trigger_xor0000<13>" is loadless and has been removed.
+   Loadless block "ep41/Mxor_ep_trigger_xor0000_Result<13>1" (ROM) removed.
+    The signal "ep41/trigff1<13>" is loadless and has been removed.
+     Loadless block "ep41/trigff1_13" (FF) removed.
+      The signal "ep41/trigff0<13>" is loadless and has been removed.
+       Loadless block "ep41/trigff0_13" (FF) removed.
+        The signal "ep41/eptrig<13>" is loadless and has been removed.
+         Loadless block "ep41/eptrig_13" (SFF) removed.
+          The signal "ep41/eptrig_xor0000<13>" is loadless and has been removed.
+           Loadless block "ep41/Mxor_eptrig_xor0000_Result<13>1" (ROM) removed.
+The signal "ep41/ep_trigger<12>" is loadless and has been removed.
+ Loadless block "ep41/ep_trigger_12" (FF) removed.
+  The signal "ep41/ep_trigger_xor0000<12>" is loadless and has been removed.
+   Loadless block "ep41/Mxor_ep_trigger_xor0000_Result<12>1" (ROM) removed.
+    The signal "ep41/trigff1<12>" is loadless and has been removed.
+     Loadless block "ep41/trigff1_12" (FF) removed.
+      The signal "ep41/trigff0<12>" is loadless and has been removed.
+       Loadless block "ep41/trigff0_12" (FF) removed.
+        The signal "ep41/eptrig<12>" is loadless and has been removed.
+         Loadless block "ep41/eptrig_12" (SFF) removed.
+          The signal "ep41/eptrig_xor0000<12>" is loadless and has been removed.
+           Loadless block "ep41/Mxor_eptrig_xor0000_Result<12>1" (ROM) removed.
+The signal "ep41/ep_trigger<11>" is loadless and has been removed.
+ Loadless block "ep41/ep_trigger_11" (FF) removed.
+  The signal "ep41/ep_trigger_xor0000<11>" is loadless and has been removed.
+   Loadless block "ep41/Mxor_ep_trigger_xor0000_Result<11>1" (ROM) removed.
+    The signal "ep41/trigff1<11>" is loadless and has been removed.
+     Loadless block "ep41/trigff1_11" (FF) removed.
+      The signal "ep41/trigff0<11>" is loadless and has been removed.
+       Loadless block "ep41/trigff0_11" (FF) removed.
+        The signal "ep41/eptrig<11>" is loadless and has been removed.
+         Loadless block "ep41/eptrig_11" (SFF) removed.
+          The signal "ep41/eptrig_xor0000<11>" is loadless and has been removed.
+           Loadless block "ep41/Mxor_eptrig_xor0000_Result<11>1" (ROM) removed.
+The signal "ep41/ep_trigger<10>" is loadless and has been removed.
+ Loadless block "ep41/ep_trigger_10" (FF) removed.
+  The signal "ep41/ep_trigger_xor0000<10>" is loadless and has been removed.
+   Loadless block "ep41/Mxor_ep_trigger_xor0000_Result<10>1" (ROM) removed.
+    The signal "ep41/trigff1<10>" is loadless and has been removed.
+     Loadless block "ep41/trigff1_10" (FF) removed.
+      The signal "ep41/trigff0<10>" is loadless and has been removed.
+       Loadless block "ep41/trigff0_10" (FF) removed.
+        The signal "ep41/eptrig<10>" is loadless and has been removed.
+         Loadless block "ep41/eptrig_10" (SFF) removed.
+          The signal "ep41/eptrig_xor0000<10>" is loadless and has been removed.
+           Loadless block "ep41/Mxor_eptrig_xor0000_Result<10>1" (ROM) removed.
+The signal "ep41/ep_trigger<9>" is loadless and has been removed.
+ Loadless block "ep41/ep_trigger_9" (FF) removed.
+  The signal "ep41/ep_trigger_xor0000<9>" is loadless and has been removed.
+   Loadless block "ep41/Mxor_ep_trigger_xor0000_Result<9>1" (ROM) removed.
+    The signal "ep41/trigff1<9>" is loadless and has been removed.
+     Loadless block "ep41/trigff1_9" (FF) removed.
+      The signal "ep41/trigff0<9>" is loadless and has been removed.
+       Loadless block "ep41/trigff0_9" (FF) removed.
+        The signal "ep41/eptrig<9>" is loadless and has been removed.
+         Loadless block "ep41/eptrig_9" (SFF) removed.
+          The signal "ep41/eptrig_xor0000<9>" is loadless and has been removed.
+           Loadless block "ep41/Mxor_eptrig_xor0000_Result<9>1" (ROM) removed.
+The signal "ep41/ep_trigger<8>" is loadless and has been removed.
+ Loadless block "ep41/ep_trigger_8" (FF) removed.
+  The signal "ep41/ep_trigger_xor0000<8>" is loadless and has been removed.
+   Loadless block "ep41/Mxor_ep_trigger_xor0000_Result<8>1" (ROM) removed.
+    The signal "ep41/trigff1<8>" is loadless and has been removed.
+     Loadless block "ep41/trigff1_8" (FF) removed.
+      The signal "ep41/trigff0<8>" is loadless and has been removed.
+       Loadless block "ep41/trigff0_8" (FF) removed.
+        The signal "ep41/eptrig<8>" is loadless and has been removed.
+         Loadless block "ep41/eptrig_8" (SFF) removed.
+          The signal "ep41/eptrig_xor0000<8>" is loadless and has been removed.
+           Loadless block "ep41/Mxor_eptrig_xor0000_Result<8>1" (ROM) removed.
+The signal "ep41/ep_trigger<7>" is loadless and has been removed.
+ Loadless block "ep41/ep_trigger_7" (FF) removed.
+  The signal "ep41/ep_trigger_xor0000<7>" is loadless and has been removed.
+   Loadless block "ep41/Mxor_ep_trigger_xor0000_Result<7>1" (ROM) removed.
+    The signal "ep41/trigff1<7>" is loadless and has been removed.
+     Loadless block "ep41/trigff1_7" (FF) removed.
+      The signal "ep41/trigff0<7>" is loadless and has been removed.
+       Loadless block "ep41/trigff0_7" (FF) removed.
+        The signal "ep41/eptrig<7>" is loadless and has been removed.
+         Loadless block "ep41/eptrig_7" (SFF) removed.
+          The signal "ep41/eptrig_xor0000<7>" is loadless and has been removed.
+           Loadless block "ep41/Mxor_eptrig_xor0000_Result<7>1" (ROM) removed.
+The signal "ep41/ep_trigger<6>" is loadless and has been removed.
+ Loadless block "ep41/ep_trigger_6" (FF) removed.
+  The signal "ep41/ep_trigger_xor0000<6>" is loadless and has been removed.
+   Loadless block "ep41/Mxor_ep_trigger_xor0000_Result<6>1" (ROM) removed.
+    The signal "ep41/trigff1<6>" is loadless and has been removed.
+     Loadless block "ep41/trigff1_6" (FF) removed.
+      The signal "ep41/trigff0<6>" is loadless and has been removed.
+       Loadless block "ep41/trigff0_6" (FF) removed.
+        The signal "ep41/eptrig<6>" is loadless and has been removed.
+         Loadless block "ep41/eptrig_6" (SFF) removed.
+          The signal "ep41/eptrig_xor0000<6>" is loadless and has been removed.
+           Loadless block "ep41/Mxor_eptrig_xor0000_Result<6>1" (ROM) removed.
+The signal "ep41/ep_trigger<5>" is loadless and has been removed.
+ Loadless block "ep41/ep_trigger_5" (FF) removed.
+  The signal "ep41/ep_trigger_xor0000<5>" is loadless and has been removed.
+   Loadless block "ep41/Mxor_ep_trigger_xor0000_Result<5>1" (ROM) removed.
+    The signal "ep41/trigff1<5>" is loadless and has been removed.
+     Loadless block "ep41/trigff1_5" (FF) removed.
+      The signal "ep41/trigff0<5>" is loadless and has been removed.
+       Loadless block "ep41/trigff0_5" (FF) removed.
+        The signal "ep41/eptrig<5>" is loadless and has been removed.
+         Loadless block "ep41/eptrig_5" (SFF) removed.
+          The signal "ep41/eptrig_xor0000<5>" is loadless and has been removed.
+           Loadless block "ep41/Mxor_eptrig_xor0000_Result<5>1" (ROM) removed.
+The signal "ep41/ep_trigger<4>" is loadless and has been removed.
+ Loadless block "ep41/ep_trigger_4" (FF) removed.
+  The signal "ep41/ep_trigger_xor0000<4>" is loadless and has been removed.
+   Loadless block "ep41/Mxor_ep_trigger_xor0000_Result<4>1" (ROM) removed.
+    The signal "ep41/trigff1<4>" is loadless and has been removed.
+     Loadless block "ep41/trigff1_4" (FF) removed.
+      The signal "ep41/trigff0<4>" is loadless and has been removed.
+       Loadless block "ep41/trigff0_4" (FF) removed.
+        The signal "ep41/eptrig<4>" is loadless and has been removed.
+         Loadless block "ep41/eptrig_4" (SFF) removed.
+          The signal "ep41/eptrig_xor0000<4>" is loadless and has been removed.
+           Loadless block "ep41/Mxor_eptrig_xor0000_Result<4>1" (ROM) removed.
+The signal "ep41/ep_trigger<3>" is loadless and has been removed.
+ Loadless block "ep41/ep_trigger_3" (FF) removed.
+  The signal "ep41/ep_trigger_xor0000<3>" is loadless and has been removed.
+   Loadless block "ep41/Mxor_ep_trigger_xor0000_Result<3>1" (ROM) removed.
+    The signal "ep41/trigff1<3>" is loadless and has been removed.
+     Loadless block "ep41/trigff1_3" (FF) removed.
+      The signal "ep41/trigff0<3>" is loadless and has been removed.
+       Loadless block "ep41/trigff0_3" (FF) removed.
+        The signal "ep41/eptrig<3>" is loadless and has been removed.
+         Loadless block "ep41/eptrig_3" (SFF) removed.
+          The signal "ep41/eptrig_xor0000<3>" is loadless and has been removed.
+           Loadless block "ep41/Mxor_eptrig_xor0000_Result<3>1" (ROM) removed.
+The signal "ep41/ep_trigger<2>" is loadless and has been removed.
+ Loadless block "ep41/ep_trigger_2" (FF) removed.
+  The signal "ep41/ep_trigger_xor0000<2>" is loadless and has been removed.
+   Loadless block "ep41/Mxor_ep_trigger_xor0000_Result<2>1" (ROM) removed.
+    The signal "ep41/trigff1<2>" is loadless and has been removed.
+     Loadless block "ep41/trigff1_2" (FF) removed.
+      The signal "ep41/trigff0<2>" is loadless and has been removed.
+       Loadless block "ep41/trigff0_2" (FF) removed.
+        The signal "ep41/eptrig<2>" is loadless and has been removed.
+         Loadless block "ep41/eptrig_2" (SFF) removed.
+          The signal "ep41/eptrig_xor0000<2>" is loadless and has been removed.
+           Loadless block "ep41/Mxor_eptrig_xor0000_Result<2>1" (ROM) removed.
+The signal "ep80/ep_dataout<15>" is loadless and has been removed.
+ Loadless block "ep80/ep_dataout_15" (SFF) removed.
+The signal "ep80/ep_dataout<14>" is loadless and has been removed.
+ Loadless block "ep80/ep_dataout_14" (SFF) removed.
+The signal "ep80/ep_dataout<13>" is loadless and has been removed.
+ Loadless block "ep80/ep_dataout_13" (SFF) removed.
+The signal "ep80/ep_dataout<12>" is loadless and has been removed.
+ Loadless block "ep80/ep_dataout_12" (SFF) removed.
+The signal "ep80/ep_dataout<11>" is loadless and has been removed.
+ Loadless block "ep80/ep_dataout_11" (SFF) removed.
+The signal "ep80/ep_dataout<10>" is loadless and has been removed.
+ Loadless block "ep80/ep_dataout_10" (SFF) removed.
+The signal "ep80/ep_dataout<9>" is loadless and has been removed.
+ Loadless block "ep80/ep_dataout_9" (SFF) removed.
+The signal "ep80/ep_dataout<8>" is loadless and has been removed.
+ Loadless block "ep80/ep_dataout_8" (SFF) removed.
+The signal "ep80/ep_dataout<7>" is loadless and has been removed.
+ Loadless block "ep80/ep_dataout_7" (SFF) removed.
+The signal "ep80/ep_dataout<6>" is loadless and has been removed.
+ Loadless block "ep80/ep_dataout_6" (SFF) removed.
+The signal "ep80/ep_dataout<5>" is loadless and has been removed.
+ Loadless block "ep80/ep_dataout_5" (SFF) removed.
+The signal "ep80/ep_dataout<4>" is loadless and has been removed.
+ Loadless block "ep80/ep_dataout_4" (SFF) removed.
+The signal "ep80/ep_dataout<3>" is loadless and has been removed.
+ Loadless block "ep80/ep_dataout_3" (SFF) removed.
+The signal "ep80/ep_dataout<2>" is loadless and has been removed.
+ Loadless block "ep80/ep_dataout_2" (SFF) removed.
+The signal "ep80/ep_dataout<1>" is loadless and has been removed.
+ Loadless block "ep80/ep_dataout_1" (SFF) removed.
+The signal "ep83/ep_dataout<15>" is loadless and has been removed.
+ Loadless block "ep83/ep_dataout_15" (SFF) removed.
+The signal "ep83/ep_dataout<14>" is loadless and has been removed.
+ Loadless block "ep83/ep_dataout_14" (SFF) removed.
+The signal "ep83/ep_dataout<13>" is loadless and has been removed.
+ Loadless block "ep83/ep_dataout_13" (SFF) removed.
+The signal "ep83/ep_dataout<12>" is loadless and has been removed.
+ Loadless block "ep83/ep_dataout_12" (SFF) removed.
+The signal "ep83/ep_dataout<11>" is loadless and has been removed.
+ Loadless block "ep83/ep_dataout_11" (SFF) removed.
+The signal "ep83/ep_dataout<10>" is loadless and has been removed.
+ Loadless block "ep83/ep_dataout_10" (SFF) removed.
+The signal "ep83/ep_dataout<9>" is loadless and has been removed.
+ Loadless block "ep83/ep_dataout_9" (SFF) removed.
+The signal "ep83/ep_dataout<8>" is loadless and has been removed.
+ Loadless block "ep83/ep_dataout_8" (SFF) removed.
+The signal "ep83/ep_dataout<7>" is loadless and has been removed.
+ Loadless block "ep83/ep_dataout_7" (SFF) removed.
+The signal "ep83/ep_dataout<6>" is loadless and has been removed.
+ Loadless block "ep83/ep_dataout_6" (SFF) removed.
+The signal "ep83/ep_dataout<5>" is loadless and has been removed.
+ Loadless block "ep83/ep_dataout_5" (SFF) removed.
+The signal "ep83/ep_dataout<4>" is loadless and has been removed.
+ Loadless block "ep83/ep_dataout_4" (SFF) removed.
+The signal "ep83/ep_dataout<3>" is loadless and has been removed.
+ Loadless block "ep83/ep_dataout_3" (SFF) removed.
+The signal "ep83/ep_dataout<2>" is loadless and has been removed.
+ Loadless block "ep83/ep_dataout_2" (SFF) removed.
+The signal "ep83/ep_dataout<1>" is loadless and has been removed.
+ Loadless block "ep83/ep_dataout_1" (SFF) removed.
+The signal
+"fifo_data/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr
+1.rfwft/empty_fwft_i" is loadless and has been removed.
+ Loadless block
+"fifo_data/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr
+1.rfwft/empty_fwft_i" (FF) removed.
+  The signal
+"fifo_data/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr
+1.rfwft/empty_fwft_i_or0000" is loadless and has been removed.
+   Loadless block
+"fifo_data/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr
+1.rfwft/empty_fwft_i_or00001" (ROM) removed.
+    The signal
+"fifo_data/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr
+1.rfwft/empty_fwft_fb" is loadless and has been removed.
+     Loadless block
+"fifo_data/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr
+1.rfwft/empty_fwft_fb" (FF) removed.
+The signal
+"fifo_data/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gw
+as.wsts/ram_full_i" is loadless and has been removed.
+ Loadless block
+"fifo_data/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gw
+as.wsts/ram_full_i" (FF) removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "i2c_scl" is unused and has been removed.
+ Unused block "i2c_scl_OBUFT" (TRI) removed.
+The signal "i2c_sda" is unused and has been removed.
+ Unused block "i2c_sda_OBUFT" (TRI) removed.
+The signal "ext_mem_0/N0" is unused and has been removed.
+The signal "ext_mem_1/N0" is unused and has been removed.
+Unused block "i2c_scl" (PAD) removed.
+Unused block "i2c_sda" (PAD) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+GND 		ep00/XST_GND
+GND 		ep01/XST_GND
+GND 		ep02/XST_GND
+GND 		ep03/XST_GND
+GND 		ep04/XST_GND
+GND 		ep05/XST_GND
+GND 		ep20/XST_GND
+GND 		ep21/XST_GND
+LUT2 		ep21/ok2_10_mux00001
+   optimized to 0
+LUT2 		ep21/ok2_11_mux00001
+   optimized to 0
+LUT2 		ep21/ok2_12_mux00001
+   optimized to 0
+LUT2 		ep21/ok2_13_mux00001
+   optimized to 0
+LUT2 		ep21/ok2_14_mux00001
+   optimized to 0
+LUT2 		ep21/ok2_15_mux00001
+   optimized to 0
+LUT2 		ep21/ok2_5_mux00001
+   optimized to 0
+LUT2 		ep21/ok2_6_mux00001
+   optimized to 0
+LUT2 		ep21/ok2_7_mux00001
+   optimized to 0
+LUT2 		ep21/ok2_8_mux00001
+   optimized to 0
+LUT2 		ep21/ok2_9_mux00001
+   optimized to 0
+FDRE 		ep21/wirehold_10
+   optimized to 0
+FDRE 		ep21/wirehold_11
+   optimized to 0
+FDRE 		ep21/wirehold_12
+   optimized to 0
+FDRE 		ep21/wirehold_13
+   optimized to 0
+FDRE 		ep21/wirehold_14
+   optimized to 0
+FDRE 		ep21/wirehold_15
+   optimized to 0
+FDRE 		ep21/wirehold_5
+   optimized to 0
+FDRE 		ep21/wirehold_6
+   optimized to 0
+FDRE 		ep21/wirehold_7
+   optimized to 0
+FDRE 		ep21/wirehold_8
+   optimized to 0
+FDRE 		ep21/wirehold_9
+   optimized to 0
+GND 		ep41/XST_GND
+GND 		ep60/XST_GND
+FDC 		ep60/ep_trigger0_10
+   optimized to 0
+FDC 		ep60/ep_trigger0_11
+   optimized to 0
+FDC 		ep60/ep_trigger0_12
+   optimized to 0
+FDC 		ep60/ep_trigger0_13
+   optimized to 0
+FDC 		ep60/ep_trigger0_14
+   optimized to 0
+FDC 		ep60/ep_trigger0_15
+   optimized to 0
+FDC 		ep60/ep_trigger0_2
+   optimized to 0
+FDC 		ep60/ep_trigger0_3
+   optimized to 0
+FDC 		ep60/ep_trigger0_4
+   optimized to 0
+FDC 		ep60/ep_trigger0_5
+   optimized to 0
+FDC 		ep60/ep_trigger0_6
+   optimized to 0
+FDC 		ep60/ep_trigger0_7
+   optimized to 0
+FDC 		ep60/ep_trigger0_8
+   optimized to 0
+FDC 		ep60/ep_trigger0_9
+   optimized to 0
+GND 		ep61/XST_GND
+FDC 		ep61/ep_trigger0_0
+   optimized to 0
+FDC 		ep61/ep_trigger0_1
+   optimized to 0
+FDC 		ep61/ep_trigger0_10
+   optimized to 0
+FDC 		ep61/ep_trigger0_11
+   optimized to 0
+FDC 		ep61/ep_trigger0_12
+   optimized to 0
+FDC 		ep61/ep_trigger0_13
+   optimized to 0
+FDC 		ep61/ep_trigger0_14
+   optimized to 0
+FDC 		ep61/ep_trigger0_15
+   optimized to 0
+FDC 		ep61/ep_trigger0_2
+   optimized to 0
+FDC 		ep61/ep_trigger0_3
+   optimized to 0
+FDC 		ep61/ep_trigger0_4
+   optimized to 0
+FDC 		ep61/ep_trigger0_5
+   optimized to 0
+FDC 		ep61/ep_trigger0_6
+   optimized to 0
+FDC 		ep61/ep_trigger0_7
+   optimized to 0
+FDC 		ep61/ep_trigger0_8
+   optimized to 0
+FDC 		ep61/ep_trigger0_9
+   optimized to 0
+GND 		ep80/XST_GND
+VCC 		ep80/XST_VCC
+GND 		ep81/XST_GND
+VCC 		ep81/XST_VCC
+GND 		ep82/XST_GND
+VCC 		ep82/XST_VCC
+GND 		ep83/XST_GND
+VCC 		ep83/XST_VCC
+LUT2 		epa0/ok2_10_mux00001
+   optimized to 0
+LUT2 		epa0/ok2_11_mux00001
+   optimized to 0
+LUT2 		epa0/ok2_12_mux00001
+   optimized to 0
+LUT2 		epa0/ok2_13_mux00001
+   optimized to 0
+LUT2 		epa0/ok2_14_mux00001
+   optimized to 0
+LUT2 		epa0/ok2_15_mux00001
+   optimized to 0
+LUT2 		epa0/ok2_1_mux00001
+   optimized to 0
+LUT2 		epa0/ok2_2_mux00001
+   optimized to 0
+LUT2 		epa0/ok2_3_mux00001
+   optimized to 0
+LUT2 		epa0/ok2_4_mux00001
+   optimized to 0
+LUT2 		epa0/ok2_5_mux00001
+   optimized to 0
+LUT2 		epa0/ok2_6_mux00001
+   optimized to 0
+LUT2 		epa0/ok2_7_mux00001
+   optimized to 0
+LUT2 		epa0/ok2_8_mux00001
+   optimized to 0
+LUT2 		epa0/ok2_9_mux00001
+   optimized to 0
+LUT2 		epa3/ok2_10_mux00001
+   optimized to 0
+LUT2 		epa3/ok2_11_mux00001
+   optimized to 0
+LUT2 		epa3/ok2_12_mux00001
+   optimized to 0
+LUT2 		epa3/ok2_13_mux00001
+   optimized to 0
+LUT2 		epa3/ok2_14_mux00001
+   optimized to 0
+LUT2 		epa3/ok2_15_mux00001
+   optimized to 0
+LUT2 		epa3/ok2_1_mux00001
+   optimized to 0
+LUT2 		epa3/ok2_2_mux00001
+   optimized to 0
+LUT2 		epa3/ok2_3_mux00001
+   optimized to 0
+LUT2 		epa3/ok2_4_mux00001
+   optimized to 0
+LUT2 		epa3/ok2_5_mux00001
+   optimized to 0
+LUT2 		epa3/ok2_6_mux00001
+   optimized to 0
+LUT2 		epa3/ok2_7_mux00001
+   optimized to 0
+LUT2 		epa3/ok2_8_mux00001
+   optimized to 0
+LUT2 		epa3/ok2_9_mux00001
+   optimized to 0
+LUT2 		epa5/ok2_10_mux00001
+   optimized to 0
+LUT2 		epa5/ok2_11_mux00001
+   optimized to 0
+LUT2 		epa5/ok2_12_mux00001
+   optimized to 0
+LUT2 		epa5/ok2_13_mux00001
+   optimized to 0
+LUT2 		epa5/ok2_14_mux00001
+   optimized to 0
+LUT2 		epa5/ok2_15_mux00001
+   optimized to 0
+LUT2 		epa5/ok2_8_mux00001
+   optimized to 0
+LUT2 		epa5/ok2_9_mux00001
+   optimized to 0
+GND 		ext_mem_0/XST_GND
+VCC 		ext_mem_0/XST_VCC
+GND 		ext_mem_1/XST_GND
+VCC 		ext_mem_1/XST_VCC
+GND 		fifo_data/XST_GND
+VCC 		fifo_data/XST_VCC
+GND 		fifo_valid/XST_GND
+VCC 		fifo_valid/XST_VCC
+GND 		mem_classout/XST_GND
+VCC 		mem_classout/XST_VCC
+GND 		rgn_x/XST_GND
+VCC 		rgn_x/XST_VCC
+GND 		rgn_y/XST_GND
+VCC 		rgn_y/XST_VCC
+GND 		RP2serial_1/XST_GND
+VCC 		RP2serial_1/XST_VCC
+GND 		aer_mimic_u1/XST_GND
+VCC 		aer_mimic_u1/XST_VCC
+GND 		okHI/hicore/XST_GND
+VCC 		okHI/hicore/XST_VCC
+LUT4 		wireOR/ok2<0>9
+	Property STUCK_AT NOT found
+LUT4 		wireOR/ok2<10>9
+	Property STUCK_AT NOT found
+LUT4 		wireOR/ok2<11>9
+	Property STUCK_AT NOT found
+LUT4 		wireOR/ok2<12>9
+	Property STUCK_AT NOT found
+LUT4 		wireOR/ok2<13>9
+	Property STUCK_AT NOT found
+LUT4 		wireOR/ok2<14>9
+	Property STUCK_AT NOT found
+LUT4 		wireOR/ok2<15>9
+	Property STUCK_AT NOT found
+LUT4 		wireOR/ok2<16>9
+	Property STUCK_AT NOT found
+LUT4 		wireOR/ok2<1>9
+	Property STUCK_AT NOT found
+LUT4 		wireOR/ok2<2>9
+	Property STUCK_AT NOT found
+LUT4 		wireOR/ok2<3>9
+	Property STUCK_AT NOT found
+LUT4 		wireOR/ok2<4>9
+	Property STUCK_AT NOT found
+LUT4 		wireOR/ok2<5>9
+	Property STUCK_AT NOT found
+LUT4 		wireOR/ok2<6>9
+	Property STUCK_AT NOT found
+LUT4 		wireOR/ok2<7>9
+	Property STUCK_AT NOT found
+LUT4 		wireOR/ok2<8>9
+	Property STUCK_AT NOT found
+LUT4 		wireOR/ok2<9>9
+	Property STUCK_AT NOT found
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| capture                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| clk_phase1                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| clk_phase2                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| clk_top                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| clk_update                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| conv_done1                         | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| dbg_dout_valid                     | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| done                               | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| en_evt2frame                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| ext_cnn_done                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| ext_cnn_rd_done                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF1         |          |          |
+| ext_cnn_ready                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| ext_dataIn_neg                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| ext_dataIn_pos                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| ext_xAddressOut<0>                 | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| ext_xAddressOut<1>                 | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| ext_xAddressOut<2>                 | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| ext_xAddressOut<3>                 | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| ext_xAddressOut<4>                 | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| ext_xAddressOut<5>                 | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| ext_xAddressOut<6>                 | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| ext_xAddressOut<7>                 | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| ext_xAddressOut<8>                 | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| hi_in<0>                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| hi_in<1>                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| hi_in<2>                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| hi_in<3>                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| hi_in<4>                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| hi_in<5>                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| hi_in<6>                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| hi_in<7>                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| hi_inout<0>                        | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| hi_inout<1>                        | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| hi_inout<2>                        | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| hi_inout<3>                        | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| hi_inout<4>                        | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| hi_inout<5>                        | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| hi_inout<6>                        | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| hi_inout<7>                        | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| hi_inout<8>                        | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| hi_inout<9>                        | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| hi_inout<10>                       | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| hi_inout<11>                       | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| hi_inout<12>                       | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| hi_inout<13>                       | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| hi_inout<14>                       | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| hi_inout<15>                       | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| hi_muxsel                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| hi_out<0>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| hi_out<1>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| init                               | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| led<0>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| led<1>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| led<2>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| led<3>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| led<4>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| led<5>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| led<6>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| led<7>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| parallel_out<0>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| parallel_out<1>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| parallel_out<2>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| parallel_out<3>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| parallel_out<4>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| parallel_out<5>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| parallel_out<6>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| parallel_out<7>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| reset_n                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| rgn_bit_valid                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| rgn_clk                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| rgn_done                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| rgn_rd_en                          | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| rgn_x_bit                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| rgn_y_bit                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| rst_n_sync                         | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| spi_din                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| spi_out                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| sys_clk1                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| sys_clk2                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| test2                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| test3                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| test_clk                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| top_AER_data<0>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| top_AER_data<1>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| top_AER_data<2>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| top_AER_data<3>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| top_AER_data<4>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| top_AER_data<5>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| top_AER_data<6>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| top_AER_data<7>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| top_AER_data<8>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| top_AER_data<9>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| top_AER_nack                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| top_AER_nreq                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| top_BiasAddrSel                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| top_BiasBitIN                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| top_BiasClock                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| top_BiasDiagSel                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| top_BiasLatch                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.
