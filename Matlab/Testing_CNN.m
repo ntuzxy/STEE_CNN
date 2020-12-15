@@ -1,11 +1,9 @@
 %% setup XEM6010, do just once
 % clear;
 OK_Setup;%% Load the fpga bitstream code
-%%
-%load('image97.mat');
+%% config bit file
 % FPGA_Config(xem,'F:\STEE_PROJ\CONV\OpalKelly3010_Verilog_CNN - Input_gen work\working_dir\testing_CNN_dbg.bit');
 FPGA_Config(xem,'F:\STEE_PROJ\CONV\OpalKelly3010_Verilog_CNN\working_dir\testing_CNN_dbg.bit');
-
 %% generate image with regions
 % parameters
 WIDTH = 320;%240;%320;
@@ -70,25 +68,25 @@ dfp_out_lyr2 = 'FC';
 dfp_out_lyr3 = 'FC';
 %% weights/pointer/bias for debug
 % read text file
-weights_mem1 = zeros(16,1);% textread('./testing_data/server/22mar2020/conv2d_1_weight_table.txt','%s');
-weights_mem2 = zeros(16,1);% textread('./testing_data/server/26mar2020/separable_conv2d_1_weight_table.txt','%s');
-weights_mem4 = zeros(16,1);% textread('./testing_data/server/28mar2020/dense_1_weight_table.txt','%s');
-kernel_ptr_lyr1     = zeros(300,1);% textread('./testing_data/server/22mar2020/weights_conv2d_1_weight_pointer.txt','%s');
-kernel_ptr_dw_lyr2  = zeros(150,1);% textread('./testing_data/server/26mar2020/weights_separable_conv2d_1depthwise_weight_pointer.txt','%s');
-kernel_ptr_pw_lyr2  = zeros(30,1);% textread('./testing_data/server/26mar2020/weights_separable_conv2d_1pointwise_weight_pointer.txt','%s');
-kernel_ptr_fc_lyr   = num2str(zeros(1225,1));% textread('./testing_data/server/28mar2020/weights_dense_1.txt','%s');
-bias_lyr1 = zeros(6,1);% textread('./testing_data/server/22mar2020/conv2d_1_bias_values.txt','%s');
-bias_lyr2 = zeros(5,1);% textread('./testing_data/server/26mar2020/separable_conv2d_1_bias_values.txt','%s');
-bias_lyr3 = zeros(5,1);% textread('./testing_data/server/28mar2020/dense_1_bias_values.txt','%s');
-dfp_bias_lyr1   = 0;% textread('./testing_data/server/22mar2020/dfp_bias.txt','%s');
-dfp_lyr1        = 0;% textread('./testing_data/server/22mar2020/dfp_conv.txt','%s'); 
-dfp_bias_lyr2   = 0;% textread('./testing_data/server/26mar2020/dfp_bias_layer_2.txt','%s');
-dfp_lyr2        = 0;% textread('./testing_data/server/26mar2020/dfp_seperable_conv.txt','%s');
-dfp_bias_lyr3   = 0;% textread('./testing_data/server/28mar2020/dfp_bias_layer_3.txt','%s');
-dfp_lyr3        = 0;% textread('./testing_data/server/28mar2020/dfp_dense.txt','%s'); 
-dfp_out_lyr1 = 0;% 'FC';
-% dfp_out_lyr2 = 0;% 'FC';
-% dfp_out_lyr3 = 0;% 'FC';
+% weights_mem1 = num2str(ones(16,1)*6);% textread('./testing_data/server/22mar2020/conv2d_1_weight_table.txt','%s');
+% weights_mem2 = num2str(ones(16,1)*8);% textread('./testing_data/server/26mar2020/separable_conv2d_1_weight_table.txt','%s');
+% weights_mem4 = num2str(ones(16,1)*0);% textread('./testing_data/server/28mar2020/dense_1_weight_table.txt','%s');
+% kernel_ptr_lyr1     = zeros(300,1);% textread('./testing_data/server/22mar2020/weights_conv2d_1_weight_pointer.txt','%s');
+% kernel_ptr_dw_lyr2  = zeros(150,1);% textread('./testing_data/server/26mar2020/weights_separable_conv2d_1depthwise_weight_pointer.txt','%s');
+% kernel_ptr_pw_lyr2  = zeros(30,1);% textread('./testing_data/server/26mar2020/weights_separable_conv2d_1pointwise_weight_pointer.txt','%s');
+% kernel_ptr_fc_lyr   = num2str(ones(1225,1)*5);% textread('./testing_data/server/28mar2020/weights_dense_1.txt','%s');
+% bias_lyr1 = num2str(ones(6,1));% textread('./testing_data/server/22mar2020/conv2d_1_bias_values.txt','%s');
+% bias_lyr2 = num2str(ones(5,1)*8);% textread('./testing_data/server/26mar2020/separable_conv2d_1_bias_values.txt','%s');
+% bias_lyr3 = num2str(ones(5,1)*1);% textread('./testing_data/server/28mar2020/dense_1_bias_values.txt','%s');
+% dfp_bias_lyr1   = 'A';% textread('./testing_data/server/22mar2020/dfp_bias.txt','%s');
+% dfp_lyr1        = 'F8';% textread('./testing_data/server/22mar2020/dfp_conv.txt','%s'); 
+% dfp_bias_lyr2   = 'F1';% textread('./testing_data/server/26mar2020/dfp_bias_layer_2.txt','%s');
+% dfp_lyr2        = 0;% textread('./testing_data/server/26mar2020/dfp_seperable_conv.txt','%s');
+% dfp_bias_lyr3   = 0;% textread('./testing_data/server/28mar2020/dfp_bias_layer_3.txt','%s');
+% dfp_lyr3        = 0;% textread('./testing_data/server/28mar2020/dfp_dense.txt','%s'); 
+% dfp_out_lyr1 = 0;% 'FC';
+% dfp_out_lyr2 = 'FD';% 'FC';
+% dfp_out_lyr3 = 'FD';% 'FC';
 %% parameter
 % CNN_inpit_gen
 dbg_dout_mem_en        = 0;
@@ -105,6 +103,10 @@ config110_15to8bit     = (~logical(dbg_cnn_done_op_en)) * 2^15 + (~logical(dbg_c
 top_valid_wr_dbg = 0; %cnn_top.line855
 class_output_dbg = 0; %cnn_top.line1028
 %% reset & SPI config
+% clock divider
+setwireinvalue(xem,hex2dec('04'),0,hex2dec('0001'));updatewireins(xem); %enable clock scaling
+setwireinvalue(xem,hex2dec('04'),10,hex2dec('fffe'));updatewireins(xem); %100MHz/10
+
 % reset
 setwireinvalue(xem,hex2dec('00'),1,hex2dec('0001'));updatewireins(xem);
 setwireinvalue(xem,hex2dec('00'),0,hex2dec('0001'));updatewireins(xem);
@@ -176,33 +178,15 @@ for lyr3_ptr_cnt=1:49
                                         kernel_ptr_fc_lyr(lyr3_ptr_cnt+49*1+49*5*4), ...
                                         kernel_ptr_fc_lyr(lyr3_ptr_cnt+49*0+49*5*4))));
     %addr:0~49-1
-    spi_config(xem, 68, (lyr3_ptr_cnt-1));
-    spi_config(xem, 69, (lyr3_ptr_cnt-1));
-    spi_config(xem, 70, (lyr3_ptr_cnt-1));
-    spi_config(xem, 71, (lyr3_ptr_cnt-1));
     spi_config(xem, 72, (lyr3_ptr_cnt-1));
+    spi_config(xem, 71, (lyr3_ptr_cnt-1));
+    spi_config(xem, 70, (lyr3_ptr_cnt-1));
+    spi_config(xem, 69, (lyr3_ptr_cnt-1));
+    spi_config(xem, 68, (lyr3_ptr_cnt-1));
     spi_config(xem, 83, hex2dec('ffff'));
     spi_config(xem, 83, hex2dec('0000'));
 end
 fprintf('init_ptr_lyr3_done\n');
-
-% --weight memory table
-for weight_cnt=1:16
-    spi_config(xem, 59, hex2dec(weights_mem1(weight_cnt)));
-    spi_config(xem, 61, (weight_cnt-1));
-    % config_reg63[1:0] for wea of memory
-    % top_valid_wr_dbg(config_reg63[12]) for ev_to_qvga_tsmc
-    spi_config(xem, 63, hex2dec([num2str(top_valid_wr_dbg),'0ff']));
-    spi_config(xem, 63, hex2dec([num2str(top_valid_wr_dbg),'000']));
-    
-    spi_config(xem, 60, hex2dec(weights_mem2(weight_cnt)));
-    spi_config(xem, 62, (weight_cnt-1));
-    % config_reg64[1:0] for wea of memory
-    % config_reg64[15] for class output
-    spi_config(xem, 64, hex2dec([num2str(class_output_dbg*8),'0ff']));
-    spi_config(xem, 64, hex2dec([num2str(class_output_dbg*8),'000']));
-end
-fprintf('init_wght_done\n');
 
 for weight_cnt4=1:16
     spi_config(xem, 100-weight_cnt4, hex2dec(weights_mem4(weight_cnt4)));
@@ -226,6 +210,25 @@ spi_config(xem, 123, hex2dec(dfp_out_lyr1));
 spi_config(xem, 124, hex2dec(dfp_out_lyr2));
 spi_config(xem, 125, hex2dec(dfp_out_lyr3));
 
+% --weight memory table
+for weight_cnt=1:16
+    spi_config(xem, 59, hex2dec(weights_mem1(weight_cnt)));
+    spi_config(xem, 61, (weight_cnt-1));
+    % config_reg63[1:0] for wea of memory
+    % top_valid_wr_dbg(config_reg63[12]) for ev_to_qvga_tsmc
+    spi_config(xem, 63, hex2dec([num2str(top_valid_wr_dbg),'0ff']));
+    spi_config(xem, 63, hex2dec([num2str(top_valid_wr_dbg),'000']));
+end
+for weight_cnt=1:16
+    spi_config(xem, 60, hex2dec(weights_mem2(weight_cnt)));
+    spi_config(xem, 62, (weight_cnt-1));
+    % config_reg64[1:0] for wea of memory
+    % config_reg64[15] for class output
+    spi_config(xem, 64, hex2dec([num2str(class_output_dbg*8),'0ff']));
+    spi_config(xem, 64, hex2dec([num2str(class_output_dbg*8),'000']));
+end
+fprintf('init_wght_done\n');
+
 
 % % CNN_Input_Gen
 % param a = 1. 
@@ -245,6 +248,12 @@ spi_config(xem, 110, config110_15to8bit + hex2dec(bias_lyr2(1+1)));
 %not used for current testing
 
 fprintf('SPI configure done!\n');
+%% check the tsmc memories in cnn
+disp('internal memories checking ...')
+read_ptr_1and2(xem, kernel_ptr_lyr1,kernel_ptr_dw_lyr2,kernel_ptr_pw_lyr2)
+read_ptr3(xem, kernel_ptr_fc_lyr); 
+read_weight_1and2(xem, weights_mem1, weights_mem2)
+disp('internal memories check done')
 %% feed in image & rp from file
 % load image & rp
 load './testing_data/server/TEST_DATA/RP_FILES/image_1006/image_1006_0' %read_data_pos
@@ -307,8 +316,8 @@ fprintf('write image & region done!\n');
 setwireinvalue(xem, 0, 2, 2); % init = wi00_data[1];
 updatewireins(xem);
 fprintf('en_evt2frame & init inserted\n');
-setwireinvalue(xem, 5, 1, 1); % dbg_read_valid = wi05_data[0];
-updatewireins(xem);
+% setwireinvalue(xem, 5, 1, 1); % dbg_read_valid = wi05_data[0];
+% updatewireins(xem);
 % input via RP2serial
 setwireinvalue(xem,hex2dec('03'),32,hex2dec('0020'));updatewireins(xem); %wi03_data[5] to trig region_valid
 setwireinvalue(xem,hex2dec('03'),0,hex2dec('0020'));updatewireins(xem);
@@ -353,31 +362,153 @@ for region_cnt = 1:region_num
     end
 end
 
-% start twice
-setwireinvalue(xem, 5, 2, 3); % dbg_read_valid = wi05_data[0];
+% % start twice
+% setwireinvalue(xem, 5, 2, 3); % dbg_read_data = wi05_data[1];
+% updatewireins(xem);
+% % input via RP2serial
+% setwireinvalue(xem,hex2dec('03'),32,hex2dec('0020'));updatewireins(xem); %wi03_data[5] to trig region_valid
+% setwireinvalue(xem,hex2dec('03'),0,hex2dec('0020'));updatewireins(xem);
+% 
+% read_cnn_data_out = 0;
+% while read_cnn_data_out == 0
+%     updatetriggerouts(xem);
+%     read_cnn_data_out = istriggered(xem, hex2dec('60'),2);
+%     if read_cnn_data_out == 1
+%         pipeout4 = readfrompipeout(xem, hex2dec('a4'), N_readout);
+%     else
+% %         disp('waiting...');
+%     end
+% end
+% pipeout5 = readfrompipeout(xem, hex2dec('a5'), 2000*2);
+%% debug internal outputs of cnn
+setwireinvalue(xem,hex2dec('05'),0*2^6+0*2^5,hex2dec('0060'));updatewireins(xem);
+N_readout_dbg = 110000;
+pipeout5 = zeros(N_readout_dbg*2,9);
+dbg_data = zeros(N_readout_dbg,9);
+% setwireinvalue(xem, 0, 0, 2); % init = wi00_data[1];
+setwireinvalue(xem, 0, 2, 2); % init = wi00_data[1];
+updatewireins(xem);
+% % read & store data
+setwireinvalue(xem, 5, 2, 3); % dbg_read_data = wi05_data[1]; dbg_read_valid = wi05_data[0];
+updatewireins(xem);
+for i = 1:8
+    setwireinvalue(xem,hex2dec('05'),(i-1)*2^2,hex2dec('001c'));updatewireins(xem);
+    % input via RP2serial
+    setwireinvalue(xem,hex2dec('03'),32,hex2dec('0020'));updatewireins(xem); %wi03_data[5] to trig region_valid
+    setwireinvalue(xem,hex2dec('03'),0,hex2dec('0020'));updatewireins(xem);
+    read_cnn_data_out = 0;
+    while read_cnn_data_out == 0
+        updatetriggerouts(xem);
+        read_cnn_data_out = istriggered(xem, hex2dec('60'),2); 
+        if read_cnn_data_out == 1
+            pipeout5(:,i) = readfrompipeout(xem, hex2dec('a5'), N_readout_dbg*2);
+        end
+    end
+end
+% % read and store valid 
+setwireinvalue(xem, 5, 1, 3); % dbg_read_data = wi05_data[1]; dbg_read_valid = wi05_data[0];
+updatewireins(xem);
+setwireinvalue(xem,hex2dec('05'),3*2^2,hex2dec('001c'));updatewireins(xem);
+% input via RP2serial
+setwireinvalue(xem,hex2dec('03'),32,hex2dec('0020'));updatewireins(xem); %wi03_data[5] to trig region_valid
+setwireinvalue(xem,hex2dec('03'),0,hex2dec('0020'));updatewireins(xem);
+read_cnn_data_out = 0;
+while read_cnn_data_out == 0
+    updatetriggerouts(xem);
+    read_cnn_data_out = istriggered(xem, hex2dec('60'),2); 
+    if read_cnn_data_out == 1
+        pipeout5(:,9) = readfrompipeout(xem, hex2dec('a5'), N_readout_dbg*2);
+    end
+end
+
+% % process data
+for i = 1: N_readout_dbg
+    dbg_data(i,:) = pipeout5(2*i-1,:);
+end
+dbg_valid = dbg_data(:,9);
+dbg_data1 = dbg_data(:,8)*2^7+ dbg_data(:,7)*2^6+ dbg_data(:,6)*2^5+ dbg_data(:,5)*2^4+ ...
+            dbg_data(:,4)*2^3+ dbg_data(:,3)*2^2+ dbg_data(:,2)*2^1+ dbg_data(:,1);
+figure;
+for i = 1:9
+    subplot(9,1,i); plot(1: N_readout_dbg, dbg_data(:,i))
+    ax(i) = subplot(9,1,i);
+    set(gca,'ylim',[0 1]); set(gca,'ytick',0:1:1);
+    if i<9
+        set(gca,'xticklabel',[]);
+    end
+end
+linkaxes(ax,'x');
+zoom xon
+
+sum(dbg_data(:,:))
+%%
+sum(dbg_data(1:499,9))
+%% debug data
+setwireinvalue(xem, 0, 2, 2); % init = wi00_data[1];
+updatewireins(xem);
+% % read & store data
+setwireinvalue(xem, 5, 2, 3); % dbg_read_data = wi05_data[1]; dbg_read_valid = wi05_data[0];
+updatewireins(xem);
+for i = 1:8
+    % input via RP2serial
+    setwireinvalue(xem,hex2dec('03'),32,hex2dec('0020'));updatewireins(xem); %wi03_data[5] to trig region_valid
+    setwireinvalue(xem,hex2dec('03'),0,hex2dec('0020'));updatewireins(xem);
+    setwireinvalue(xem,hex2dec('05'),i*2^2,hex2dec('001c'));updatewireins(xem);
+    read_cnn_data_out = 0;
+    while read_cnn_data_out == 0
+        updatetriggerouts(xem);
+        read_cnn_data_out = istriggered(xem, hex2dec('60'),2); 
+        if read_cnn_data_out == 1
+            
+            pipeout5(:,i) = readfrompipeout(xem, hex2dec('a5'), N_readout_dbg*2);
+        end
+    end
+end
+setwireinvalue(xem, 5, 0, 3); % dbg_read_data = wi05_data[1]; dbg_read_valid = wi05_data[0];
 updatewireins(xem);
 % input via RP2serial
 setwireinvalue(xem,hex2dec('03'),32,hex2dec('0020'));updatewireins(xem); %wi03_data[5] to trig region_valid
 setwireinvalue(xem,hex2dec('03'),0,hex2dec('0020'));updatewireins(xem);
+% figure;
+% for i = 1:8
+%     subplot(9,1,i); plot(1: N_readout_dbg, dbg_data(:,i))
+%     ax(i) = subplot(9,1,i);
+%     set(gca,'ylim',[0 1]); set(gca,'ytick',0:1:1);
+%     if i<9
+%         set(gca,'xticklabel',[]);
+%     end
+% end
+sum(dbg_data(:,1:8))
 
+%% debug valid
+setwireinvalue(xem, 0, 2, 2); % init = wi00_data[1];
+updatewireins(xem);
+setwireinvalue(xem, 5, 0, 3); % dbg_read_data = wi05_data[1]; dbg_read_valid = wi05_data[0];
+updatewireins(xem);
+% % read and store valid 
+setwireinvalue(xem, 5, 1, 3); % dbg_read_data = wi05_data[1]; dbg_read_valid = wi05_data[0];
+updatewireins(xem);
+% input via RP2serial
+setwireinvalue(xem,hex2dec('03'),32,hex2dec('0020'));updatewireins(xem); %wi03_data[5] to trig region_valid
+setwireinvalue(xem,hex2dec('03'),0,hex2dec('0020'));updatewireins(xem);
 read_cnn_data_out = 0;
 while read_cnn_data_out == 0
     updatetriggerouts(xem);
-    read_cnn_data_out = istriggered(xem, hex2dec('60'),2);
+    read_cnn_data_out = istriggered(xem, hex2dec('60'),2); 
     if read_cnn_data_out == 1
-        pipeout4 = readfrompipeout(xem, hex2dec('a4'), N_readout);
-    else
-%         disp('waiting...');
+        pipeout5(:,9) = readfrompipeout(xem, hex2dec('a5'), N_readout_dbg*2);
     end
 end
-pipeout5 = readfrompipeout(xem, hex2dec('a5'), 2000*2);
-%%
-sum(pipeout5)
-%%
-hex2sdec('ff',8)
-%%
-updatewireouts(xem);
-getwireoutvalue(xem,hex2dec('21'))
+% figure;
+% for i = 9
+%     subplot(9,1,i); plot(1: N_readout_dbg, dbg_data(:,i))
+%     ax(i) = subplot(9,1,i);
+%     set(gca,'ylim',[0 1]); set(gca,'ytick',0:1:1);
+%     if i<9
+%         set(gca,'xticklabel',[]);
+%     end
+% end
+sum(dbg_data(:,9))
 %% check
 %read and compare; run onec for each reset
 pipeout_rx = readfrompipeout(xem, hex2dec('a1'), region_num*2*2);
