@@ -49,9 +49,13 @@ extern "C" {
 //typedef void* okPLL22393_HANDLE;
 //typedef void* okFrontPanel_HANDLE;
 
-typedef unsigned long okPLL22150_HANDLE;
-typedef unsigned long okPLL22393_HANDLE;
-typedef unsigned long okFrontPanel_HANDLE;
+//typedef unsigned long okPLL22150_HANDLE;
+//typedef unsigned long okPLL22393_HANDLE;
+//typedef unsigned long okFrontPanel_HANDLE;
+
+typedef long long okPLL22150_HANDLE;
+typedef long long okPLL22393_HANDLE;
+typedef long long okFrontPanel_HANDLE;
 
 typedef int Bool;
 

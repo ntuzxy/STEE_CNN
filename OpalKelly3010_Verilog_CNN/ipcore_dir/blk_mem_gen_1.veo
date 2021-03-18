@@ -52,7 +52,9 @@ blk_mem_gen_1 your_instance_name (
   .wea(wea), // input [0 : 0] wea
   .addra(addra), // input [3 : 0] addra
   .dina(dina), // input [15 : 0] dina
-  .douta(douta) // output [15 : 0] douta
+  .clkb(clkb), // input clkb
+  .addrb(addrb), // input [3 : 0] addrb
+  .doutb(doutb) // output [15 : 0] doutb
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------
 

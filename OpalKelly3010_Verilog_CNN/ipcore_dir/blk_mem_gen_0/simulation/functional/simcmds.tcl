@@ -57,6 +57,8 @@ wave add /blk_mem_gen_0_tb/status
       wave add  /blk_mem_gen_0_tb/blk_mem_gen_0_synth_inst/BMG_PORT/ADDRA
       wave add  /blk_mem_gen_0_tb/blk_mem_gen_0_synth_inst/BMG_PORT/DINA
       wave add  /blk_mem_gen_0_tb/blk_mem_gen_0_synth_inst/BMG_PORT/WEA
-      wave add  /blk_mem_gen_0_tb/blk_mem_gen_0_synth_inst/BMG_PORT/DOUTA
+      wave add  /blk_mem_gen_0_tb/blk_mem_gen_0_synth_inst/BMG_PORT/CLKB
+      wave add  /blk_mem_gen_0_tb/blk_mem_gen_0_synth_inst/BMG_PORT/ADDRB
+      wave add  /blk_mem_gen_0_tb/blk_mem_gen_0_synth_inst/BMG_PORT/DOUTB
 run all
 quit

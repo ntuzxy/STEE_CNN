@@ -41,139 +41,130 @@ Data Sheet report:
 All values displayed in nanoseconds (ns)
 
 Setup/Hold to clock hi_in<0>
-------------------+------------+------------+------------------+--------+
-                  |Max Setup to|Max Hold to |                  | Clock  |
-Source            | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
-------------------+------------+------------+------------------+--------+
-done              |   10.569(R)|   -3.820(R)|clk_top_OBUF      |   0.000|
-ext_cnn_done      |   10.731(R)|   -3.448(R)|clk_top_OBUF      |   0.000|
-ext_cnn_ready     |   10.178(R)|   -1.025(R)|clk_top_OBUF      |   0.000|
-ext_xAddressOut<0>|   16.836(R)|   -5.800(R)|clk_top_OBUF      |   0.000|
-ext_xAddressOut<1>|   16.721(R)|   -5.707(R)|clk_top_OBUF      |   0.000|
-ext_xAddressOut<2>|   16.551(R)|   -5.572(R)|clk_top_OBUF      |   0.000|
-ext_xAddressOut<3>|   16.565(R)|   -5.582(R)|clk_top_OBUF      |   0.000|
-ext_xAddressOut<4>|   16.927(R)|   -5.873(R)|clk_top_OBUF      |   0.000|
-ext_xAddressOut<5>|   16.695(R)|   -5.687(R)|clk_top_OBUF      |   0.000|
-ext_xAddressOut<6>|   16.285(R)|   -5.360(R)|clk_top_OBUF      |   0.000|
-ext_xAddressOut<7>|   16.335(R)|   -5.399(R)|clk_top_OBUF      |   0.000|
-ext_xAddressOut<8>|   16.686(R)|   -5.681(R)|clk_top_OBUF      |   0.000|
-hi_in<1>          |    7.336(R)|   -2.745(R)|clk_top_OBUF      |   0.000|
-hi_in<2>          |    6.769(R)|   -2.790(R)|clk_top_OBUF      |   0.000|
-hi_in<3>          |    5.053(R)|   -2.658(R)|clk_top_OBUF      |   0.000|
-hi_in<4>          |   11.552(R)|   -3.092(R)|clk_top_OBUF      |   0.000|
-hi_in<5>          |   12.852(R)|   -2.957(R)|clk_top_OBUF      |   0.000|
-hi_in<6>          |   13.337(R)|   -2.874(R)|clk_top_OBUF      |   0.000|
-hi_in<7>          |   12.776(R)|   -2.145(R)|clk_top_OBUF      |   0.000|
-hi_inout<0>       |    3.619(R)|   -1.753(R)|clk_top_OBUF      |   0.000|
-hi_inout<1>       |    3.561(R)|   -1.707(R)|clk_top_OBUF      |   0.000|
-hi_inout<2>       |    3.606(R)|   -1.738(R)|clk_top_OBUF      |   0.000|
-hi_inout<3>       |    3.548(R)|   -1.692(R)|clk_top_OBUF      |   0.000|
-hi_inout<4>       |    3.641(R)|   -1.765(R)|clk_top_OBUF      |   0.000|
-hi_inout<5>       |    3.897(R)|   -1.970(R)|clk_top_OBUF      |   0.000|
-hi_inout<6>       |    3.828(R)|   -1.920(R)|clk_top_OBUF      |   0.000|
-hi_inout<7>       |    3.453(R)|   -1.620(R)|clk_top_OBUF      |   0.000|
-hi_inout<8>       |    4.172(R)|   -2.220(R)|clk_top_OBUF      |   0.000|
-hi_inout<9>       |    4.076(R)|   -2.143(R)|clk_top_OBUF      |   0.000|
-hi_inout<10>      |    3.412(R)|   -1.628(R)|clk_top_OBUF      |   0.000|
-hi_inout<11>      |    4.057(R)|   -2.144(R)|clk_top_OBUF      |   0.000|
-hi_inout<12>      |    3.576(R)|   -1.741(R)|clk_top_OBUF      |   0.000|
-hi_inout<13>      |    4.460(R)|   -2.449(R)|clk_top_OBUF      |   0.000|
-hi_inout<14>      |    4.552(R)|   -2.539(R)|clk_top_OBUF      |   0.000|
-hi_inout<15>      |    3.557(R)|   -1.743(R)|clk_top_OBUF      |   0.000|
-parallel_out<0>   |   26.982(R)|   -2.739(R)|clk_top_OBUF      |   0.000|
-parallel_out<1>   |   26.740(R)|   -3.402(R)|clk_top_OBUF      |   0.000|
-parallel_out<2>   |   23.387(R)|   -6.819(R)|clk_top_OBUF      |   0.000|
-parallel_out<3>   |   23.713(R)|   -1.845(R)|clk_top_OBUF      |   0.000|
-parallel_out<4>   |   22.568(R)|   -6.639(R)|clk_top_OBUF      |   0.000|
-parallel_out<5>   |   22.801(R)|   -6.592(R)|clk_top_OBUF      |   0.000|
-parallel_out<6>   |   22.553(R)|   -6.185(R)|clk_top_OBUF      |   0.000|
-parallel_out<7>   |   23.304(R)|   -6.492(R)|clk_top_OBUF      |   0.000|
-spi_out           |    4.485(R)|   -2.458(R)|clk_top_OBUF      |   0.000|
-top_AER_nack      |   10.648(R)|   -4.497(R)|clk_top_OBUF      |   0.000|
-------------------+------------+------------+------------------+--------+
+---------------+------------+------------+------------------+--------+
+               |Max Setup to|Max Hold to |                  | Clock  |
+Source         | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+---------------+------------+------------+------------------+--------+
+hi_in<1>       |    7.139(R)|   -3.429(R)|ok1<24>           |   0.000|
+hi_in<2>       |    6.847(R)|   -3.170(R)|ok1<24>           |   0.000|
+hi_in<3>       |    6.206(R)|   -3.056(R)|ok1<24>           |   0.000|
+hi_in<4>       |   11.027(R)|   -2.534(R)|ok1<24>           |   0.000|
+hi_in<5>       |   10.972(R)|   -2.600(R)|ok1<24>           |   0.000|
+hi_in<6>       |   11.031(R)|   -2.800(R)|ok1<24>           |   0.000|
+hi_in<7>       |   10.087(R)|   -2.509(R)|ok1<24>           |   0.000|
+hi_inout<0>    |    3.610(R)|   -1.732(R)|ok1<24>           |   0.000|
+hi_inout<1>    |    3.610(R)|   -1.732(R)|ok1<24>           |   0.000|
+hi_inout<2>    |    3.721(R)|   -1.818(R)|ok1<24>           |   0.000|
+hi_inout<3>    |    4.287(R)|   -2.267(R)|ok1<24>           |   0.000|
+hi_inout<4>    |    4.509(R)|   -2.444(R)|ok1<24>           |   0.000|
+hi_inout<5>    |    4.250(R)|   -2.247(R)|ok1<24>           |   0.000|
+hi_inout<6>    |    4.840(R)|   -2.708(R)|ok1<24>           |   0.000|
+hi_inout<7>    |    4.533(R)|   -2.463(R)|ok1<24>           |   0.000|
+hi_inout<8>    |    4.167(R)|   -2.180(R)|ok1<24>           |   0.000|
+hi_inout<9>    |    4.455(R)|   -2.437(R)|ok1<24>           |   0.000|
+hi_inout<10>   |    3.720(R)|   -1.851(R)|ok1<24>           |   0.000|
+hi_inout<11>   |    4.924(R)|   -2.825(R)|ok1<24>           |   0.000|
+hi_inout<12>   |    4.610(R)|   -2.574(R)|ok1<24>           |   0.000|
+hi_inout<13>   |    4.629(R)|   -2.579(R)|ok1<24>           |   0.000|
+hi_inout<14>   |    5.268(R)|   -3.090(R)|ok1<24>           |   0.000|
+hi_inout<15>   |    4.208(R)|   -2.256(R)|ok1<24>           |   0.000|
+parallel_out<0>|   11.260(R)|   -7.806(R)|ok1<24>           |   0.000|
+parallel_out<1>|    8.821(R)|   -5.907(R)|ok1<24>           |   0.000|
+parallel_out<2>|    7.270(R)|   -4.652(R)|ok1<24>           |   0.000|
+parallel_out<3>|    7.898(R)|   -5.154(R)|ok1<24>           |   0.000|
+parallel_out<4>|    5.986(R)|   -3.643(R)|ok1<24>           |   0.000|
+parallel_out<5>|    7.815(R)|   -5.055(R)|ok1<24>           |   0.000|
+parallel_out<6>|    6.261(R)|   -3.819(R)|ok1<24>           |   0.000|
+parallel_out<7>|    8.006(R)|   -5.208(R)|ok1<24>           |   0.000|
+---------------+------------+------------+------------------+--------+
 
 Clock hi_in<0> to Pad
 ---------------+------------+------------------+--------+
                | clk (edge) |                  | Clock  |
 Destination    |   to PAD   |Internal Clock(s) | Phase  |
 ---------------+------------+------------------+--------+
-capture        |    9.006(R)|clk_top_OBUF      |   0.000|
-clk_update     |    8.112(R)|clk_top_OBUF      |   0.000|
-en_evt2frame   |   11.015(R)|clk_top_OBUF      |   0.000|
-ext_cnn_rd_done|    5.058(R)|clk_top_OBUF      |   0.000|
-ext_dataIn_neg |   18.341(R)|clk_top_OBUF      |   0.000|
-ext_dataIn_pos |   17.129(R)|clk_top_OBUF      |   0.000|
-hi_inout<0>    |    9.033(R)|clk_top_OBUF      |   0.000|
-hi_inout<1>    |    9.210(R)|clk_top_OBUF      |   0.000|
-hi_inout<2>    |    9.708(R)|clk_top_OBUF      |   0.000|
-hi_inout<3>    |   10.160(R)|clk_top_OBUF      |   0.000|
-hi_inout<4>    |   10.295(R)|clk_top_OBUF      |   0.000|
-hi_inout<5>    |   10.629(R)|clk_top_OBUF      |   0.000|
-hi_inout<6>    |   10.946(R)|clk_top_OBUF      |   0.000|
-hi_inout<7>    |   11.187(R)|clk_top_OBUF      |   0.000|
-hi_inout<8>    |    8.816(R)|clk_top_OBUF      |   0.000|
-hi_inout<9>    |    8.473(R)|clk_top_OBUF      |   0.000|
-hi_inout<10>   |    9.186(R)|clk_top_OBUF      |   0.000|
-hi_inout<11>   |    9.186(R)|clk_top_OBUF      |   0.000|
-hi_inout<12>   |    9.899(R)|clk_top_OBUF      |   0.000|
-hi_inout<13>   |   10.593(R)|clk_top_OBUF      |   0.000|
-hi_inout<14>   |    9.880(R)|clk_top_OBUF      |   0.000|
-hi_inout<15>   |    9.187(R)|clk_top_OBUF      |   0.000|
-hi_out<0>      |    7.320(R)|clk_top_OBUF      |   0.000|
-init           |   11.622(R)|clk_top_OBUF      |   0.000|
-led<0>         |    9.510(R)|clk_top_OBUF      |   0.000|
-led<1>         |    9.145(R)|clk_top_OBUF      |   0.000|
-led<2>         |   10.063(R)|clk_top_OBUF      |   0.000|
-led<3>         |    9.980(R)|clk_top_OBUF      |   0.000|
-led<4>         |    8.180(R)|clk_top_OBUF      |   0.000|
-led<5>         |    7.530(R)|clk_top_OBUF      |   0.000|
-led<6>         |    7.439(R)|clk_top_OBUF      |   0.000|
-led<7>         |    7.524(R)|clk_top_OBUF      |   0.000|
-reset_n        |    8.896(R)|clk_top_OBUF      |   0.000|
-rgn_clk        |    9.403(R)|clk_top_OBUF      |   0.000|
-spi_din        |    8.674(R)|clk_top_OBUF      |   0.000|
-top_AER_data<0>|    9.973(R)|clk_top_OBUF      |   0.000|
-top_AER_data<1>|    9.589(R)|clk_top_OBUF      |   0.000|
-top_AER_data<2>|    8.541(R)|clk_top_OBUF      |   0.000|
-top_AER_data<3>|    8.609(R)|clk_top_OBUF      |   0.000|
-top_AER_data<4>|    8.798(R)|clk_top_OBUF      |   0.000|
-top_AER_data<5>|    7.350(R)|clk_top_OBUF      |   0.000|
-top_AER_data<6>|    9.445(R)|clk_top_OBUF      |   0.000|
-top_AER_data<7>|   11.298(R)|clk_top_OBUF      |   0.000|
-top_AER_data<8>|   10.305(R)|clk_top_OBUF      |   0.000|
-top_AER_data<9>|   11.244(R)|clk_top_OBUF      |   0.000|
-top_AER_nreq   |   10.362(R)|clk_top_OBUF      |   0.000|
+clk_phase1     |   22.180(R)|ok1<24>           |   0.000|
+clk_phase2     |   22.180(R)|ok1<24>           |   0.000|
+clk_top        |   22.724(R)|ok1<24>           |   0.000|
+clk_update     |   22.363(R)|ok1<24>           |   0.000|
+en_evt2frame   |   11.033(R)|ok1<24>           |   0.000|
+ext_cnn_rd_done|   14.424(R)|ok1<24>           |   0.000|
+hi_inout<0>    |    9.510(R)|ok1<24>           |   0.000|
+hi_inout<1>    |   10.164(R)|ok1<24>           |   0.000|
+hi_inout<2>    |    9.390(R)|ok1<24>           |   0.000|
+hi_inout<3>    |    9.369(R)|ok1<24>           |   0.000|
+hi_inout<4>    |    9.824(R)|ok1<24>           |   0.000|
+hi_inout<5>    |   10.020(R)|ok1<24>           |   0.000|
+hi_inout<6>    |   10.380(R)|ok1<24>           |   0.000|
+hi_inout<7>    |   10.770(R)|ok1<24>           |   0.000|
+hi_inout<8>    |    9.700(R)|ok1<24>           |   0.000|
+hi_inout<9>    |   11.498(R)|ok1<24>           |   0.000|
+hi_inout<10>   |   11.144(R)|ok1<24>           |   0.000|
+hi_inout<11>   |   12.331(R)|ok1<24>           |   0.000|
+hi_inout<12>   |   11.949(R)|ok1<24>           |   0.000|
+hi_inout<13>   |   12.687(R)|ok1<24>           |   0.000|
+hi_inout<14>   |   12.919(R)|ok1<24>           |   0.000|
+hi_inout<15>   |   11.573(R)|ok1<24>           |   0.000|
+hi_out<0>      |    8.529(R)|ok1<24>           |   0.000|
+init           |   10.560(R)|ok1<24>           |   0.000|
+led<0>         |   10.215(R)|ok1<24>           |   0.000|
+led<1>         |   10.139(R)|ok1<24>           |   0.000|
+led<2>         |   10.046(R)|ok1<24>           |   0.000|
+led<3>         |    9.159(R)|ok1<24>           |   0.000|
+led<4>         |   11.332(R)|ok1<24>           |   0.000|
+led<5>         |    9.536(R)|ok1<24>           |   0.000|
+led<6>         |   10.256(R)|ok1<24>           |   0.000|
+led<7>         |   10.416(R)|ok1<24>           |   0.000|
+reset_n        |    9.210(R)|ok1<24>           |   0.000|
+test3          |   19.071(R)|ok1<24>           |   0.000|
 ---------------+------------+------------------+--------+
+
+Clock sys_clk1 to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+clk_phase1  |   22.039(R)|test_clk_OBUF     |   0.000|
+clk_phase2  |   22.039(R)|test_clk_OBUF     |   0.000|
+clk_top     |   23.911(R)|test_clk_OBUF     |   0.000|
+clk_update  |   22.222(R)|test_clk_OBUF     |   0.000|
+test3       |   19.038(R)|test_clk_OBUF     |   0.000|
+------------+------------+------------------+--------+
 
 Clock to Setup on destination clock hi_in<0>
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-hi_in<0>       |   17.039|         |         |         |
+hi_in<0>       |   15.854|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock sys_clk1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+hi_in<0>       |   11.952|         |         |         |
+sys_clk1       |    6.334|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-hi_in<0>       |clk_phase1     |    9.874|
-hi_in<0>       |clk_phase2     |   10.577|
-hi_in<0>       |clk_top        |    7.737|
-hi_in<0>       |clk_update     |   11.087|
 sys_clk1       |test_clk       |   13.550|
 sys_clk2       |test2          |   13.154|
 ---------------+---------------+---------+
 
 
-Analysis completed Sat Dec 05 17:33:33 2020 
+Analysis completed Wed Feb 17 17:05:07 2021 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 4553 MB
+Peak Memory Usage: 4552 MB
 
 
 

@@ -5,14 +5,14 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="par" timeStamp="Sat Dec 05 17:33:09 2020">
+  <application stringID="par" timeStamp="Wed Feb 17 17:04:44 2021">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
           <item stringID="variable" value="Path"/>
-          <item stringID="value" value="F:\Xilinx\14.7\ISE_DS\ISE\\lib\nt64;F:\Xilinx\14.7\ISE_DS\ISE\\bin\nt64;F:\Xilinx\14.7\ISE_DS\ISE\bin\nt64;F:\Xilinx\14.7\ISE_DS\ISE\lib\nt64;F:\Xilinx\14.7\ISE_DS\ISE\..\..\..\DocNav;F:\Xilinx\14.7\ISE_DS\PlanAhead\bin;F:\Xilinx\14.7\ISE_DS\EDK\bin\nt64;F:\Xilinx\14.7\ISE_DS\EDK\lib\nt64;F:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;F:\Xilinx\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;F:\Xilinx\14.7\ISE_DS\EDK\gnuwin\bin;F:\Xilinx\14.7\ISE_DS\EDK\gnu\arm\nt\bin;F:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;F:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;F:\Xilinx\14.7\ISE_DS\common\bin\nt64;F:\Xilinx\14.7\ISE_DS\common\lib\nt64;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\MATLAB\R2016a\runtime\win64;C:\Program Files\MATLAB\R2016a\bin;C:\TDM-GCC-64\bin;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\WinMerge;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\TortoiseGit\bin;C:\Program Files\Git\cmd;C:\Users\Zhang\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\Zhang\AppData\Local\Programs\Python\Python36\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\SSH Communications Security\SSH Secure Shell;C:\Program Files\modeltech64_10.4\win64;C:\modeltech64_10.4\win64;C:\Users\Zhang\AppData\Local\GitHubDesktop\bin;C:\Users\Zhang\AppData\Local\Programs\Microsoft VS Code\bin;C:\Modeltech_pe_edu_10.4a\win32pe_edu;C:\modeltech_10.1a\win32"/>
+          <item stringID="value" value="F:\Xilinx\14.7\ISE_DS\ISE\\lib\nt64;F:\Xilinx\14.7\ISE_DS\ISE\\bin\nt64;F:\Xilinx\14.7\ISE_DS\ISE\bin\nt64;F:\Xilinx\14.7\ISE_DS\ISE\lib\nt64;F:\Xilinx\14.7\ISE_DS\ISE\..\..\..\DocNav;F:\Xilinx\14.7\ISE_DS\PlanAhead\bin;F:\Xilinx\14.7\ISE_DS\EDK\bin\nt64;F:\Xilinx\14.7\ISE_DS\EDK\lib\nt64;F:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;F:\Xilinx\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;F:\Xilinx\14.7\ISE_DS\EDK\gnuwin\bin;F:\Xilinx\14.7\ISE_DS\EDK\gnu\arm\nt\bin;F:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;F:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;F:\Xilinx\14.7\ISE_DS\common\bin\nt64;F:\Xilinx\14.7\ISE_DS\common\lib\nt64;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\MATLAB\R2020b\bin;C:\Program Files\MATLAB\R2016a\runtime\win64;C:\Program Files\MATLAB\R2016a\bin;C:\TDM-GCC-64\bin;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\WinMerge;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\TortoiseGit\bin;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\Zhang\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\Zhang\AppData\Local\Programs\Python\Python36\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\SSH Communications Security\SSH Secure Shell;C:\Program Files\modeltech64_10.4\win64;C:\modeltech64_10.4\win64;C:\Users\Zhang\AppData\Local\GitHubDesktop\bin;C:\Users\Zhang\AppData\Local\Programs\Microsoft VS Code\bin;C:\Modeltech_pe_edu_10.4a\win32pe_edu;C:\modeltech_10.1a\win32"/>
         </row>
         <row stringID="row" value="1">
           <item stringID="variable" value="PATHEXT"/>
@@ -66,17 +66,17 @@
         <item AVAILABLE="221" dataType="int" label="Number of External IOBs" stringID="PAR_EXTERNAL_IOB" value="99">
           <item AVAILABLE="99" dataType="int" label="Number of LOCed IOBs" stringID="PAR_LOC_IOB" value="98"/>
         </item>
-        <item AVAILABLE="13312" dataType="int" stringID="PAR_SLICES" value="1110"></item>
+        <item AVAILABLE="13312" dataType="int" stringID="PAR_SLICES" value="1432"></item>
       </section>
     </task>
     <task stringID="PAR_PAR">
       <section stringID="PAR_DESIGN_SUMMARY">
-        <item stringID="PAR_REAL_TIME_COMPLETION_ROUTER" value="19 secs "/>
-        <item stringID="PAR_CPU_TIME_COMPLETION_ROUTER" value="16 secs "/>
+        <item stringID="PAR_REAL_TIME_COMPLETION_ROUTER" value="18 secs "/>
+        <item stringID="PAR_CPU_TIME_COMPLETION_ROUTER" value="18 secs "/>
         <item dataType="int" stringID="PAR_UNROUTES" value="0"/>
         <item dataType="float" stringID="PAR_TIMING_SCORE" value="0.000000"/>
-        <item stringID="PAR_REAL_TIME_COMPLETION_PAR" value="20 secs "/>
-        <item stringID="PAR_CPU_TIME_COMPLETION_PAR" value="17 secs "/>
+        <item stringID="PAR_REAL_TIME_COMPLETION_PAR" value="19 secs "/>
+        <item stringID="PAR_CPU_TIME_COMPLETION_PAR" value="19 secs "/>
       </section>
     </task>
     <task stringID="PAR_par">
@@ -91,22 +91,58 @@
           <column label="Net Skew(ns)" stringID="NET_SKEW"/>
           <column label="Max Delay(ns)" stringID="MAX_DELAY"/>
           <row stringID="row" value="1">
-            <item label="Clock Net" stringID="CLOCK_NET" value="clk_top_OBUF"/>
+            <item label="Clock Net" stringID="CLOCK_NET" value="test_clk_OBUF"/>
             <item label="Routed" stringID="ROUTED" value="ROUTED"/>
             <item label="Resource" stringID="RESOURCE" value="BUFGMUX3"/>
             <item label="Locked" stringID="LOCKED" value="No"/>
-            <item dataType="float" label="Fanout" stringID="FANOUT" value="730.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.473000"/>
-            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="1.211000"/>
+            <item dataType="float" label="Fanout" stringID="FANOUT" value="24.000000"/>
+            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.175000"/>
+            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="1.053000"/>
           </row>
           <row stringID="row" value="2">
-            <item label="Clock Net" stringID="CLOCK_NET" value="RP2serial_1/clk_div"/>
+            <item label="Clock Net" stringID="CLOCK_NET" value="clk_div2"/>
+            <item label="Routed" stringID="ROUTED" value="ROUTED"/>
+            <item label="Resource" stringID="RESOURCE" value="BUFGMUX5"/>
+            <item label="Locked" stringID="LOCKED" value="No"/>
+            <item dataType="float" label="Fanout" stringID="FANOUT" value="195.000000"/>
+            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.430000"/>
+            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="1.176000"/>
+          </row>
+          <row stringID="row" value="3">
+            <item label="Clock Net" stringID="CLOCK_NET" value="clk_phase2_OBUF"/>
+            <item label="Routed" stringID="ROUTED" value="ROUTED"/>
+            <item label="Resource" stringID="RESOURCE" value="BUFGMUX2"/>
+            <item label="Locked" stringID="LOCKED" value="No"/>
+            <item dataType="float" label="Fanout" stringID="FANOUT" value="196.000000"/>
+            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.388000"/>
+            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="1.134000"/>
+          </row>
+          <row stringID="row" value="4">
+            <item label="Clock Net" stringID="CLOCK_NET" value="ok1&lt;24>"/>
+            <item label="Routed" stringID="ROUTED" value="ROUTED"/>
+            <item label="Resource" stringID="RESOURCE" value="BUFGMUX0"/>
+            <item label="Locked" stringID="LOCKED" value="No"/>
+            <item dataType="float" label="Fanout" stringID="FANOUT" value="441.000000"/>
+            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.463000"/>
+            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="1.198000"/>
+          </row>
+          <row stringID="row" value="5">
+            <item label="Clock Net" stringID="CLOCK_NET" value="clk_top_OBUF"/>
             <item label="Routed" stringID="ROUTED" value="ROUTED"/>
             <item label="Resource" stringID="RESOURCE" value="BUFGMUX4"/>
             <item label="Locked" stringID="LOCKED" value="No"/>
-            <item dataType="float" label="Fanout" stringID="FANOUT" value="34.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.246000"/>
-            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="1.085000"/>
+            <item dataType="float" label="Fanout" stringID="FANOUT" value="18.000000"/>
+            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.199000"/>
+            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="0.956000"/>
+          </row>
+          <row stringID="row" value="6">
+            <item label="Clock Net" stringID="CLOCK_NET" value="RP2serial_1/clk_div"/>
+            <item label="Routed" stringID="ROUTED" value="ROUTED"/>
+            <item label="Resource" stringID="RESOURCE" value="BUFGMUX7"/>
+            <item label="Locked" stringID="LOCKED" value="No"/>
+            <item dataType="float" label="Fanout" stringID="FANOUT" value="35.000000"/>
+            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.182000"/>
+            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="0.985000"/>
           </row>
         </table>
       </section>
@@ -289,7 +325,7 @@
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="B8"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="VCCO_0"/>
             <item label="IO Bank&#xA;Number" stringID="IO_Bank_Number" value="0"/>
-            <item label="Voltage" stringID="Voltage" value="2.50"/>
+            <item label="Voltage" stringID="Voltage" value="any******"/>
           </row>
           <row stringID="row" value="27">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="B9"/>
@@ -399,7 +435,7 @@
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="C6"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="VCCO_0"/>
             <item label="IO Bank&#xA;Number" stringID="IO_Bank_Number" value="0"/>
-            <item label="Voltage" stringID="Voltage" value="2.50"/>
+            <item label="Voltage" stringID="Voltage" value="any******"/>
           </row>
           <row stringID="row" value="43">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="C7"/>
@@ -829,18 +865,10 @@
           </row>
           <row stringID="row" value="99">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="F9"/>
-            <item label="Signal&#xA;Name" stringID="Signal_Name" value="hi_muxsel"/>
-            <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
+            <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="DIFFM"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO_L32P_0/GCLK6"/>
-            <item stringID="Direction" value="OUTPUT"/>
-            <item label="IO&#xA;Standard" sort="smart" stringID="IO_Standard" value="LVCMOS25*"/>
+            <item stringID="Direction" value="UNUSED"/>
             <item label="IO Bank&#xA;Number" stringID="IO_Bank_Number" value="0"/>
-            <item label="Drive&#xA;(mA)" stringID="Drive" value="12"/>
-            <item label="Slew&#xA;Rate" stringID="Slew_Rate" value="SLOW"/>
-            <item label="Termination" stringID="Termination" value="NONE**"/>
-            <item label="Constraint" stringID="Constraint" value="UNLOCATED"/>
-            <item label="IO&#xA;Register" stringID="IO_Register" value="NO"/>
-            <item label="Signal&#xA;Integrity" stringID="Signal_Integrity" value="NONE"/>
           </row>
           <row stringID="row" value="100">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="F10"/>
@@ -878,7 +906,7 @@
             <item label="Slew&#xA;Rate" stringID="Slew_Rate" value="SLOW"/>
             <item label="Termination" stringID="Termination" value="NONE**"/>
             <item label="Constraint" stringID="Constraint" value="LOCATED"/>
-            <item label="IO&#xA;Register" stringID="IO_Register" value="YES"/>
+            <item label="IO&#xA;Register" stringID="IO_Register" value="NO"/>
             <item label="Signal&#xA;Integrity" stringID="Signal_Integrity" value="NONE"/>
           </row>
           <row stringID="row" value="105">
@@ -979,13 +1007,13 @@
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="G8"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="VCCO_0"/>
             <item label="IO Bank&#xA;Number" stringID="IO_Bank_Number" value="0"/>
-            <item label="Voltage" stringID="Voltage" value="2.50"/>
+            <item label="Voltage" stringID="Voltage" value="any******"/>
           </row>
           <row stringID="row" value="117">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="G9"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="VCCO_0"/>
             <item label="IO Bank&#xA;Number" stringID="IO_Bank_Number" value="0"/>
-            <item label="Voltage" stringID="Voltage" value="2.50"/>
+            <item label="Voltage" stringID="Voltage" value="any******"/>
           </row>
           <row stringID="row" value="118">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="G10"/>
@@ -2008,10 +2036,18 @@
           </row>
           <row stringID="row" value="240">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="P10"/>
-            <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="DIFFM"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="hi_muxsel"/>
+            <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO_L32P_4/GCLK0"/>
-            <item stringID="Direction" value="UNUSED"/>
+            <item stringID="Direction" value="OUTPUT"/>
+            <item label="IO&#xA;Standard" sort="smart" stringID="IO_Standard" value="LVCMOS25*"/>
             <item label="IO Bank&#xA;Number" stringID="IO_Bank_Number" value="4"/>
+            <item label="Drive&#xA;(mA)" stringID="Drive" value="12"/>
+            <item label="Slew&#xA;Rate" stringID="Slew_Rate" value="SLOW"/>
+            <item label="Termination" stringID="Termination" value="NONE**"/>
+            <item label="Constraint" stringID="Constraint" value="UNLOCATED"/>
+            <item label="IO&#xA;Register" stringID="IO_Register" value="NO"/>
+            <item label="Signal&#xA;Integrity" stringID="Signal_Integrity" value="NONE"/>
           </row>
           <row stringID="row" value="241">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="P11"/>

@@ -94,9 +94,13 @@ ENTITY blk_mem_gen_1_exdes IS
   
     DINA           : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
   
-    DOUTA          : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
-    CLKA       : IN STD_LOGIC
+    CLKA       : IN STD_LOGIC;
 
+  
+      --Inputs - Port B
+    ADDRB          : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+    DOUTB          : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+    CLKB           : IN STD_LOGIC
 
   );
 
@@ -120,11 +124,15 @@ ARCHITECTURE xilinx OF blk_mem_gen_1_exdes IS
     ADDRA      : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
   
     DINA       : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+
   
-    DOUTA      : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+    CLKA       : IN STD_LOGIC;
 
-    CLKA       : IN STD_LOGIC
-
+  
+      --Port B
+    ADDRB      : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+    DOUTB      : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+    CLKB       : IN STD_LOGIC
 
 
   );
@@ -142,6 +150,11 @@ BEGIN
      O => CLKA_buf
      );
 
+  bufg_B : BUFG
+    PORT MAP (
+     I => CLKB,
+     O => CLKB_buf
+     );
 
 
   bmg0 : blk_mem_gen_1
@@ -152,11 +165,14 @@ BEGIN
       ADDRA      => ADDRA,
   
       DINA       => DINA,
+
+      CLKA       => CLKA_buf,
+
   
-      DOUTA      => DOUTA,
-
-      CLKA       => CLKA_buf
-
+      --Port B
+      ADDRB      => ADDRB,
+      DOUTB      => DOUTB,
+      CLKB       => CLKB_buf
 
     );
 

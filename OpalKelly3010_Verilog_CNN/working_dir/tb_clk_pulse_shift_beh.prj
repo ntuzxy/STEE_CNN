@@ -1,0 +1,3 @@
+verilog work "../implementation/clk_pulse_shift.v"
+verilog work "../simulation/tb_clk_pulse_shift.v"
+verilog work "F:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

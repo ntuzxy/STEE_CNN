@@ -26,8 +26,6 @@ Loading design module
 Loading design module "../ipcore_dir/blk_mem_gen_0.ngc"...
 Loading design module "../ipcore_dir/blk_mem_gen_1.ngc"...
 Loading design module "../ipcore_dir/blk_mem_gen2.ngc"...
-Loading design module "../ipcore_dir/fifo_76800x1.ngc"...
-Loading design module "../ipcore_dir/fifo_512x8b.ngc"...
 Gathering constraint information from source properties...
 Done.
 
@@ -39,22 +37,22 @@ Checking Constraint Associations...
 Done...
 
 Checking expanded design ...
-WARNING:NgdBuild:452 - logical net 'N196' has no driver
-WARNING:NgdBuild:452 - logical net 'N197' has no driver
-WARNING:NgdBuild:452 - logical net 'N198' has no driver
-WARNING:NgdBuild:452 - logical net 'N199' has no driver
-WARNING:NgdBuild:452 - logical net 'N200' has no driver
-WARNING:NgdBuild:452 - logical net 'N201' has no driver
-WARNING:NgdBuild:452 - logical net 'N202' has no driver
-WARNING:NgdBuild:452 - logical net 'N203' has no driver
-WARNING:NgdBuild:452 - logical net 'N204' has no driver
-WARNING:NgdBuild:452 - logical net 'N205' has no driver
-WARNING:NgdBuild:452 - logical net 'N206' has no driver
-WARNING:NgdBuild:452 - logical net 'N207' has no driver
-WARNING:NgdBuild:452 - logical net 'N208' has no driver
-WARNING:NgdBuild:452 - logical net 'N209' has no driver
-WARNING:NgdBuild:452 - logical net 'N210' has no driver
-WARNING:NgdBuild:452 - logical net 'N211' has no driver
+WARNING:NgdBuild:452 - logical net 'N269' has no driver
+WARNING:NgdBuild:452 - logical net 'N270' has no driver
+WARNING:NgdBuild:452 - logical net 'N271' has no driver
+WARNING:NgdBuild:452 - logical net 'N272' has no driver
+WARNING:NgdBuild:452 - logical net 'N273' has no driver
+WARNING:NgdBuild:452 - logical net 'N274' has no driver
+WARNING:NgdBuild:452 - logical net 'N275' has no driver
+WARNING:NgdBuild:452 - logical net 'N276' has no driver
+WARNING:NgdBuild:452 - logical net 'N277' has no driver
+WARNING:NgdBuild:452 - logical net 'N278' has no driver
+WARNING:NgdBuild:452 - logical net 'N279' has no driver
+WARNING:NgdBuild:452 - logical net 'N280' has no driver
+WARNING:NgdBuild:452 - logical net 'N281' has no driver
+WARNING:NgdBuild:452 - logical net 'N282' has no driver
+WARNING:NgdBuild:452 - logical net 'N283' has no driver
+WARNING:NgdBuild:452 - logical net 'N284' has no driver
 
 Partition Implementation Status
 -------------------------------
@@ -67,10 +65,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:  16
 
-Total memory usage is 4422388 kilobytes
+Total memory usage is 4414036 kilobytes
 
 Writing NGD file "testing_CNN_dbg.ngd" ...
-Total REAL time to NGDBUILD completion:  5 sec
+Total REAL time to NGDBUILD completion:  4 sec
 Total CPU time to NGDBUILD completion:   3 sec
 
 Writing NGDBUILD log file "testing_CNN_dbg.bld"...
